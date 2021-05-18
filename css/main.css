@@ -768,7 +768,86 @@ textarea {
 }
 
 
-.footer-component {
+/* ------------------ footer component ------------------*/
+.footer {
+  min-height: 300px;
+  background: #fff
+}
 
+.footer .footer-logo {
+  width: 70px;
+  max-width: 70px
+}
+
+.footer h6 {
+  font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 6px;
+  margin: 0;
+  color: #000
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0
+}
+
+.footer ul li {
+  font-family: Graphik, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 3px 0;
+  font-size: 15px
+}
+
+.footer ul li a {
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -ms-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+  text-decoration: none;
+  color: #85888c
+}
+
+.footer ul li a:hover {
+  color: #000
+}
+
+.footer .row {
+  flex-wrap: nowrap
+}
+
+.footer .row:first-child {
+  padding: 48px 0
+}
+
+.footer .row.sub {
+  background: #000;
+  height: 60px
+}
+
+.footer .row.sub ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0
+}
+
+.footer .row.sub ul li {
+  font-family: Graphik, Helvetica Neue, Helvetica, sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 0;
+  line-height: 60px;
+  font-size: 14px
+}
+
+.footer .row.sub ul li a, .footer .row.sub ul li a:hover {
+  color: #fff !important
+}
+
+.footer .row.sub ul li:first-child {
+  margin-left: 0
 }
 

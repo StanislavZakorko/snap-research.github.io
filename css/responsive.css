@@ -458,3 +458,31 @@
     width: calc(100% - 45px)
   }
 }
+
+/* --------------------- footer component ------------------*/
+@media (max-width: 767px) {
+  .footer .col-6 {
+    display: block
+  }
+}
+@media (min-width: 1040px) {
+  .footer .footer-logo {
+    margin: 0 60px 0 0
+  }
+}
+@media (min-width: 768px) {
+  .footer ul {
+    margin: 0 30px 0 0
+  }
+}
+
+@media (min-width: 1040px) {
+  .footer ul {
+    margin: 0 60px 0 0
+  }
+}
+@media (max-width: 767px) {
+  .footer .row {
+    flex-wrap: wrap
+  }
+}

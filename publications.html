@@ -59,11 +59,17 @@
         publications: 'publications.html',
         news: 'news.html'
       }
+      const footerRoutes = {
+        logo: 'img/snap-logo-footer.svg',
+        team: 'team.html',
+        publications: 'publications.html',
+        news: 'news.html'
+      };
       $('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
       $('.home-hero-container').loadTemplate("templates/components/home-hero.html");
       $('.home-research-container').loadTemplate("templates/components/home-research.html");
       $('.join-our-team-container').loadTemplate("templates/components/join.html");
-      $('.footer-container').loadTemplate("templates/components/footer.html");
+      $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
 
     });
   </script>
