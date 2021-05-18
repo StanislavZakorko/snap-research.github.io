@@ -14,8 +14,8 @@
   line-height: 44px;
   letter-spacing: 0.01rem;
   color: #000;
-  text-align: left;
-  margin: 0;
+  /* text-align: left;
+  margin: 0; */
   padding-left: 16px;
   border-left: 3px solid #f2f2f2;
 }
@@ -52,28 +52,28 @@
   border-color: rgba(0, 0, 0, 0.75) !important;
 }
 
-.news--group.-image {
+/* .news--group.-image {
   background: rgba(0, 0, 0, 0.5);
-}
+} */
 
-.news--group.-image:hover {
+/* .news--group.-image:hover {
   background: rgba(0, 0, 0, 0.35);
-}
+} */
 
-.news--group.-image:hover .news--group-title a {
+/* .news--group.-image:hover .news--group-title a {
   border-color: hsla(0, 0%, 100%, 0.75) !important;
-}
+} */
 
-.news--group.-image .news--group-date {
+/* .news--group.-image .news--group-date {
   background-color: hsla(0, 0%, 100%, 0.15);
   color: #fff;
-}
+} */
 
-.news--group.-image .news--group-title a {
+/* .news--group.-image .news--group-title a {
   color: #fff;
-}
+} */
 
-.news--group.-image .news--group-title a:hover {
+/* .news--group.-image .news--group-title a:hover {
   border-color: hsla(0, 0%, 100%, 0.75) !important;
 }
 
@@ -112,7 +112,7 @@
   min-width: 100%;
   min-height: 100%;
   opacity: 0.5;
-}
+} */
 
 .news--group-date {
   background: #f2f2f2;
@@ -124,11 +124,7 @@
 }
 
 .news--group-title {
-  font-family: font-family(graphik);
-  font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 44px;
   letter-spacing: 0.01rem;
   font-size: 20px;
   line-height: 24px;
@@ -154,11 +150,7 @@
 }
 
 .news--group-intro {
-  font-family: font-family(graphik);
-  font-family: Graphik, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 1.61;
   letter-spacing: 0;
   font-size: 14px;
   line-height: 19px;
@@ -177,7 +169,6 @@
   -ms-transition: 0.25s ease;
   -o-transition: 0.25s ease;
   transition: 0.25s ease;
-  /* font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif; */
   font-weight: 500;
   cursor: pointer;
   display: inline-block;
@@ -194,6 +185,11 @@
   border-color: #000;
   background: rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
 
 .news--group-pagination {
   list-style-type: none;
