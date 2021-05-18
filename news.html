@@ -68,7 +68,13 @@
         team: 'team.html',
         publications: 'publications.html',
         news: 'news.html',
-      }
+      };
+      const footerRoutes = {
+        logo: 'img/snap-logo-footer.svg',
+        team: 'team.html',
+        publications: 'publications.html',
+        news: 'news.html'
+      };
       const arrayNews=[
         {
           date: 'December 21, 2020',
@@ -90,11 +96,9 @@
       ];
 
       $('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
-
       $('.new-one-container').loadTemplate("templates/components/new-one.html",arrayNews);
-
       $('.join-our-team-container').loadTemplate("templates/components/join.html");
-      $('.footer-container').loadTemplate("templates/components/footer.html");
+      $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
 
     });
   </script>
