@@ -122,6 +122,19 @@
 	color: #000;
 }
 
+.team--nav-wrapper {
+	overflow: hidden;
+	margin-top: 45px;
+}
+
+.team--nav-menu {
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: 20px;
+	margin-bottom: -20px;
+	cursor: grab;
+}
+
 .team--nav-items {
 	-webkit-transition: .25s ease;
 	-moz-transition: .25s ease;
@@ -129,13 +142,8 @@
 	-o-transition: .25s ease;
 	transition: .25s ease;
 	height: 34px;
-
 	display: flex;
 	justify-content: space-between;
-	flex-flow: row nowrap;
-
-	margin-top: 45px;
-	margin-bottom: 32px;
 }
 
 .team--nav-link {
@@ -197,5 +205,6 @@
 	font-size: 26px;
 	line-height: 44px;
 	font-weight: 500;
+	margin-top: 32px;
 	margin-bottom: 8px;
 }
