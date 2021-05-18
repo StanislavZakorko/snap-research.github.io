@@ -965,7 +965,7 @@
   width: calc(100% - 24px)
 }
 
-.news--group {
+/* .news--group {
   -webkit-transition: .25s ease;
   -moz-transition: .25s ease;
   -ms-transition: .25s ease;
@@ -1405,7 +1405,7 @@
 .news-media img, .news-media video {
   width: 100%;
   max-width: 600px
-}
+} */
 
 .publication.container.content {
   display: flex;
