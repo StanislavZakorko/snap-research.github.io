@@ -7,13 +7,14 @@ const teamMembersList = [
     Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work    
     `,
     name: "Guru Krisdshnan",
+    subTitle: "Lead Research Engineer",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#guru-krishnan",
     backUrl: "../../team/category/computational-imaging.html",
     imageUrl:
-      "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
+    "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
     description: `
-    <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.</p>&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.</p>
+    <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
   },
   {
@@ -22,6 +23,7 @@ const teamMembersList = [
     metaTitle: "",
     metaDescription: "",
     name: "Jian (James) Wang",
+    subTitle: "Research Scientist",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#jian-james-wang",
     backUrl: "../../team/category/computational-imaging.html",
@@ -57,6 +59,7 @@ function getMembersByIDs(id, path) {
     teamMembersList.find((item) => item.hash === hash) || {};
 
   $(".team--detail-name").text(teamMemberInfo.name);
+  $(".sub-title").text(teamMemberInfo.subTitle);
   $(".research-areas").text(teamMemberInfo.researchAreas);
   $(".team--detail-description").html(teamMemberInfo.description);
   $("a.category").attr("href", teamMemberInfo.backUrl);
