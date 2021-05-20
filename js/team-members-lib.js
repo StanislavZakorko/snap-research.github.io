@@ -7,19 +7,19 @@ const teamMembersList = [
     Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work    
     `,
     name: "Guru Krisdshnan",
-    email:'',
+    email: "",
     subTitle: "Lead Research Engineer",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#guru-krishnan",
     backUrl: "../../team/category/computational-imaging.html",
     imageUrl:
-    "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
+      "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
     description: `
     <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
     publications: [0, 1, 2],
   },
-  
+
   {
     id: 1,
     hash: "#jian-james-wang",
@@ -32,7 +32,7 @@ const teamMembersList = [
     scattering media. Learn more about his work.
     `,
     name: "Jian (James) Wang",
-    email:'',
+    email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#jian-james-wang",
@@ -50,7 +50,7 @@ const teamMembersList = [
     `,
     publications: [2, 3],
   },
-  
+
   {
     id: 100,
     hash: "#colin-eles",
@@ -59,7 +59,7 @@ const teamMembersList = [
     Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University. 
     `,
     name: "Colin Eles",
-    email:'',
+    email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computational Social Science",
     url: "team/team-member/#colin-eles",
@@ -80,7 +80,7 @@ const teamMembersList = [
     Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
     `,
     name: "Ana Cardenas Gasca",
-    email:'',
+    email: "",
     subTitle: "Research Intern",
     researchAreas: "",
     url: "team/team-member/#ana-cardenas-gasca",
@@ -101,7 +101,7 @@ const teamMembersList = [
     Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
     `,
     name: "Jian Ren",
-    email:'',
+    email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computer Vision, Deep Learning",
     url: "team/team-member/#jian-ren",
@@ -113,23 +113,30 @@ const teamMembersList = [
     `,
     publications: [2],
   },
-
 ];
 
-const publicationForTeamCategory ={
-  computationalImaging: [0,1,2],
-  computationalSocialScience: [0,2],
+const publicationForTeamCategory = {
+  computationalImaging: [0, 1, 2],
+  computationalSocialScience: [0, 2],
   humanComputerIinteraction: [0],
-  creativeVision: [0,1,2],
-  all: [2],
-}
-const teamMembersForTeamCategory ={
-  computationalImaging: [0,1,2],
+  creativeVision: [0, 1, 2],
+  all: [0],
+};
+
+const teamMembersForTeamCategory = {
+  computationalImaging: [0, 1, 2],
   computationalSocialScience: [100],
   humanComputerIinteraction: [200],
   creativeVision: [300],
-  all: [0,1,2,100,200,300],
-}
+  get all() {
+    return [
+      ...this.computationalImaging,
+      ...this.computationalSocialScience,
+      ...this.humanComputerIinteraction,
+      ...this.creativeVision,
+    ];
+  },
+};
 
 function getMembersByIDs(id, path) {
   if (!id.length) return [];
