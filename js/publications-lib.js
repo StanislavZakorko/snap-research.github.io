@@ -57,3 +57,14 @@ function getPublications(id, path) {
   }
   return result;
 }
+
+function getPublicationsByIDs(id, path) {
+  if (!id.length) return [];
+  let result = publicationsList.filter((item) => id.includes(item.id));
+  return result.map((item) => {
+    const tempObj = { ...item };
+    tempObj.link = path + tempObj.link;
+    return tempObj;
+  });
+}
+

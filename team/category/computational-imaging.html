@@ -73,11 +73,7 @@
             <div class="events-for-member"></div>
 
     </div>
-
-
   </div>
-
-  
 </div>
 
 <div class="join-our-team-container"></div>
@@ -87,6 +83,7 @@
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
 <script src="../../js/team-members-lib.js"></script>
+<script src="../../js/publications-lib.js"></script>
 <script src="../../js/dragscroll.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -117,35 +114,6 @@
       publications: '../../publications.html',
       news: '../../news.html'
     };
-    const teamMembers=[
-      {
-        name: 'Guru Krishnan',
-        url: '../../team/category/computational-imaging/guru-krishnan',
-        imageUrl: 'https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png',
-      },
-      {
-        name: 'Jian (James) Wang',
-        url: '../../team/category/computational-imaging/jian-james-wang',
-        imageUrl: 'https://images.ctfassets.net/btheynltg5cn/3S6R9feaIi02RVKA4zNs06/b93bb592cd22d9d164aaa8006d5624ff/JianWangNew.png',
-      },
-    ];
-    const arrayPublication = [
-      {
-        date: 'March 15, 2021',
-        title: 'Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'March 15, 2021',
-        title: 'Modeling Cyclic and Ephemeral User Behavior on Social Platforms',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'March 15, 2021',
-        title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-    ];
 
     const arrayEvents = [
       {
@@ -170,10 +138,10 @@
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", arrayPublication);
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", getPublicationsByIDs([0,1,2], '../../'));
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
 
-    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", getMember([0,1], '../../'));
+    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", getMembersByIDs([0,1], '../../'));
 
   });
 </script>
