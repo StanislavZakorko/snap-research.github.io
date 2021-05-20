@@ -115,7 +115,8 @@
       };
       $('.header-container').loadTemplate("../../templates/components/header.html",headerRoutes);
 
-      $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", getPublicationsByIDs([0,1,2], '../../'));
+      $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
+        getPublicationsByIDs(publicationsForTeamMember,'../../'));
 
       $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
       $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);

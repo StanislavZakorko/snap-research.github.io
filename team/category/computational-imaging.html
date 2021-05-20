@@ -54,8 +54,8 @@
   </div>
 
   <h3 class="team--nav-h3 container">About Us</h3>
-  <p class="container"> The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
-    algorithms to capture and display visual information in fundamentally new ways. </p>
+  <p class="container">The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
+    algorithms to capture and display visual information in fundamentally new ways.</p>
 
   <div class="team--group">
     <div class="container">
@@ -138,10 +138,13 @@
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", getPublicationsByIDs([0,1,2], '../../'));
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", 
+      getPublicationsByIDs(publicationForTeamCategory.computationalImaging, '../../'));
+
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
 
-    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", getMembersByIDs([0,1], '../../'));
+    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", 
+      getMembersByIDs(teamMembersForTeamCategory.computationalImaging, '../../'));
 
   });
 </script>

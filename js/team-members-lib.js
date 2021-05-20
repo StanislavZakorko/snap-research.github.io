@@ -7,6 +7,7 @@ const teamMembersList = [
     Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work    
     `,
     name: "Guru Krisdshnan",
+    email:'',
     subTitle: "Lead Research Engineer",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#guru-krishnan",
@@ -16,13 +17,22 @@ const teamMembersList = [
     description: `
     <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
+    publications: [0, 1, 2],
   },
+  
   {
     id: 1,
     hash: "#jian-james-wang",
     metaTitle: "",
-    metaDescription: "",
+    metaDescription: `
+    Jian (James) Wang works in the Computational Imaging lab at Snap Research New York. Jian received his PhD in
+    Computation Imaging and Computer Vision from Carnegie Mellon University in 2018. His research interests lie in
+    computer vision and computational photography. His previous work involves the design of novel camera systems
+    (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through
+    scattering media. Learn more about his work.
+    `,
     name: "Jian (James) Wang",
+    email:'',
     subTitle: "Research Scientist",
     researchAreas: "Computational Imaging",
     url: "team/team-member/#jian-james-wang",
@@ -35,11 +45,91 @@ const teamMembersList = [
     computer vision and computational photography. His previous work involves the design of novel camera systems
     (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through
     scattering media. Learn more about his work&nbsp;<a
-      href="http://www.andrew.cmu.edu/user/jianwan2/"><u></u></a><u></u><a
-      href="https://jianwang-cmu.github.io/"><u>here</u></a>.
-  </p>`,
+    href="http://www.andrew.cmu.edu/user/jianwan2/"><u></u></a><u></u><a
+    href="https://jianwang-cmu.github.io/"><u>here</u></a>.</p>
+    `,
+    publications: [2, 3],
   },
+  
+  {
+    id: 100,
+    hash: "#colin-eles",
+    metaTitle: "",
+    metaDescription: `
+    Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University. 
+    `,
+    name: "Colin Eles",
+    email:'',
+    subTitle: "Research Scientist",
+    researchAreas: "Computational Social Science",
+    url: "team/team-member/#colin-eles",
+    backUrl: "../../team/category/computational-social-science.html",
+    imageUrl:
+      "https://images.ctfassets.net/btheynltg5cn/41mWZjA5zo0zHqqByTcF8w/8913f2d975878ec29c94eac64cfd57e9/Colin_Eles_1.jpeg",
+    description: `
+    <p>Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University.&nbsp;</p>
+    `,
+    publications: [],
+  },
+
+  {
+    id: 200,
+    hash: "#ana-cardenas-gasca",
+    metaTitle: "",
+    metaDescription: `
+    Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
+    `,
+    name: "Ana Cardenas Gasca",
+    email:'',
+    subTitle: "Research Intern",
+    researchAreas: "",
+    url: "team/team-member/#ana-cardenas-gasca",
+    backUrl: "../../team/category/human-computer-interaction.html",
+    imageUrl:
+      "https://images.ctfassets.net/btheynltg5cn/31JpDbeRtsNeBEBKt9gvKb/08fb4c14c55d909108da5bb06e100f32/SnapPhoto.png",
+    description: `
+    <p>Ana is a Research Intern&nbsp;on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen&nbsp;human connection instead of weaken it,&nbsp;particularly on mobile Augmented Reality. She designs and creates Augmented Reality&nbsp;applications around social&nbsp;themes such as co-located interactions and studies around the&nbsp;way users interact with&nbsp;these applications.</p><p>Ana finished her MS in Information of Science at the School of Information in the University of Michigan as a Fulbright scholarship recipient. Prior to that, she completed a double major in Computer Science and Design at the University of Los Andes, Colombia where she is originally from.</p>    
+    `,
+    publications: [3],
+  },
+
+  {
+    id: 300,
+    hash: "#jian-ren",
+    metaTitle: "",
+    metaDescription: `
+    Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
+    `,
+    name: "Jian Ren",
+    email:'',
+    subTitle: "Research Scientist",
+    researchAreas: "Computer Vision, Deep Learning",
+    url: "team/team-member/#jian-ren",
+    backUrl: "../../team/category/creative-vision.html",
+    imageUrl:
+      "https://images.ctfassets.net/btheynltg5cn/qGKJDrVJmWHdTWBx3PbTs/d03c4f5bb460bf7d828a38419743cb0c/Jian_Ren_2019.png",
+    description: `
+    <p>Jian is a Research Scientist working in the Creative Vision group at Snap Research. His research focuses on computer vision, deep learning, and generative models. Before joining Snap Inc., he worked as a Research Intern at Adobe, Snap Inc., and Bytedance Research. Jian obtained a PhD degree in Computer Engineering from Rutgers University in 2019.</p>
+    `,
+    publications: [2],
+  },
+
 ];
+
+const publicationForTeamCategory ={
+  computationalImaging: [0,1,2],
+  computationalSocialScience: [0,2],
+  humanComputerIinteraction: [0],
+  creativeVision: [0,1,2],
+  all: [2],
+}
+const teamMembersForTeamCategory ={
+  computationalImaging: [0,1,2],
+  computationalSocialScience: [100],
+  humanComputerIinteraction: [200],
+  creativeVision: [300],
+  all: [0,1,2,100,200,300],
+}
 
 function getMembersByIDs(id, path) {
   if (!id.length) return [];
@@ -51,12 +141,15 @@ function getMembersByIDs(id, path) {
   });
 }
 
+let publicationsForTeamMember = [];
 (function () {
   if (window.location.pathname !== "/team/team-member/") return true;
 
   const hash = window.location.hash;
   const teamMemberInfo =
     teamMembersList.find((item) => item.hash === hash) || {};
+
+  publicationsForTeamMember = teamMemberInfo.publications;
 
   $(".team--detail-name").text(teamMemberInfo.name);
   $(".sub-title").text(teamMemberInfo.subTitle);
