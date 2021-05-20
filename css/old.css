@@ -1998,19 +1998,19 @@
   color: #000
 } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .team--detail .row {
     flex-wrap: nowrap
   }
-}
+} */
 
-.team--detail img {
+/* .team--detail img {
   max-width: 100%;
   border-radius: 9px;
   border: 3px solid #f2f2f2
-}
+} */
 
-.team--detail h1 {
+/* .team--detail h1 {
   font-family: font-family(graphik);
   font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 500;
@@ -2018,29 +2018,29 @@
   line-height: 44px;
   font-size: 24px;
   line-height: 28px
-}
+} */
 
-.team--detail h1, .team--detail h2 {
+/* .team--detail h1, .team--detail h2 {
   letter-spacing: .01rem;
   color: #000;
   text-align: left;
   margin: 0
-}
+} */
 
-.team--detail h2 {
+/* .team--detail h2 {
   font-size: 32px;
   line-height: 36px;
   font-size: 22px;
   line-height: 26px
-}
+} */
 
-.team--detail-research-areas, .team--detail h2 {
+/* .team--detail-research-areas, .team--detail h2 {
   font-family: font-family(graphik);
   font-family: Graphik, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400
-}
+} */
 
-.team--detail-research-areas {
+/* .team--detail-research-areas {
   line-height: 1.61;
   letter-spacing: 0;
   font-size: 15px;
@@ -2050,15 +2050,15 @@
   margin-bottom: 32px;
   border-left: 3px solid #f2f2f2;
   margin-top: 16px
-}
+} */
 
-.team--detail-research-areas span:not(.research-areas) {
+/* .team--detail-research-areas span:not(.research-areas) {
   font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 500;
   margin-right: 10px
-}
+} */
 
-.team--detail p {
+/* .team--detail p {
   font-family: font-family(graphik);
   font-family: Graphik, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 400;
@@ -2066,7 +2066,7 @@
   letter-spacing: 0;
   font-size: 15px;
   max-width: 80%
-}
+} */
 
 /* .container.content {
   padding: 48px 0 96px

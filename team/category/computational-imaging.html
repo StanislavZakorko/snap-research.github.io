@@ -45,10 +45,10 @@
     <div class="team--nav-menu dragscroll">
       <div class="team--nav-items ">
         <a class="team--nav-link active" href="computational-imaging.html">Computational&nbsp;Imaging</a>
-        <a class="team--nav-link" href="computational-social-science.html">Computational&nbsp;Social&nbsp;Science</a>
-        <a class="team--nav-link" href="human-computer-interaction.html">Human&nbsp;Compute&nbsp;Interaction</a>
-        <a class="team--nav-link" href="creative-vision.html">Creative&nbsp;Vision</a>
-        <a class="team--nav-link" href="all.html">All</a>
+        <a class="team--nav-link " href="computational-social-science.html">Computational&nbsp;Social&nbsp;Science</a>
+        <a class="team--nav-link " href="human-computer-interaction.html">Human&nbsp;Compute&nbsp;Interaction</a>
+        <a class="team--nav-link " href="creative-vision.html">Creative&nbsp;Vision</a>
+        <a class="team--nav-link " href="all.html">All</a>
       </div>
     </div>
   </div>
@@ -59,28 +59,25 @@
 
   <div class="team--group">
     <div class="container">
-      <div class="row">
-
-        <!-- start temlate for team-member -->
-        <div class="col">
-          <div class="card"><a href="/team/ana-cardenas-gasca">
-              <div class="card-inner">
-                <div class="card--bg-image-outer">
-                  <div class="card--bg-image-inner"
-                    style="background-image: url(&quot;//images.ctfassets.net/btheynltg5cn/31JpDbeRtsNeBEBKt9gvKb/08fb4c14c55d909108da5bb06e100f32/SnapPhoto.png?w=500&quot;);">
-                  </div>
-                  <div class="card--copy">
-                    <p class="mb-0">Ana Cardenas Gasca</p>
-                  </div>
-                </div>
-              </div>
-            </a></div>
-        </div>
-        <!-- finish temlate for team-member -->
-
-      </div>
+      <!-- team-members -->
+      <div class="team-members-container row"></div>
+      <!-- team-members -->
     </div>
+
+    <div class="team--detail-publications container">
+
+      <h2 class="title">Publications</h2>
+            <div class="publications-for-member"></div>
+
+      <h2 class="title">Events</h2>
+            <div class="events-for-member"></div>
+
+    </div>
+
+
   </div>
+
+  
 </div>
 
 <div class="join-our-team-container"></div>
@@ -119,10 +116,64 @@
       publications: '../../publications.html',
       news: '../../news.html'
     };
+    const teamMembers=[
+      {
+        name: 'Guru Krishnan',
+        url: '../../team/guru-krishnan',
+        backUrl: '../../team/guru-krishnan',
+        imageUrl: 'https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png',
+      },
+      {
+        name: 'Jian (James) Wang',
+        url: '../../team/jian-james-wang',
+        imageUrl: 'https://images.ctfassets.net/btheynltg5cn/3S6R9feaIi02RVKA4zNs06/b93bb592cd22d9d164aaa8006d5624ff/JianWangNew.png',
+      },
+    ];
+    const arrayPublication = [
+      {
+        date: 'March 15, 2021',
+        title: 'Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat',
+        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+      {
+        date: 'March 15, 2021',
+        title: 'Modeling Cyclic and Ephemeral User Behavior on Social Platforms',
+        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+      {
+        date: 'March 15, 2021',
+        title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
+        url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+    ];
+
+    const arrayEvents = [
+      {
+        date: 'April 12, 2021',
+        title: 'International Conference on Data Engineering',
+        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+      {
+        date: 'April 12, 2021',
+        title: 'International Conference on Data Engineering',
+        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+      {
+        date: 'April 12, 2021',
+        title: 'International Conference on Data Engineering',
+        url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+      },
+    ];
+
     $('.header-container').loadTemplate("../../templates/components/header.html", headerRoutes);
 
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
+
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", arrayPublication);
+    $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
+
+    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", teamMembers);
 
   });
 </script>

@@ -76,7 +76,7 @@
 	border-radius: 9px;
 	padding: 48px 24px 48px 36px;
 	margin-bottom: 24px;
-	width: calc(100% - 24px);
+	/* width: calc(100% - 24px); */
 	position: relative;
 	overflow: hidden;
 }

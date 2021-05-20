@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+<!--  <link rel="manifest" href="site.webmanifest">-->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main2.css">
+  <link rel="stylesheet" href="../css/main3.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../fonts/stylesheet.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../../js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-container"></div>
+
+  <div class="team">
+    <div class="sub-hero">
+      <div class="container"><a class="category" href="../team/category/computational-imaging.html">Back to Team</a></div>
+    </div>
+    <div class="container content">
+      <div class="team--detail">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <img
+              src="https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png"
+              alt="Guru Krishnan">
+          </div>
+          <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
+            <h1 class="title">Guru Krishnan</h1>
+            <div class="team--detail-research-areas">
+              <span>Research Areas</span>
+              <span class="research-areas">Computational Imaging</span>
+            </div>
+            <p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging,
+              photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc.,
+              Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for
+              robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about
+              his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
+            </p>
+
+            <div class="team--detail-publications-member">
+              <h2 class="title">Publications</h2>
+              
+              <div class="publications-for-member">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="publication-member"></div>
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+    $(function () {
+      const headerRoutes = {
+        home: '../index.html',
+        logo: '../img/snap-logo.svg',
+        fellowships: '../fellowships.html',
+        team: '../team.html',
+        computationalImaging: '../team/category/computational-imaging.html',
+        computationalSocialScience: '../team/category/computational-social-science.html',
+        humanComputerInteraction: '../team/category/human-computer-interaction.html',
+        creativeVision: '../team/category/creative-vision.html',
+        allTeam: '../team/category/all.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      const footerRoutes = {
+        logo: '../img/snap-logo-footer.svg',
+        team: '../team.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      const arrayPublication = [
+        {
+          date: 'March 15, 2021',
+          title: 'Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat',
+          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+        {
+          date: 'March 15, 2021',
+          title: 'Modeling Cyclic and Ephemeral User Behavior on Social Platforms',
+          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+        {
+          date: 'March 15, 2021',
+          title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
+          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+      ];
+
+      $('.header-container').loadTemplate("../templates/components/header.html",headerRoutes);
+
+      $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html", arrayPublication);
+
+      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
+      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
+
+    });
+  </script>
+</body>
+
+</html>
