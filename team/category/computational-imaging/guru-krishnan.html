@@ -16,18 +16,18 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/bootstrap-grid.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/main2.css">
-  <link rel="stylesheet" href="../css/main3.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="../fonts/stylesheet.css">
+  <link rel="stylesheet" href="../../../css/normalize.css">
+  <link rel="stylesheet" href="../../../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../../../css/main.css">
+  <link rel="stylesheet" href="../../../css/main2.css">
+  <link rel="stylesheet" href="../../../css/main3.css">
+  <link rel="stylesheet" href="../../../css/responsive.css">
+  <link rel="stylesheet" href="../../../fonts/stylesheet.css">
 
   <meta name="theme-color" content="#fafafa">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="../../js/jquery.loadTemplate.min.js"></script>
+  <script src="../../../js/jquery.loadTemplate.min.js"></script>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 
   <div class="team">
     <div class="sub-hero">
-      <div class="container"><a class="category" href="../team/category/computational-imaging.html">Back to Team</a></div>
+      <div class="container"><a class="category" href="../../../team/category/computational-imaging.html">Back to Team</a></div>
     </div>
     <div class="container content">
       <div class="team--detail">
@@ -58,7 +58,12 @@
               robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about
               his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
             </p>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+          </div>
+          <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
             <div class="team--detail-publications-member">
               <h2 class="title">Publications</h2>
               
@@ -76,9 +81,9 @@
   <div class="join-our-team-container"></div>
   <div class="footer-container"></div>
 
-  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -90,48 +95,48 @@
   <script type="text/javascript">
     $(function () {
       const headerRoutes = {
-        home: '../index.html',
-        logo: '../img/snap-logo.svg',
-        fellowships: '../fellowships.html',
-        team: '../team.html',
-        computationalImaging: '../team/category/computational-imaging.html',
-        computationalSocialScience: '../team/category/computational-social-science.html',
-        humanComputerInteraction: '../team/category/human-computer-interaction.html',
-        creativeVision: '../team/category/creative-vision.html',
-        allTeam: '../team/category/all.html',
-        publications: '../publications.html',
-        news: '../news.html'
+        home: '../../../index.html',
+        logo: '../../../img/snap-logo.svg',
+        fellowships: '../../../fellowships.html',
+        team: '../../../team.html',
+        computationalImaging: '../../../team/category/computational-imaging.html',
+        computationalSocialScience: '../../../team/category/computational-social-science.html',
+        humanComputerInteraction: '../../../team/category/human-computer-interaction.html',
+        creativeVision: '../../../team/category/creative-vision.html',
+        allTeam: '../../../team/category/all.html',
+        publications: '../../../publications.html',
+        news: '../../../news.html'
       };
       const footerRoutes = {
-        logo: '../img/snap-logo-footer.svg',
-        team: '../team.html',
-        publications: '../publications.html',
-        news: '../news.html'
+        logo: '../../../img/snap-logo-footer.svg',
+        team: '../../../team.html',
+        publications: '../../../publications.html',
+        news: '../../../news.html'
       };
       const arrayPublication = [
         {
           date: 'March 15, 2021',
           title: 'Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat',
-          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
         },
         {
           date: 'March 15, 2021',
           title: 'Modeling Cyclic and Ephemeral User Behavior on Social Platforms',
-          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
         },
         {
           date: 'March 15, 2021',
           title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
-          url: '../publications/3d-guided-fine-grained-face-manipulation.html',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
         },
       ];
 
-      $('.header-container').loadTemplate("../templates/components/header.html",headerRoutes);
+      $('.header-container').loadTemplate("../../../templates/components/header.html",headerRoutes);
 
-      $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html", arrayPublication);
+      $('.publications-for-member').loadTemplate("../../../templates/components/publications-for-member.html", arrayPublication);
 
-      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
-      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
+      $('.join-our-team-container').loadTemplate("../../../templates/components/join.html");
+      $('.footer-container').loadTemplate("../../../templates/components/footer.html", footerRoutes);
 
     });
   </script>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+<!--  <link rel="manifest" href="site.webmanifest">-->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="../../../css/normalize.css">
+  <link rel="stylesheet" href="../../../css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../../../css/main.css">
+  <link rel="stylesheet" href="../../../css/main2.css">
+  <link rel="stylesheet" href="../../../css/main3.css">
+  <link rel="stylesheet" href="../../../css/responsive.css">
+  <link rel="stylesheet" href="../../../fonts/stylesheet.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="../../../js/jquery.loadTemplate.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header-container"></div>
+
+  <div class="team">
+    <div class="sub-hero">
+      <div class="container"><a class="category" href="../../../team/category/computational-imaging.html">Back to Team</a></div>
+    </div>
+    <div class="container content">
+      <div class="team--detail">
+        <div class="row">
+          <div class="col-12 col-md-3"><img
+              src="//images.ctfassets.net/btheynltg5cn/3S6R9feaIi02RVKA4zNs06/b93bb592cd22d9d164aaa8006d5624ff/JianWangNew.png"
+              alt="Jian (James) Wang"></div>
+          <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
+            <h1 class="title">Jian (James) Wang</h1>
+            <h2 class="sub-title">Research Scientist</h2>
+            <div class="team--detail-research-areas"><span>Research Areas</span><span class="research-areas">Computational
+                Imaging</span></div>
+            <p>Jian (James) Wang works in the Computational Imaging lab at Snap Research New York. Jian received his PhD in
+              Computation Imaging and Computer Vision from Carnegie Mellon University in 2018. His research interests lie in
+              computer vision and computational photography. His previous work involves the design of novel camera systems
+              (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through
+              scattering media. Learn more about his work&nbsp;<a
+                href="http://www.andrew.cmu.edu/user/jianwan2/"><u></u></a><u></u><a
+                href="https://jianwang-cmu.github.io/"><u>here</u></a>.
+            </p>
+
+            <div class="team--detail-publications-member">
+              <h2 class="title">Publications</h2>
+              
+              <div class="publications-for-member">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="publication-member"></div>
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../../js/plugins.js"></script>
+  <script src="../../js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+    $(function () {
+      const headerRoutes = {
+        home: '../../../index.html',
+        logo: '../../../img/snap-logo.svg',
+        fellowships: '../../../fellowships.html',
+        team: '../../../team.html',
+        computationalImaging: '../../../team/category/computational-imaging.html',
+        computationalSocialScience: '../../../team/category/computational-social-science.html',
+        humanComputerInteraction: '../../../team/category/human-computer-interaction.html',
+        creativeVision: '../../../team/category/creative-vision.html',
+        allTeam: '../../../team/category/all.html',
+        publications: '../../../publications.html',
+        news: '../../../news.html'
+      };
+      const footerRoutes = {
+        logo: '../../../img/snap-logo-footer.svg',
+        team: '../../../team.html',
+        publications: '../../../publications.html',
+        news: '../../../news.html'
+      };
+      const arrayPublication = [
+        {
+          date: 'March 15, 2021',
+          title: 'Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+        {
+          date: 'March 15, 2021',
+          title: 'Modeling Cyclic and Ephemeral User Behavior on Social Platforms',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+        {
+          date: 'March 15, 2021',
+          title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
+          url: '../../../publications/3d-guided-fine-grained-face-manipulation.html',
+        },
+      ];
+
+      $('.header-container').loadTemplate("../../../templates/components/header.html",headerRoutes);
+
+      $('.publications-for-member').loadTemplate("../../../templates/components/publications-for-member.html", arrayPublication);
+
+      $('.join-our-team-container').loadTemplate("../../../templates/components/join.html");
+      $('.footer-container').loadTemplate("../../../templates/components/footer.html", footerRoutes);
+
+    });
+  </script>
+</body>
+
+</html>
+
