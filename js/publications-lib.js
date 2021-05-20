@@ -24,20 +24,35 @@ const publicationsList = [
     title: 'Significant Otter: Understanding the Role of Biosignals in Communication',
     authors: 'Fannie Liu, Chunjong Park, Yu Jiang Tham, Tsung-Yu Tsai, Laura Dabbish, Geoff Kaufman, Andrés Monroy-Hernández',
     event: 'CHI 2021',
-    researchArea: 'Human Computer Interaction'
+    researchArea: 'Human Computer Interaction',
+  },
+  {
+    id: 3,
+    date: 'February 08, 2021',
+    link: 'publications/graph-neural-networks-for-friend-ranking-in-large-scale-social-platforms.html',
+    title: 'Graph Neural Networks for Friend Ranking in Large-scale Social Platforms',
+    authors: 'Aravind Sankar, Yozen Liu, Jun Yu, Neil Shah',
+    event: 'WWW 2021',
+    researchArea: 'Computational Social Science',
   },
 ];
 
 function getPublications(id, path) {
   let result;
+  function getResult (insideID) {
+    let res = publicationsList.map((item) => {
+      if (insideID === item.id) {
+        item.link = path + item.link;
+        return item;
+      }
+    });
+    return res;
+  }
   if(typeof id === 'string') {
-    result = publicationsList[id];
-    result.link = path + publicationsList[id].link;
+    result = getResult(id);
   } else if (typeof id === 'object') {
     id.map((item) => {
-      let publication = publicationsList[item];
-      publication.link = path + publicationsList[item].link;
-      result.push(publication);
+      result.push(getResult(item));
     })
   }
   return result;
