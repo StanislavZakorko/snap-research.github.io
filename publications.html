@@ -35,33 +35,39 @@
 <div class="publication container content">
   <div class="publication--search">
     <div class="search-box">
-      <div class="search-box--filter closed">
-        <div class="search-box--filter-title">Search Filter
-          <button type="button" class="search-box--filter-toggle"></button>
-        </div>
+      <div class="search-box--filter">
         <div class="search-box--filter-inputs">
           <div class="search-box--filter-wrap">
-            <input class="search-box--filter-input">
+            <input class="search-box--filter-input" placeholder="Search">
             <button class="search-box--filter-submit"></button>
           </div>
         </div>
       </div>
       <div class="search-box--sort closed">
-        <div class="search-box--filter-title">Sort
-          <button type="button" class="search-box--filter-toggle"></button>
-        </div>
         <div class="search-box--sort-inputs">
-          <button type="submit" class="active" value="date_DESC">Newest to Oldest</button>
-          <button type="submit" class="" value="Oldest to Newest">Oldest to Newest</button>
-          <div class="search-box--sort-year dropdown"><select class="dropdown-select">
-            <option value="All">All</option>
-            <option value="2016">2016</option>
-            <option value="2017">2017</option>
-            <option value="2018">2018</option>
-            <option value="2019">2019</option>
-            <option value="2020">2020</option>
-            <option value="2021">2021</option>
-          </select></div>
+          <label class="radio-container">
+            Newest to Oldest
+            <input type="radio" checked="checked" value="ASC" name="date_sort">
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="radio-container">
+            Oldest to Newest
+            <input type="radio" value="DESC" name="date_sort">
+            <span class="checkmark"></span>
+          </label>
+
+          <div class="search-box--sort-year dropdown">
+            <select class="dropdown-select">
+              <option value="All">All</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
@@ -223,9 +229,8 @@
       news: 'news.html'
     };
 
-
     $('.header-container').loadTemplate("templates/components/header.html", headerRoutes);
-    $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", publicationsList, {success: switchPagination(1)});
+    $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", publicationsList);
     $('.join-our-team-container').loadTemplate("templates/components/join.html");
     $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
 
@@ -236,28 +241,40 @@
       return result
     };
 
-    $('.search-box--filter-submit').on('click',function(){
+    function searchHandler() {
       let val = $('.search-box--filter-input').val();
       let filtered = searchItem(publicationsList, val);
+      renderBreadcrumbs(filtered);
       $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", filtered);
-    })
+      setTimeout(function() {
+        switchPagination(1);
+      }, 200);
+    }
 
-    function renderBreadcrumbs () {
-      for (let i = 0; i < publicationsList.length/paginationCount; i++){
+    $('.search-box--filter-submit').on('click', function(){
+      searchHandler();
+    })
+    $('.search-box--filter-input').on('keypress', function(ev) {
+      var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+      if (keycode == '13') {
+        searchHandler();
+      }
+    });
+
+    function renderBreadcrumbs (list) {
+      $('.publication--group-pagination').empty();
+      for (let i = 0; i < list.length/paginationCount; i++){
         $('.publication--group-pagination').append(
           `<li class="noactive">
             <button type="button" class="pagination-link" value="${i+1}">${i+1}</button>
           </li>`
         )
       }
+      $('.publication--group-pagination li').first().attr('class', 'active');
     }
-    renderBreadcrumbs();
-    $('.publication--group-pagination li').first().attr('class', 'active');
+    renderBreadcrumbs(publicationsList);
 
     function switchPagination (page) {
-      console.log('call switch');
-      console.log( $('.publication--group'));
-
       $('.publication--group').each(function(index) {
         if((page-1)*paginationCount <= index && index < (page)*paginationCount) {
           $(this).show();
@@ -267,10 +284,27 @@
       });
     };
 
-    $('.pagination-link').on('click', function(elem){
+    setTimeout(function() {
+      switchPagination(1);
+    }, 200);
+
+    $('.publication--group-pagination').on('click', 'button', function(elem){
       $('.publication--group-pagination li').attr('class', 'noactive');
       $(this).closest('li').attr('class', 'active');
       switchPagination(elem.target.value)
+    })
+
+    $('.radio-container input').on('change', function(el){
+      $('.search-box--filter-input').val('');
+      let val = el.target.value;
+      if (val === 'ASC') {
+        publicationsList.sort(function(a,b){
+          return new Date(b.date) - new Date(a.date);
+        });
+      } else if (val === 'DESC') {
+        publicationsList.reverse()
+      }
+      $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", publicationsList);
     })
 
   });

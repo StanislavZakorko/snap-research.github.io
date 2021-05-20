@@ -485,6 +485,70 @@
   }
 }
 
+/* --------------------- news page ----------------- */
+@media (max-width: 767px) {
+  .news--detail {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .team--group .card--bg-image-outer {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .team--group .card--bg-image-outer {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .team--group .card--copy p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team--detail .row {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .publications-for-member-container,
+  .events-for-member-container {
+    display: none;
+  }
+  .publications-for-member-title-media,
+  .events-for-member-title-media {
+    display: block;
+  }
+}
+
+/* --------------------- team pages ------------------*/
+@media (max-width: 767px) {
+  .team--group .col {
+    max-width: calc(50% - 16px);
+    width: calc(50% - 16px);
+  }
+}
+
+@media (min-width: 768px) {
+  .team--group .col {
+    max-width: calc(25% - 16px);
+    width: calc(25% - 16px);
+  }
+}
+
+@media (min-width: 1040px) {
+  .team--group .col {
+    max-width: calc(20% - 16px);
+    width: calc(20% - 16px);
+  }
+}
+
 /* --------------------- footer component ------------------*/
 @media (max-width: 767px) {
   .footer .col-6 {

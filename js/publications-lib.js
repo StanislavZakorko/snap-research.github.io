@@ -37,27 +37,6 @@ const publicationsList = [
   },
 ];
 
-function getPublications(id, path) {
-  let result;
-  function getResult (insideID) {
-    let res = publicationsList.map((item) => {
-      if (insideID === item.id) {
-        item.link = path + item.link;
-        return item;
-      }
-    });
-    return res;
-  }
-  if(typeof id === 'string') {
-    result = getResult(id);
-  } else if (typeof id === 'object') {
-    id.map((item) => {
-      result.push(getResult(item));
-    })
-  }
-  return result;
-}
-
 function getPublicationsByIDs(id, path) {
   if (!id.length) return [];
   let result = publicationsList.filter((item) => id.includes(item.id));
