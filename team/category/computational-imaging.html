@@ -41,6 +41,8 @@
   </div>
 
   <div class="team--nav-wrapper container">
+    <img class="team--nav-scroll left" src="../../img/keyboard-left-arrow-button.svg" alt="">
+    <img class="team--nav-scroll rigth" src="../../img/keyboard-left-arrow-button.svg" alt="">
     <div class="team--nav-menu dragscroll">
       <div class="team--nav-items ">
         <a class="team--nav-link active" href="computational-imaging.html">Computational&nbsp;Imaging</a>
@@ -146,6 +148,16 @@
       getMembersByIDs(teamMembersForTeamCategory.computationalImaging, '../../'));
 
   });
+</script>
+
+<script>
+  $(".team--nav-scroll.left").click(function(){
+    $(".team--nav-menu").scrollLeft($(".team--nav-menu").scrollLeft() - 50);
+  });
+  $(".team--nav-scroll.rigth").click(function(){
+    $(".team--nav-menu").scrollLeft($(".team--nav-menu").scrollLeft() + 50);
+  });
+
 </script>
 </body>
 

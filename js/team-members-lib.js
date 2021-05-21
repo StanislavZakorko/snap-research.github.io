@@ -153,8 +153,9 @@ let publicationsForTeamMember = [];
   if (window.location.pathname !== "/team/team-member/") return true;
 
   const hash = window.location.hash;
-  const teamMemberInfo =
-    teamMembersList.find((item) => item.hash === hash) || {};
+  let teamMemberInfo = teamMembersList.find((item) => item.hash === hash);
+
+  if (!teamMemberInfo) $(location).attr("href", "../../404.html");
 
   publicationsForTeamMember = teamMemberInfo.publications;
 
