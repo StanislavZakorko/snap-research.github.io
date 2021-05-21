@@ -30,6 +30,7 @@ time, mark, audio, video {
   font-size: 100%;
   font-family: 'Graphik';
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /*
@@ -1276,7 +1277,8 @@ textarea {
 }
 
 .publication--list {
-  padding-left: 40px
+  padding-left: 40px;
+  width: 100%;
 }
 
 .publication--list .container {
@@ -1290,21 +1292,8 @@ textarea {
 /* ----------------- search box -------------------*/
 .search-box {
   width: 300px;
-  margin-top: 50px;
+  margin-top: 132px;
   font-weight: 500;
-}
-
-.search-box--filter.open .search-box--filter-toggle, .search-box--sort.open .search-box--filter-toggle {
-  transform: rotate(90deg)
-}
-
-.search-box--filter.open .search-box--filter-toggle:after, .search-box--sort.open .search-box--filter-toggle:after {
-  width: 10px
-}
-
-.search-box--filter.open .search-box--filter-inputs, .search-box--filter.open .search-box--sort-inputs, .search-box--sort.open .search-box--filter-inputs, .search-box--sort.open .search-box--sort-inputs {
-  height: 0;
-  padding: 0
 }
 
 .search-box--filter-title {
@@ -1314,7 +1303,6 @@ textarea {
 .search-box--filter-inputs {
   overflow: hidden;
   transition: all .2s ease-out;
-  height: 50px
 }
 
 .search-box--filter-wrap {
@@ -1339,32 +1327,51 @@ textarea {
   background-position: 97% 50%;
   border: 0;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 16px;
+  top: 12px;
+  left: 16px;
+  width: 20px;
   height: 20px;
   cursor: pointer;
   outline: 0
 }
 
 .search-box--sort-inputs {
-  padding: 8px 0;
   overflow: hidden;
   transition: all .2s ease-out;
-  height: 96px
+}
+
+.search-box--sort {
+  padding: 24px 16px 0 16px;
+  border: 2px solid #EBECEF;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  background: #F9F9F9;
+}
+
+.search-box--title {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .radio-container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  width: 100%;
+  padding: 14px 14px 14px 32px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 15px;
+  line-height: 19px;
+  color: #1A1A36;
+  font-weight: normal;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.radio-container.bordered {
+  border-bottom: 1px solid #EBECEF;
 }
 
 .radio-container input {
@@ -1377,12 +1384,14 @@ textarea {
 
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
+  top: 50%;
+  left: 5px;
+  height: 14px;
+  width: 14px;
   background-color: #eee;
+  border: 2px solid #808A8D;
   border-radius: 50%;
+  transform: translate(0, -50%);
 }
 
 .radio-container:hover input ~ .checkmark {
@@ -1390,7 +1399,7 @@ textarea {
 }
 
 .radio-container input:checked ~ .checkmark {
-  background-color: #2196F3;
+  border: 2px solid #1A1A36;
 }
 
 .checkmark:after {
@@ -1404,12 +1413,12 @@ textarea {
 }
 
 .radio-container .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: white;
+  background: #1A1A36;
 }
 
 .search-box--filter-title {
@@ -1417,8 +1426,40 @@ textarea {
 }
 
 .search-box--sort-year {
-  padding: 8px 12px;
-  width: calc(100% - 24px)
+  width: 100%;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.search-box--sort-year select {
+  width: 100%;
+  border: 1px solid #808A8D;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  line-height: 19px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search-box--sort-year:before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 16px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg);
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 /* ----------------- news page --------------------*/
