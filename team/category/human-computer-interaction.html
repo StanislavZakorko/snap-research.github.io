@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="../../css/bootstrap-grid.css">
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/main2.css">
-  <link rel="stylesheet" href="../../css/main3.css">
   <link rel="stylesheet" href="../../css/responsive.css">
   <link rel="stylesheet" href="../../fonts/stylesheet.css">
 
@@ -54,8 +53,21 @@
   </div>
 
   <h3 class="team--nav-h3 container">About Us</h3>
-  <p class="container"> The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
-    algorithms to capture and display visual information in fundamentally new ways. </p>
+  <p class="container">
+    We invent and study technologies that enable people to connect and collaborate in new ways. We do this by building prototypes, launching experimental products, and studying how people use them to guide future technology investments. We publish and share our insights with the broader research community in venues like CHI, CSCW, UbiComp, and UIST. 
+  </p><br>
+  <p class="container"> We currently focus on developing technologies that support social presence, both in-person and
+    remote, through the following three research initiatives: </p><br>
+  <p class="container"> 1. <b>AR Communication.</b> How can communication be experienced more deeply using smart glasses and AR?
+  </p><br>
+  <p class="container"> 2. <b>Authentic connections.</b> How can authentic and emotional interactions between people, leveraging
+    sensed data? </p><br>
+  <p class="container"> 3. <b>Co-located AR.</b> How can we design playful technologies that foster in-person interactions rather
+    than distract us away from the people around us? </p><br>
+  <p class="container"> We take interns year-round, but most of them join in the summer. Internships typically last three
+    months. We tend to hire PhDs students with a strong track record of publications in HCI venues. Applications usually
+    include a research statement that articulates how the applicant's prior work and skills align with our research
+    initiatives and the internship's ideal outcome. </p>
 
   <div class="team--group">
     <div class="container">
@@ -138,10 +150,13 @@
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", getPublicationsByIDs([0,1,2], '../../'));
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", 
+      getPublicationsByIDs(publicationForTeamCategory.humanComputerIinteraction, '../../'));
+      
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
 
-    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", getMembersByIDs([0,1], '../../'));
+    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", 
+      getMembersByIDs(teamMembersForTeamCategory.humanComputerIinteraction, '../../'));
 
   });
 </script>

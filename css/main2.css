@@ -1,0 +1,30 @@
+.team--nav-wrapper {
+	position: relative;
+}
+.team--nav-menu {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.team--nav-scroll {
+	position: absolute;
+	width: 20px;
+	height: 34px;
+	cursor: pointer;
+	opacity: 0;
+	-webkit-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-ms-transition: 0.25s ease;
+	-o-transition: 0.25s ease;
+	transition: 0.25s ease;
+	/* transform: rotate(180deg); */
+	top: -5px;
+	/* right: 15px; */
+}
+.team--nav-scroll.rigth {
+	transform: rotate(180deg);
+	right: 15px;
+}
+
+.team--nav-wrapper:hover img {
+	opacity: 1;
+}

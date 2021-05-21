@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="../../css/bootstrap-grid.css">
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/main2.css">
-  <link rel="stylesheet" href="../../css/main3.css">
   <link rel="stylesheet" href="../../css/responsive.css">
   <link rel="stylesheet" href="../../fonts/stylesheet.css">
 
@@ -42,6 +41,8 @@
   </div>
 
   <div class="team--nav-wrapper container">
+    <img class="team--nav-scroll left" src="../../img/keyboard-left-arrow-button.svg" alt="">
+    <img class="team--nav-scroll rigth" src="../../img/keyboard-left-arrow-button.svg" alt="">
     <div class="team--nav-menu dragscroll">
       <div class="team--nav-items ">
         <a class="team--nav-link active" href="computational-imaging.html">Computational&nbsp;Imaging</a>
@@ -54,8 +55,8 @@
   </div>
 
   <h3 class="team--nav-h3 container">About Us</h3>
-  <p class="container"> The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
-    algorithms to capture and display visual information in fundamentally new ways. </p>
+  <p class="container">The computation imaging group is focused on developing novel imaging techniques that combine hardware advanced
+    algorithms to capture and display visual information in fundamentally new ways.</p>
 
   <div class="team--group">
     <div class="container">
@@ -138,12 +139,25 @@
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", getPublicationsByIDs([0,1,2], '../../'));
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", 
+      getPublicationsByIDs(publicationForTeamCategory.computationalImaging, '../../'));
+
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
 
-    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", getMembersByIDs([0,1], '../../'));
+    $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", 
+      getMembersByIDs(teamMembersForTeamCategory.computationalImaging, '../../'));
 
   });
+</script>
+
+<script>
+  $(".team--nav-scroll.left").click(function(){
+    $(".team--nav-menu").scrollLeft($(".team--nav-menu").scrollLeft() - 50);
+  });
+  $(".team--nav-scroll.rigth").click(function(){
+    $(".team--nav-menu").scrollLeft($(".team--nav-menu").scrollLeft() + 50);
+  });
+
 </script>
 </body>
 
