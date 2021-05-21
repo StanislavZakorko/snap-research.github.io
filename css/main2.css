@@ -26,5 +26,17 @@
 }
 
 .team--nav-wrapper:hover img {
-	opacity: 1;
+	opacity: .6;
+}
+
+@media (min-width: 1200px) {
+  .team--nav-menu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .team--nav-wrapper:hover img {
+    opacity: 0;
+  }
+  
+  
 }

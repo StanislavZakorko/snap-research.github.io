@@ -41,6 +41,8 @@
   </div>
 
   <div class="team--nav-wrapper container">
+    <img class="team--nav-scroll left" src="../../img/keyboard-left-arrow-button.svg" alt="">
+    <img class="team--nav-scroll rigth" src="../../img/keyboard-left-arrow-button.svg" alt="">
     <div class="team--nav-menu dragscroll">
       <div class="team--nav-items ">
         <a class="team--nav-link " href="computational-imaging.html">Computational&nbsp;Imaging</a>
@@ -84,6 +86,7 @@
 <script src="../../js/team-members-lib.js"></script>
 <script src="../../js/publications-lib.js"></script>
 <script src="../../js/dragscroll.js"></script>
+<script src="../../js/handle-scroll-left.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
@@ -146,12 +149,6 @@
       getMembersByIDs(teamMembersForTeamCategory.all, '../../'));
 
   });
-</script>
-
-<script>
-  (function() {
-    $(".team--nav-menu").scrollLeft(650);
-  })();
 </script>
 
 </body>

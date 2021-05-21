@@ -120,8 +120,19 @@ const publicationForTeamCategory = {
   computationalSocialScience: [0, 2],
   humanComputerIinteraction: [0],
   creativeVision: [0, 1, 2],
-  all: [0],
+  all: [],
 };
+
+if (!publicationForTeamCategory.all.length) {
+  publicationForTeamCategory.all = [
+    ...new Set([
+      ...publicationForTeamCategory.computationalImaging,
+      ...publicationForTeamCategory.computationalSocialScience,
+      ...publicationForTeamCategory.humanComputerIinteraction,
+      ...publicationForTeamCategory.creativeVision,
+    ]),
+  ];
+}
 
 const teamMembersForTeamCategory = {
   computationalImaging: [0, 1, 2],
@@ -149,7 +160,7 @@ function getMembersByIDs(id, path) {
 }
 
 let publicationsForTeamMember = [];
-(function () {
+$(function () {
   if (window.location.pathname !== "/team/team-member/") return true;
 
   const hash = window.location.hash;
@@ -169,4 +180,4 @@ let publicationsForTeamMember = [];
 
   $("title").text(teamMemberInfo.name + " - Snap Research");
   $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);
-})();
+});
