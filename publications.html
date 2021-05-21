@@ -43,9 +43,12 @@
           </div>
         </div>
       </div>
-      <div class="search-box--sort closed">
+      <div class="search-box--sort">
         <div class="search-box--sort-inputs">
-          <label class="radio-container">
+          <p class="search-box--title">
+            Sort by
+          </p>
+          <label class="radio-container bordered">
             Newest to Oldest
             <input type="radio" checked="checked" value="ASC" name="date_sort">
             <span class="checkmark"></span>
@@ -57,15 +60,16 @@
             <span class="checkmark"></span>
           </label>
 
-          <div class="search-box--sort-year dropdown">
+        </div>
+      </div>
+      <div class="search-box--sort">
+        <div class="search-box--sort-inputs">
+          <p class="search-box--title">
+            Year published
+          </p>
+          <div class="search-box--sort-year">
             <select class="dropdown-select">
               <option value="All">All</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
             </select>
           </div>
         </div>
@@ -82,26 +86,7 @@
       <div class="publication-list-item"></div>
 
 
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>January 04, 2021</span><br><a-->
-<!--          href="/publications/advertiming-matters-examining-user-ad-consumption-for-effective-ad">AdverTiming Matters:-->
-<!--          Examining User Ad Consumption for Effective Ad Allocations on Social Media</a></div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Koustuv Saha, Yozen Liu, Nicholas Vincent, Farhan Asif Chowdhury,-->
-<!--          Leonardo Neves, Neil Shah, Maarten Bos-->
-<!--        </div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> CHI 2021</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Computational Social Science</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>December 05, 2020</span><br><a-->
-<!--          href="/publications/fairod-fairness-aware-outlier-detection">FairOD: Fairness-aware Outlier Detection</a>-->
-<!--        </div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Shubhranshu Shekhar, Neil Shah, Leman Akoglu</div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> AIES 2021</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Computational Social Science</span>-->
-<!--        </div>-->
-<!--      </div>-->
+
 <!--      <div class="publication&#45;&#45;group">-->
 <!--        <div class="publication&#45;&#45;group-title"><span>December 02, 2020</span><br><a-->
 <!--          href="/publications/data-augmentation-for-graph-neural-networks">Data Augmentation for Graph Neural-->
@@ -209,6 +194,9 @@
 <script type="text/javascript">
   $(function () {
     const paginationCount = 2;
+    const dropdownPeriodFrom = 2016;
+    const dropdownPeriodTo = new Date().getFullYear();
+    const dateRangeOfYears = dropdownPeriodTo - dropdownPeriodFrom;
     const headerRoutes = {
       home: 'index.html',
       logo: 'img/snap-logo.svg',
@@ -249,6 +237,11 @@
       setTimeout(function() {
         switchPagination(1);
       }, 200);
+      if (filtered.length === 0) {
+        $('.publication-list-item').append(
+          `<p>There is no result for: ${val}</p>`
+        )
+      }
     }
 
     $('.search-box--filter-submit').on('click', function(){
@@ -263,14 +256,16 @@
 
     function renderBreadcrumbs (list) {
       $('.publication--group-pagination').empty();
-      for (let i = 0; i < list.length/paginationCount; i++){
-        $('.publication--group-pagination').append(
-          `<li class="noactive">
+      if(list.length > 1) {
+        for (let i = 0; i < list.length/paginationCount; i++){
+          $('.publication--group-pagination').append(
+            `<li class="noactive">
             <button type="button" class="pagination-link" value="${i+1}">${i+1}</button>
           </li>`
-        )
+          )
+        }
+        $('.publication--group-pagination li').first().attr('class', 'active');
       }
-      $('.publication--group-pagination li').first().attr('class', 'active');
     }
     renderBreadcrumbs(publicationsList);
 
@@ -305,8 +300,37 @@
         publicationsList.reverse()
       }
       $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", publicationsList);
-    })
+    });
 
+    for (let i = 0; i <= dateRangeOfYears; i++ ) {
+      $('.dropdown-select').append(
+        `<option value="${dropdownPeriodFrom + i}">${dropdownPeriodFrom + i}</option>`
+      )
+    };
+    $('.dropdown-select').on('change', function(e) {
+      const val = e.target.value;
+      if (val === 'All') {
+        renderBreadcrumbs(publicationsList);
+        $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", publicationsList);
+        setTimeout(function() {
+          switchPagination(1);
+        }, 200);
+      } else {
+        const filtered = publicationsList.filter((item) => {
+          return new Date(item.date).getFullYear() === Number(val);
+        });
+        renderBreadcrumbs(filtered);
+        $('.publication-list-item').loadTemplate("templates/components/publication-list-item.html", filtered);
+        setTimeout(function() {
+          switchPagination(1);
+        }, 200);
+        if (filtered.length === 0) {
+          $('.publication-list-item').append(
+            `<p>There is no result for: ${val}</p>`
+          )
+        }
+      }
+    })
   });
 </script>
 </body>
