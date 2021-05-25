@@ -4,9 +4,9 @@ const teamMembersList = [
     hash: "#guru-krishnan",
     metaTitle: "",
     metaDescription: `
-    Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work    
+    Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work     
     `,
-    name: "Guru Krisdshnan",
+    name: "Guru Krishnan",
     email: "",
     subTitle: "Lead Research Engineer",
     researchAreas: "Computational Imaging",
@@ -18,6 +18,7 @@ const teamMembersList = [
     <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
     publications: [0, 1, 2],
+    email: "",
   },
 
   {
@@ -25,11 +26,7 @@ const teamMembersList = [
     hash: "#jian-james-wang",
     metaTitle: "",
     metaDescription: `
-    Jian (James) Wang works in the Computational Imaging lab at Snap Research New York. Jian received his PhD in
-    Computation Imaging and Computer Vision from Carnegie Mellon University in 2018. His research interests lie in
-    computer vision and computational photography. His previous work involves the design of novel camera systems
-    (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through
-    scattering media. Learn more about his work.
+    Jian (James) Wang works in the Computational Imaging lab at Snap Research New York. Jian received his PhD in Computation Imaging and Computer Vision from Carnegie Mellon University in 2018. His research interests lie in computer vision and computational photography. His previous work involves the design of novel camera systems (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through scattering media. Learn more about his work 
     `,
     name: "Jian (James) Wang",
     email: "",
@@ -49,6 +46,7 @@ const teamMembersList = [
     href="https://jianwang-cmu.github.io/"><u>here</u></a>.</p>
     `,
     publications: [2, 3],
+    email: "",
   },
 
   {
@@ -70,6 +68,7 @@ const teamMembersList = [
     <p>Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University.&nbsp;</p>
     `,
     publications: [],
+    admin: false,
   },
 
   {
@@ -91,6 +90,7 @@ const teamMembersList = [
     <p>Ana is a Research Intern&nbsp;on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen&nbsp;human connection instead of weaken it,&nbsp;particularly on mobile Augmented Reality. She designs and creates Augmented Reality&nbsp;applications around social&nbsp;themes such as co-located interactions and studies around the&nbsp;way users interact with&nbsp;these applications.</p><p>Ana finished her MS in Information of Science at the School of Information in the University of Michigan as a Fulbright scholarship recipient. Prior to that, she completed a double major in Computer Science and Design at the University of Los Andes, Colombia where she is originally from.</p>    
     `,
     publications: [3],
+    admin: false,
   },
 
   {
@@ -98,7 +98,7 @@ const teamMembersList = [
     hash: "#jian-ren",
     metaTitle: "",
     metaDescription: `
-    Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
+    Jian is a Research Scientist working in the Creative Vision group at Snap Research. His research focuses on computer vision, deep learning, and generative models. Before joining Snap Inc., he worked as a Research Intern at Adobe, Snap Inc., and Bytedance Research. Jian obtained a PhD degree in Computer Engineering from Rutgers University in 2019.
     `,
     name: "Jian Ren",
     email: "",
@@ -112,6 +112,7 @@ const teamMembersList = [
     <p>Jian is a Research Scientist working in the Creative Vision group at Snap Research. His research focuses on computer vision, deep learning, and generative models. Before joining Snap Inc., he worked as a Research Intern at Adobe, Snap Inc., and Bytedance Research. Jian obtained a PhD degree in Computer Engineering from Rutgers University in 2019.</p>
     `,
     publications: [2],
+    admin: false,
   },
 ];
 
@@ -155,6 +156,7 @@ function getMembersByIDs(id, path) {
   return result.map((item) => {
     const tempObj = { ...item };
     tempObj.url = path + tempObj.url;
+    if (tempObj.email) tempObj.showEmail = "show-email";
     return tempObj;
   });
 }
@@ -177,6 +179,7 @@ $(function () {
   $("a.category").attr("href", teamMemberInfo.backUrl);
   $(".team--detail img").attr("src", teamMemberInfo.imageUrl);
   $(".team--detail img").attr("alt", teamMemberInfo.name);
+  if(!teamMemberInfo.email) $(".card--email-team-member").hide();
 
   $("title").text(teamMemberInfo.name + " - Snap Research");
   $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);

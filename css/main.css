@@ -1691,7 +1691,7 @@ textarea {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .team--group .card--bg-image-inner {
@@ -1709,7 +1709,7 @@ textarea {
 
 .team--group .card--copy {
   position: absolute;
-  bottom: 24px;
+  bottom: 40px;
   width: calc(100% - 48px);
   left: 24px;
 }
