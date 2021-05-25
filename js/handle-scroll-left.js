@@ -9,7 +9,6 @@ const setScrollLeft = {
   default: 0,
 };
 const categoryesTeam = Object.keys(setScrollLeft);
-// console.log(categoryesTeam);
 
 const category =
   categoryesTeam.find((el) => pathname.includes(el)) || "default";

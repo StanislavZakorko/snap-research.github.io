@@ -16,10 +16,9 @@
 	-ms-transition: 0.25s ease;
 	-o-transition: 0.25s ease;
 	transition: 0.25s ease;
-	/* transform: rotate(180deg); */
 	top: -5px;
-	/* right: 15px; */
 }
+
 .team--nav-scroll.rigth {
 	transform: rotate(180deg);
 	right: 15px;
@@ -30,13 +29,16 @@
 }
 
 @media (min-width: 1200px) {
-  .team--nav-menu {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .team--nav-wrapper:hover img {
-    opacity: 0;
-  }
-  
-  
+	.team--nav-menu {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.team--nav-wrapper:hover img {
+		opacity: 0;
+	}
 }
+
+.container p {
+	margin: 15px 0 15px 0;
+}
+
