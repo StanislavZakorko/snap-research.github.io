@@ -2,48 +2,37 @@ const fellowshipsList = [
   {
     id: 0,
     date: 'December 21, 2020',
-    link: 'fellowships.html',
+    link: '../fellowships.html',
     slug: 'ceam-the-effectiveness-of-cyclic',
+    url: 'fellowships/fellowship.html#ceam-the-effectiveness-of-cyclic',
     title: '2020 Snap Research Fellowship',
     descriptionShort: 'Congratulations to our 2020 Snap Research Fellows!',
-    description: '',
+    description: 'Congratulations to our 2020 Snap Research Fellows!',
     event: '',
     metaTitle: 'CCongratulations to our 2020 Snap Research Fellows!',
     metaDescription: ''
   },
   {
     id: 1,
-    date: 'December 21, 2019',
-    link: 'fellowships.html',
-    slug: 'ceam-the-effectiveness-of-cyclic',
+    date: 'December 25, 2020',
+    link: '../fellowships.html',
+    slug: 'ceam-the-effectiveness',
+    url: 'fellowships/fellowship.html#ceam-the-effectiveness',
     title: '2020 Snap Research Fellowship',
     descriptionShort: 'Congratulations to our 2020 Snap Research Fellows!',
-    description: '',
-    PDFLink: '',
-    metaTitle: 'CCongratulations to our 2020 Snap Research Fellows!',
-    metaDescription: ''
-  },
-  {
-    id: 2,
-    date: 'December 21, 2017',
-    link: 'fellowships.html',
-    slug: 'ceam-the-effectiveness-of-cyclic',
-    title: '2020 Snap Research Fellowship',
-    descriptionShort: 'Congratulations to our 2020 Snap Research Fellows!',
-    description: '',
+    description: 'Congratulations to our 2020 Snap Research Fellows!',
+    event: '',
     metaTitle: 'CCongratulations to our 2020 Snap Research Fellows!',
     metaDescription: ''
   },
 
 ];
 
-// function getPublicationsByIDs(id, path) {
-//   if (!id.length) return [];
-//   let result = publicationsList.filter((item) => id.includes(item.id));
-//   return result.map((item) => {
-//     const tempObj = { ...item };
-//     tempObj.link = path + tempObj.link;
-//     return tempObj;
-//   });
-// }
+
+function getFellowshipsBySlug(slug) {
+  let result = fellowshipsList.filter((item) => slug.slice(1) === item.slug);
+  return result;
+}
+
+
 

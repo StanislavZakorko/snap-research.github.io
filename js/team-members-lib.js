@@ -175,4 +175,7 @@ $(function () {
 
   $("title").text(teamMemberInfo.name + " - Snap Research");
   $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);
+  $('meta[property="og:title"]').attr('content', teamMemberInfo.name + " - Snap Research");
+  $('meta[property="og:description"]').attr('content', teamMemberInfo.metaDescription);
+
 });

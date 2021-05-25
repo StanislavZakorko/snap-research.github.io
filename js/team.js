@@ -38,9 +38,10 @@ $(function () {
     $(".team--detail-publications h2:eq(0)").hide();
   }
 
+  const mDescr = $(".team--nav-h3 ~ p:eq(0)").text();
   $("title").text("Team - " + (categoryTeam || "All") + " - Snap Research");
-  $("meta[name=description]").attr(
-    "content",
-    $(".team--nav-h3 ~ p:eq(0)").text()
-  );
+  $("meta[name=description]").attr("content", mDescr );
+
+  $('meta[property="og:title"]').attr('content', "Team - " + (categoryTeam || "All") + " - Snap Research");
+  $('meta[property="og:description"]').attr('content', mDescr);
 });
