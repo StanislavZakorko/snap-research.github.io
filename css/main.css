@@ -478,7 +478,7 @@ textarea {
 }
 
 .container.content {
-  padding: 48px 0 96px;
+  padding-top: 48px; padding-bottom: 0;
 }
 
 /* ----------- home hero ----------- */
@@ -1572,7 +1572,7 @@ textarea {
   border-radius: 10rem;
   display: inline-block;
   padding: 6px 16px 5px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   font-size: 14px;
 }
 
@@ -1581,7 +1581,7 @@ textarea {
   line-height: 1.61;
   letter-spacing: 0;
   font-size: 15px;
-  line-height: 21px;
+  margin-bottom: 96px;
   padding-left: 6px;
 }
 
