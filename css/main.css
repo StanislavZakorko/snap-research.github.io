@@ -1047,7 +1047,6 @@ textarea {
 }
 
 .publication--group-research-areas span:not(.research-areas) {
-  font-family: Graphik Medium, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 500;
   margin-right: 10px
 }
@@ -1145,7 +1144,7 @@ textarea {
   border-left: 3px solid #f2f2f2
 }
 
-.publication--detail-research-areas span:not(.research-areas) {
+.publication--detail-research-areas span.bolded {
   font-weight: 500;
   margin-right: 8px;
 }
@@ -1161,7 +1160,7 @@ textarea {
   border-left: 3px solid #f2f2f2
 }
 
-.publication--detail-event span:not(.research-areas) {
+.publication--detail-event span.bolded {
   font-weight: 500;
   margin-right: 8px
 }
@@ -1177,9 +1176,13 @@ textarea {
   border-left: 3px solid #f2f2f2
 }
 
-.publication--detail-date span:not(.research-areas) {
+.publication--detail-date span.bolded {
   font-weight: 500;
   margin-right: 8px
+}
+
+.publication--detail-file-wrap p {
+  margin: 15px auto;
 }
 
 .publication--detail-file-download {
