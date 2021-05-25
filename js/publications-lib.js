@@ -112,3 +112,5 @@ publicationsList.map(obj=> {
   })
   return Object.assign(obj, {eventShort: result[0].eventShort})
 })
+
+

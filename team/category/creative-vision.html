@@ -84,6 +84,7 @@
 <script src="../../js/main.js"></script>
 <script src="../../js/team-members-lib.js"></script>
 <script src="../../js/publications-lib.js"></script>
+<script src="../../js/team.js"></script>
 <script src="../../js/dragscroll.js"></script>
 <script src="../../js/handle-scroll-left.js"></script>
 
@@ -139,8 +140,8 @@
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", 
-      getPublicationsByIDs(publicationForTeamCategory.creativeVision, '../../'));
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
+      publicationForCategory);
       
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
 
