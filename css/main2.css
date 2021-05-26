@@ -51,54 +51,68 @@
 	margin: 15px 0 15px 0;
 }
 .card--email {
-  display: none;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 30px;
-	justify-content: center;
-	align-items: center;
-	font-size: 15px;
-	background-color: #ebecef;
-  border: none;
-  letter-spacing: -0.5px;
+	display: none;
 }
 .team--group .card--email p {
 	letter-spacing: .01rem;
 }
 
-.show-email{
-  display: flex;
-}
-.card--email-container{
-  position: relative;
-  border-radius: 9px;
-  border: 3px solid #f2f2f2;
-  overflow: hidden;
-
+.card--email-container {
+	position: relative;
+	border-radius: 9px;
+	border: 3px solid #f2f2f2;
+	overflow: hidden;
+	min-height: 200px;
 }
 
-.card--email-team-member{
-  display: flex;
-  position: absolute;
+.card--email-team-member,
+.card--email {
+	display: flex;
+  justify-content: center;
+	position: absolute;
 	background-color: #ebecef;
-	font-size: 15px;
-  border: none;
-  letter-spacing: -0.5px;
-  width: 100%;
-	height: 30px;
-	justify-content: center;
-	align-items: center;
+	font-size: 14px;
+	border: none;
+	letter-spacing: -0.5px;
+	width: calc(100% - 10px);
 	bottom: 0;
-
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+	word-break: revert;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.card--email{
+  display: none;
+}
+.show-email {
+	display: flex;
+}
+.card--email-team-member:hover,
+.card--email:hover {
+	white-space: normal;
+	/* height: auto; */
+	word-break: break-all;
 }
 
 .team--detail img {
-  max-width: 100%;
-  border: none;
+	max-width: 100%;
+	border: none;
 }
 
-.fellowship--detail-content{
-  margin-top: 32px;
+.fellowship--detail-content {
+	margin-top: 32px;
 }
 
+.team--group .card--bg-image-outer {
+	background-color: #00000070;
+}
+.card--email-team-member-text,
+.card--email-text {
+	word-break: revert;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}

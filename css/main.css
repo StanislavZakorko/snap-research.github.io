@@ -1862,7 +1862,7 @@ textarea {
   padding-bottom: 2px;
   margin-bottom: 32px;
   border-left: 3px solid #f2f2f2;
-  margin-top: 16px;
+  margin-top: 16px;max-width: 80%;
 }
 
 .team--detail-research-areas span:not(.research-areas) {
@@ -1875,7 +1875,7 @@ textarea {
   line-height: 1.61;
   letter-spacing: 0;
   font-size: 15px;
-  max-width: 80%;
+  max-width: 90%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
