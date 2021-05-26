@@ -3,7 +3,7 @@
     <img data-src="logo" alt="Snap Logo">
     Snap Research
   </a>
-
+  <div class="header--nav-toggle" role="presentation"><div></div><div></div><div></div></div>
   <div class="header--nav-items">
     <div class="header--dropdown-wrap">
       <a class="header--nav-link call-dropdown">Team</a>
@@ -22,3 +22,12 @@
     <a href="https://www.snap.com/jobs/?teams=Research" target="_blank" rel="noopener noreferrer" class="header--nav-link">Careers</a>
   </div>
 </header>
+
+<script>
+  $(function () {
+    $('.header--nav-toggle').on('click', function(){
+      $(this).toggleClass('opened');
+      $('.header-component').toggleClass('opened');
+    })
+  });
+</script>
