@@ -483,7 +483,7 @@ textarea {
 }
 
 .container.content {
-  padding: 48px 0 96px;
+  padding-top: 48px; padding-bottom: 0;
 }
 
 /* ----------- home hero ----------- */
@@ -1577,7 +1577,7 @@ textarea {
   border-radius: 10rem;
   display: inline-block;
   padding: 6px 16px 5px;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
   font-size: 14px;
 }
 
@@ -1586,7 +1586,7 @@ textarea {
   line-height: 1.61;
   letter-spacing: 0;
   font-size: 15px;
-  line-height: 21px;
+  margin-bottom: 96px;
   padding-left: 6px;
 }
 
@@ -1699,7 +1699,7 @@ textarea {
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .team--group .card--bg-image-inner {
@@ -1717,7 +1717,7 @@ textarea {
 
 .team--group .card--copy {
   position: absolute;
-  bottom: 24px;
+  bottom: 40px;
   width: calc(100% - 48px);
   left: 24px;
 }
@@ -1867,7 +1867,7 @@ textarea {
   padding-bottom: 2px;
   margin-bottom: 32px;
   border-left: 3px solid #f2f2f2;
-  margin-top: 16px;
+  margin-top: 16px;max-width: 80%;
 }
 
 .team--detail-research-areas span:not(.research-areas) {
@@ -1880,7 +1880,7 @@ textarea {
   line-height: 1.61;
   letter-spacing: 0;
   font-size: 15px;
-  max-width: 80%;
+  max-width: 90%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -1956,7 +1956,7 @@ textarea {
   border: 1px solid #ebecef;
   border-radius: 4px;
   margin-right: 20px;
-  width: 86px;
+  width: 86px; height: 86px;
   display: flex;
   justify-content: center;
   align-items: center;

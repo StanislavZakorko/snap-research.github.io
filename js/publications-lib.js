@@ -175,7 +175,7 @@ function getPublicationsByIDs(id, path) {
     const tempObj = { ...item };
     tempObj.link = path + tempObj.link;
     return tempObj;
-  });
+  }).sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function getPublicationBySlug(slug) {
@@ -189,3 +189,5 @@ publicationsList.map(obj=> {
   })
   return Object.assign(obj, {eventShort: result[0].eventShort})
 })
+
+

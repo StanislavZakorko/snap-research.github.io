@@ -1,3 +1,12 @@
+.team,
+.team img,
+.team a,
+.team p,
+.team div,
+.team h3 {
+	box-sizing: initial;
+}
+
 .team--nav-wrapper {
 	position: relative;
 }
@@ -16,10 +25,9 @@
 	-ms-transition: 0.25s ease;
 	-o-transition: 0.25s ease;
 	transition: 0.25s ease;
-	/* transform: rotate(180deg); */
 	top: -5px;
-	/* right: 15px; */
 }
+
 .team--nav-scroll.rigth {
 	transform: rotate(180deg);
 	right: 15px;
@@ -30,13 +38,81 @@
 }
 
 @media (min-width: 1200px) {
-  .team--nav-menu {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .team--nav-wrapper:hover img {
-    opacity: 0;
-  }
-  
-  
+	.team--nav-menu {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.team--nav-wrapper:hover img {
+		opacity: 0;
+	}
+}
+
+.container p {
+	margin: 15px 0 15px 0;
+}
+.card--email {
+	display: none;
+}
+.team--group .card--email p {
+	letter-spacing: .01rem;
+}
+
+.card--email-container {
+	position: relative;
+	border-radius: 9px;
+	border: 3px solid #f2f2f2;
+	overflow: hidden;
+	min-height: 200px;
+}
+
+.card--email-team-member,
+.card--email {
+	display: flex;
+  justify-content: center;
+	position: absolute;
+	background-color: #ebecef;
+	font-size: 14px;
+	border: none;
+	letter-spacing: -0.5px;
+	width: calc(100% - 10px);
+	bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
+	word-break: revert;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.card--email{
+  display: none;
+}
+.show-email {
+	display: flex;
+}
+.card--email-team-member:hover,
+.card--email:hover {
+	white-space: normal;
+	/* height: auto; */
+	word-break: break-all;
+}
+
+.team--detail img {
+	max-width: 100%;
+	border: none;
+}
+
+.fellowship--detail-content {
+	margin-top: 32px;
+}
+
+.team--group .card--bg-image-outer {
+	background-color: #00000070;
+}
+.card--email-team-member-text,
+.card--email-text {
+	word-break: revert;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

@@ -83,8 +83,10 @@
 <script src="../../js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="../../js/plugins.js"></script>
 <script src="../../js/main.js"></script>
+<script src="../../js/events-lib.js"></script>
 <script src="../../js/team-members-lib.js"></script>
 <script src="../../js/publications-lib.js"></script>
+<script src="../../js/team.js"></script>
 <script src="../../js/dragscroll.js"></script>
 <script src="../../js/handle-scroll-left.js"></script>
 
@@ -117,33 +119,16 @@
       news: '../../news.html'
     };
 
-    const arrayEvents = [
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-    ];
-
     $('.header-container').loadTemplate("../../templates/components/header.html", headerRoutes);
 
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
-    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html", 
-      getPublicationsByIDs(publicationForTeamCategory.all, '../../'));
+    $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
+      publicationForCategory);
       
-    $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
+    $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", 
+      getEvents());
 
     $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", 
       getMembersByIDs(teamMembersForTeamCategory.all, '../../'));
