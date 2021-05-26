@@ -1,62 +1,161 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <!--  <link rel="manifest" href="site.webmanifest">-->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main2.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="fonts/stylesheet.css" />
+
+  <style>
+    body .d404 {
+      padding: 100px 0;
       text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
     }
-
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
+  
+    body .d404 h2 {
+      margin: 20px;
     }
-
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
+  
+    body .d404 h1,
+    body .d404 h2 {
+      font-size: 5rem;
+      line-height: 88px;
     }
-
-    p {
-      margin: 0 auto;
-      width: 280px;
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #000;
+      font-weight: 500;
     }
-
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
-
+    .gLJgju {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
     }
   </style>
+
+  <meta name="theme-color" content="#fafafa" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="./js/jquery.loadTemplate.min.js"></script>
 </head>
 
 <body>
-  <h1>Page Not Found</h1>
-  <p>Sorry, but the page you were trying to view does not exist.</p>
+  <div class="header-container header-dark"></div>
+
+  <div class="d404">
+    <h2>Well, this is awkward!</h2>
+    <h5>We couldn't find what you were looking for</h5>
+    <div src="/images/404.png" class="GhostImg-sc-15rsmjs-0 gLJgju"></div>
+  </div>
+  <!-- <ul class="publication--group-pagination"></ul> -->
+
+
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news-lib.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga=function() {ga.q.push(arguments)}; ga.q=[]; ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto'); ga('set','anonymizeIp',true); ga('set','transport','beacon'); ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <script type="text/javascript">
+    $(function() {
+      const headerRoutes = {
+        home: 'index.html',
+        logo: 'img/snap-logo.svg',
+        fellowships: 'fellowships.html',
+        team: 'team.html',
+        computationalImaging: 'team/category/computational-imaging.html',
+        computationalSocialScience: 'team/category/computational-social-science.html',
+        humanComputerInteraction: 'team/category/human-computer-interaction.html',
+        creativeVision: 'team/category/creative-vision.html',
+        allTeam: 'team/category/all.html',
+        publications: 'publications.html',
+        news: 'news.html'
+      };
+      const footerRoutes = {
+        logo: 'img/snap-logo-footer.svg',
+        team: 'team.html',
+        publications: 'publications.html',
+        news: 'news.html'
+      };
+
+      $('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
+      $('.news-one-container').loadTemplate("templates/components/news-one-template.html", getNews());
+      $('.join-our-team-container').loadTemplate("templates/components/join.html");
+      $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
+
+
+    //   const paginationCount=3;
+    //   function renderBreadcrumbs(list) {
+    //     $('.publication--group-pagination').empty();
+    //     if(list.length>1) {
+    //       for(let i=0;i<list.length/paginationCount;i++) {
+    //         $('.publication--group-pagination').append(
+    //           `<li class="noactive">
+    //         <button type="button" class="pagination-link" value="${i+1}">${i+1}</button>
+    //       </li>`
+    //         )
+    //       }
+    //       $('.publication--group-pagination li').first().attr('class','active');
+    //     }
+    //   }
+    //   renderBreadcrumbs(newsList);
+    //   function switchPagination(page) {
+    //     $('.news-one-component').each(function(index) {
+    //       if((page-1)*paginationCount<=index&&index<(page)*paginationCount) {
+    //         $(this).show();
+    //       } else {
+    //         $(this).hide();
+    //       }
+    //     });
+    //   };
+
+    //   setTimeout(function() {
+    //     switchPagination(1);
+    //   },200);
+
+    //   $('.publication--group-pagination').on('click','button',function(elem) {
+    //     $('.publication--group-pagination li').attr('class','noactive');
+    //     $(this).closest('li').attr('class','active');
+    //     switchPagination(elem.target.value)
+    //   })
+
+    });
+  </script>
 </body>
 
 </html>
-<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->

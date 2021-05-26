@@ -112,6 +112,8 @@
       const singleNews = getNewsBySlug(window.location.hash);
       $('.news-container').loadTemplate($('#news-template'), singleNews);
       document.title = singleNews[0].metaTitle;
+
+      console.log(singleNews[0]);
       $('meta[name=description]').attr('content', singleNews[0].metaDescription);
       $('meta[property="og:title"]').attr('content', singleNews[0].metaTitle);
       $('meta[property="og:description"]').attr('content', singleNews[0].metaDescription);
