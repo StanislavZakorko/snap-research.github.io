@@ -87,7 +87,7 @@
       };
 
       $('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
-      $('.news-one-container').loadTemplate("templates/components/news-one-template.html", newsList);
+      $('.news-one-container').loadTemplate("templates/components/news-one-template.html", getNews());
       $('.join-our-team-container').loadTemplate("templates/components/join.html");
       $('.footer-container').loadTemplate("templates/components/footer.html", footerRoutes);
 
@@ -126,9 +126,6 @@
         $(this).closest('li').attr('class','active');
         switchPagination(elem.target.value)
       })
-
-      
-
 
     });
   </script>

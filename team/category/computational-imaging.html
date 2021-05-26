@@ -66,12 +66,16 @@
     </div>
 
     <div class="team--detail-publications container">
-
+      
+      <!-- publications -->
       <h2 class="title">Publications</h2>
-            <div class="publications-for-member"></div>
+      <div class="publications-for-member"></div>
+      <!-- publications -->
 
+      <!-- events -->
       <h2 class="title">Events</h2>
-            <div class="events-for-member"></div>
+      <div class="events-for-member"></div>
+      <!-- events -->
 
     </div>
   </div>
@@ -119,24 +123,6 @@
       news: '../../news.html'
     };
 
-    const arrayEvents = [
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-      {
-        date: 'April 12, 2021',
-        title: 'International Conference on Data Engineering',
-        url: '../publications/3d-guided-fine-grained-face-manipulation.html',
-      },
-    ];
-
     $('.header-container').loadTemplate("../../templates/components/header.html", headerRoutes);
 
     $('.join-our-team-container').loadTemplate("../../templates/components/join.html");
@@ -145,7 +131,8 @@
     $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
       publicationForCategory);
 
-    $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", arrayEvents);
+    $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", 
+      getEvents());
 
     $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html", 
       getMembersByIDs(teamMembersForTeamCategory.computationalImaging, '../../'));

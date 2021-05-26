@@ -10,14 +10,12 @@ const teamMembersList = [
     email: "",
     subTitle: "Lead Research Engineer",
     researchAreas: "Computational Imaging",
-    url: "team/team-member/#guru-krishnan",
     backUrl: "../../team/category/computational-imaging.html",
     imageUrl:
       "https://images.ctfassets.net/btheynltg5cn/3C3Gss7SDX7l2VW4wdFJRS/09b8878574e6d859acb5e15ef1d916da/GuruK2019.png",
     description: `
     <p><p>Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work&nbsp;<a href="http://www.gurukrishnan.com/"><u>here</u></a>.
     `,
-    email: "",
   },
 
   {
@@ -31,7 +29,6 @@ const teamMembersList = [
     email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computational Imaging",
-    url: "team/team-member/#jian-james-wang",
     backUrl: "../../team/category/computational-imaging.html",
     imageUrl:
       "//images.ctfassets.net/btheynltg5cn/3S6R9feaIi02RVKA4zNs06/b93bb592cd22d9d164aaa8006d5624ff/JianWangNew.png",
@@ -44,8 +41,6 @@ const teamMembersList = [
     href="http://www.andrew.cmu.edu/user/jianwan2/"><u></u></a><u></u><a
     href="https://jianwang-cmu.github.io/"><u>here</u></a>.</p>
     `,
-    publications: [2, 3],
-    email: "",
   },
 
   {
@@ -59,14 +54,12 @@ const teamMembersList = [
     email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computational Social Science",
-    url: "team/team-member/#colin-eles",
     backUrl: "../../team/category/computational-social-science.html",
     imageUrl:
       "https://images.ctfassets.net/btheynltg5cn/41mWZjA5zo0zHqqByTcF8w/8913f2d975878ec29c94eac64cfd57e9/Colin_Eles_1.jpeg",
     description: `
     <p>Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University.&nbsp;</p>
     `,
-    email: "",
   },
 
   {
@@ -80,14 +73,12 @@ const teamMembersList = [
     email: "",
     subTitle: "Research Intern",
     researchAreas: "",
-    url: "team/team-member/#ana-cardenas-gasca",
     backUrl: "../../team/category/human-computer-interaction.html",
     imageUrl:
       "https://images.ctfassets.net/btheynltg5cn/31JpDbeRtsNeBEBKt9gvKb/08fb4c14c55d909108da5bb06e100f32/SnapPhoto.png",
     description: `
     <p>Ana is a Research Intern&nbsp;on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen&nbsp;human connection instead of weaken it,&nbsp;particularly on mobile Augmented Reality. She designs and creates Augmented Reality&nbsp;applications around social&nbsp;themes such as co-located interactions and studies around the&nbsp;way users interact with&nbsp;these applications.</p><p>Ana finished her MS in Information of Science at the School of Information in the University of Michigan as a Fulbright scholarship recipient. Prior to that, she completed a double major in Computer Science and Design at the University of Los Andes, Colombia where she is originally from.</p>    
     `,
-    email: "",
   },
 
   {
@@ -101,14 +92,12 @@ const teamMembersList = [
     email: "",
     subTitle: "Research Scientist",
     researchAreas: "Computer Vision, Deep Learning",
-    url: "team/team-member/#jian-ren",
     backUrl: "../../team/category/creative-vision.html",
     imageUrl:
       "https://images.ctfassets.net/btheynltg5cn/qGKJDrVJmWHdTWBx3PbTs/d03c4f5bb460bf7d828a38419743cb0c/Jian_Ren_2019.png",
     description: `
     <p>Jian is a Research Scientist working in the Creative Vision group at Snap Research. His research focuses on computer vision, deep learning, and generative models. Before joining Snap Inc., he worked as a Research Intern at Adobe, Snap Inc., and Bytedance Research. Jian obtained a PhD degree in Computer Engineering from Rutgers University in 2019.</p>
     `,
-    email: "",
   },
 ];
 
@@ -132,10 +121,11 @@ function getMembersByIDs(id, path) {
   if (!id.length) return [];
   let result = teamMembersList.filter((item) => id.includes(item.id));
   return result.map((item) => {
-    const tempObj = { ...item };
-    tempObj.url = path + tempObj.url;
-    if (tempObj.email) tempObj.showEmail = "show-email";
-    return tempObj;
+    const tempItem = { ...item };
+    tempItem.url = path + "team/team-member/" + tempItem.hash;
+
+    if (tempItem.email) tempItem.showEmail = "show-email";
+    return tempItem;
   });
 }
 
@@ -146,9 +136,11 @@ $(function () {
 
   const hash = window.location.hash;
   const teamMemberInfo = teamMembersList.find((item) => item.hash === hash);
-  const teamMemberName = teamMemberInfo.name;
 
   if (!teamMemberInfo) $(location).attr("href", "../../404.html");
+  
+  const teamMemberName = teamMemberInfo.name;
+
 
   publicationsForTeamMember = publicationsList.filter((publication) => {
     return publication.authors.includes(teamMemberName);
@@ -175,7 +167,12 @@ $(function () {
 
   $("title").text(teamMemberInfo.name + " - Snap Research");
   $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);
-  $('meta[property="og:title"]').attr('content', teamMemberInfo.name + " - Snap Research");
-  $('meta[property="og:description"]').attr('content', teamMemberInfo.metaDescription);
-
+  $('meta[property="og:title"]').attr(
+    "content",
+    teamMemberInfo.name + " - Snap Research"
+  );
+  $('meta[property="og:description"]').attr(
+    "content",
+    teamMemberInfo.metaDescription
+  );
 });

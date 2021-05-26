@@ -1951,7 +1951,7 @@ textarea {
   border: 1px solid #ebecef;
   border-radius: 4px;
   margin-right: 20px;
-  width: 86px;
+  width: 86px; height: 86px;
   display: flex;
   justify-content: center;
   align-items: center;

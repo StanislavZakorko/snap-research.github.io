@@ -4,7 +4,6 @@ const newsList = [
     date: "December 21, 2020",
     link: "../news.html",
     slug: "2020-snap-research-fellows",
-    url: "news/news-one#2020-snap-research-fellows",
     title: "2020 Snap Research Fellowship",
     descriptionShort: "Congratulations to our 2020 Snap Research Fellows!",
     description: "../news/detail/2020-snap-research-fellows.html",
@@ -16,11 +15,11 @@ const newsList = [
     date: "August 25, 2020",
     link: "../news.html",
     slug: "snap-research-wins-best-in-show-award-at-siggraph-2020",
-    url: "news/news-one#snap-research-wins-best-in-show-award-at-siggraph-2020",
     title: "Snap Research Wins “Best in Show” Award at SIGGRAPH 2020",
     descriptionShort:
       "Snap Research’s Creative Vision team won the “Best in Show” award at SIGGRAPH 2020 Real Time Live for their demo, “Interactive Style Transfer to Live Video Streams.",
-    description: "../news/detail/snap-research-wins-best-in-show-award-at-siggraph-2020",
+    description:
+      "../news/detail/snap-research-wins-best-in-show-award-at-siggraph-2020",
     metaTitle: "Snap Research Wins “Best in Show” Award at SIGGRAPH 2020",
     metaDescription: "",
   },
@@ -29,7 +28,6 @@ const newsList = [
     date: "August 10, 2020",
     link: "../news.html",
     slug: "snap-creative-challenge-acm-imx-2020",
-    url: "news/news-one#snap-creative-challenge-acm-imx-2020",
     title:
       "Snap Creative Challenge Invites Universities to Reimagine AR Storytelling",
     descriptionShort:
@@ -40,6 +38,15 @@ const newsList = [
     metaDescription: "",
   },
 ];
+
+function getNews() {
+  const tempNewsList = newsList.map((item) => {
+    const tempItems = { ...item };
+    tempItems.url = "news/news-one#" + tempItems.slug;
+    return tempItems;
+  });
+  return tempNewsList.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
 
 function getNewsBySlug(slug) {
   let result = newsList.filter((item) => slug.slice(1) === item.slug);
