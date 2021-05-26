@@ -6,47 +6,7 @@
           <h1 class="title">Publications</h1>
         </div>
       </div>
-      <div class="row d-flex align-items-start justify-content-between m-0 mt-4 mb-3">
-        <a class="card-outer" href="publications/significant-otter-understanding-the-role-of-biosignals-in-communication.html">
-          <div class="card">
-            <div class="card--bg-image" style="background-image: url('//images.ctfassets.net/btheynltg5cn/1sZ3K3mOk9WmgdEORIWYcA/1a26da31f46bf51d1124ef802e17e915/Screen_Shot_2021-02-20_at_2.48.12_AM.png?w=400');"></div>
-            <div class="card--copy">
-              <p>Significant Otter: Understanding the Role of Biosignals in Communication</p>
-            </div>
-          </div>
-        </a>
-        <a class="card-outer" href="publications/tweet-eval-unified-benchmark-and-comparative-evaluation-for-tweet.html">
-          <div class="card">
-            <div class="card--copy">
-              <p>TWEET EVAL: Unified Benchmark and Comparative Evaluation for Tweet Classification</p>
-            </div>
-          </div>
-        </a>
-        <a class="card-outer" href="publications/3d-guided-fine-grained-face-manipulation.html">
-          <div class="card">
-            <div class="card--bg-image" style="background-image: url('//images.ctfassets.net/btheynltg5cn/5jUom8ndR4V4HMkgu2wuNm/b9ae318781eeafd1e3878bafc59f746f/3D_Guided_Fine-Grained_Face_Manipulation.png?w=400');"></div>
-            <div class="card--copy">
-              <p>3D Guided Fine-Grained Face Manipulation</p>
-            </div>
-          </div>
-        </a>
-        <a class="card-outer" href="publications/blocks-collaborative-and-persistent-augmented-reality-experiences.html">
-          <div class="card">
-            <div class="card--bg-image" style="background-image: url('//images.ctfassets.net/btheynltg5cn/7aOMZpQPllYrNHTozHfqwv/62c76ec8165b57fa1d7c2275cef3d62c/Blocks.png?w=400');"></div>
-            <div class="card--copy">
-              <p>Blocks: Collaborative and Persistent Augmented Reality Experiences</p>
-            </div>
-          </div>
-        </a>
-        <a class="card-outer" href="publications/vidgets-modular-mechanical-widgets-for-mobile-devices.html">
-          <div class="card">
-            <div class="card--bg-image" style="background-image: url('//images.ctfassets.net/btheynltg5cn/7e2c6ncG5rpGp5SgvV30go/becdb8a878fc4824c0cd6299b9006912/Vidgets.png?w=400');"></div>
-            <div class="card--copy">
-              <p>Vidgets: Modular Mechanical Widgets for Mobile Devices</p>
-            </div>
-          </div>
-        </a>
-      </div>
+      <div class="row d-flex align-items-start justify-content-between m-0 mt-4 mb-3 home-publication-item-container"></div>
       <div class="row d-flex justify-content-center">
         <div class="col-auto">
           <a class="cta" href="publications.html">View more</a>
@@ -55,3 +15,21 @@
     </div>
   </div>
 </div>
+
+<script type="text/html" id="home-publication-list-item">
+  <a class="card-outer" data-href="url">
+    <div class="card">
+      <img class="card--bg-image" data-url="bgImage" />
+      <div class="card--copy">
+        <p data-content="title"></p>
+      </div>
+    </div>
+  </a>
+</script>
+
+<script>
+  $(function () {
+    const mainPublications = getPublicationsByIDs([2,7,8,9,0]); // 2,7 is real, 8,9,0 is for test
+    $('.home-publication-item-container').loadTemplate($("#home-publication-list-item"), mainPublications);
+  });
+</script>
