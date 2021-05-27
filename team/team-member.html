@@ -111,13 +111,6 @@
         publications: '../publications.html',
         news: '../news.html'
       };
-      $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
-
-      $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html",
-        publicationsForTeamMember);
-
-      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
-      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
 
       const hash = window.location.hash;
       const teamMemberInfo = teamMembersList.find((item) => item.hash === hash);
@@ -138,6 +131,14 @@
       if (!publicationsForTeamMember.length) {
         $(".team--detail-publications-member h2:eq(0)").hide();
       }
+
+      $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
+
+      $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html",
+        publicationsForTeamMember);
+
+      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
+      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
 
       $(".team--detail-name").text(teamMemberInfo.name);
       $(".sub-title").text(teamMemberInfo.subTitle);

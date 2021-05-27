@@ -40,10 +40,11 @@ There is NO node modules, packages, or build sources
 3. doc folder (base docs of HTML boilerplate, can be removed)
 4. fonst folder (full package of Graphik font)
 5. img folder (few images from old project, most images of project are downloaded from absolute url, where they placed now for old project)
-6. js folder (global js files & libraries)
+6. js folder (global js files & libraries):
   - vendor folder (includes modernizr js library)
   - dragscroll.js (library for scrolling)
   - handle-scroll-left.js (custom function to scrool team groups in responsive)
+  - jquery.1.10.2.min.js (library for work with DOM)
   - jquery.loadTemplate.min.js (library for building templates)
   - main.js (main js file, includes global scripts, its connected in all pages)
   - plugins.js (js file for plugins)
@@ -51,4 +52,147 @@ There is NO node modules, packages, or build sources
   - publications-lib.js (custom data library with publications)
   - team-members-lib.js (custom data library with team members)
 6. news folder (include piece of news html files)
-7. publications folder (includes)
+7. publications folder (includes publication.html template)
+8. team folder:
+  - category (5 html files with team groups)
+  - team-member.html (template for rendering single member)
+9. templates folder (includes all simple templates for project)
+
+## How it works
+
+There are two variants to show the data:
+### 1. Static data
+there is a lot of places in the project where you can find the static data (text, links, other)
+in files its looks something like this
+````
+<div>
+  <p>Text for example</p>
+</div>
+````
+So you can find the text inside the file & change it to another
+<br>
+'Text for example' > 'Your new text'
+<br>
+and you get this:
+````
+<div>
+  <p>Your new text</p>
+</div>
+````
+
+### 2.Dynamic data
+Also you can find empty structures
+````
+<div class="header-container"></div>
+````
+That means that the "header-container" is a template and some script download content to it.
+<br>
+There are two types of templates:
+<br>
+static (simple, first variant of changing data ) - he calls in script without any parameters
+````
+$(.home-hero-container').loadTemplate("templates/components/home-hero.html");
+````
+and dynamic template - calls with parameters (parameter can be single object or array of objects)
+````
+$('.header-container').loadTemplate("templates/components/header.html",headerRoutes);
+````
+where is 'headerRoutes' - object of parameters
+<br>
+so if you need to change something in dynamic template, you need to find parameters object & change him
+<br>
+for example you want to change logo image in header (after downloading this image to 'img' folder)
+<br>
+find in project all places, where 'headerRoutes'
+````
+const headerRoutes = {
+    //...something...//
+    logo: 'img/snap-logo.svg',
+    //...something...//
+  };
+````
+change logo
+````
+  logo: 'img/new-snap-logo.png'
+````
+That all!
+<br>
+
+### Arrays of dynamic data
+in the pages where we need to show many same items, we create the arrays of it
+<br>
+in js folder you can find next files 'something-lib.js' (example events-lib.js)
+<br>
+it means that inside this file you can find array of items (events, members, news, publications, fellowships)
+<br>
+and you can add new items to it
+<br>
+### Add publications
+for example you need to add new publication:
+1) open publications-lib.js, and find the last publication
+2) copy the structure of if
+````
+{
+  id: 9,
+  date: 'September 28, 2020',
+  //...other fields...//
+}
+````
+3) paste it under the last publication structure after comma
+4) change data in the fields of pasted structure
+> the slug field is the name of publication for script
+> <br>
+> also url field must contain correct slug name
+> <br>
+> url: 'publications/publication.html#your-slug-name'
+
+when you find field 'eventID: something', you need to paste the id of event from another lib
+<br>
+if you didnt find this event, you can create new(same as create a publication), setup id to it, and add id into new publication
+
+> ! the id inside one library must be unique
+> <br>
+> all publications shows in date order (newest first)
+
+### Add news
+1) find news-lib.js
+2) add new structure in the bottom of array (the same as publications)
+3) in news/detail folder create new html template, or copy one of ready templates inside this folder
+4) the name of new file must be unique, it can be 'super-puper-challenge.html'
+5) change layout inside new template
+6) inside news-lib.js change the fields what you want
+7) the description field must contain the route for your new template, and the slug must be the part of template name
+````
+  slug: 'super-puper-challenge',
+  description: "../news/detail/super-puper-challenge.html",
+````
+after that you can find new list of news on your website
+
+### Add team memeber
+1) find team-members-lib.js
+2) add new structure in the bottom of array (the same as publications)
+3) change backUrl what team you need to go back after pushing back button
+4) find `teamMembersForTeamCategory` object, there is an object of teams
+5) add new member id to correct team
+
+for example you create new member with id `318`, and wants to show him inside `creative vision` team
+<br>
+so find `creativeVision` array, and add id to it
+````
+const teamMembersForTeamCategory = {
+  //...some fields...//
+  creativeVision: [300, 301, 302, 303, 304, 305, 318],
+  //...some fields...//
+}
+````
+
+for better use we call member id's with a hundred period
+
+- computationalImaging form `0`
+- computationalSocialScience from `100`
+- humanComputerInteraction from `200`
+- creativeVision from `300`
+- admin from `400`
+
+
+
