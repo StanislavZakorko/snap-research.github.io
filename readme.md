@@ -15,28 +15,34 @@ There are NO node modules, packages, or build sources
 
 ## Structure of the project
 
-1. Main folder includes:
-  1.1 Main structure files:
+`I. Main folder includes:`
+1. Main structure files:
      - index.html
      - news.html
      - publications.html
      - fellowships.html
-     - 404.html
-  1.2 Technical files
+     - 404.html<br>
+
+2. Technical files
      - robots.txt (copied from old site)
      - sitemap.xml (copied from old site, need refactor)
      - .git files
      - readme.md (site doc & instructions)
-2. css folder (style files):
+
+`II. css folder (style files):`
   - bootstrap-grid.css (grid styles lib for responsive layout)
   - main.css (main file with all of the layout styles)
   - normalize.css (simple settings to normalize html docs)
   - old.css (styles from old site, can be removed if no more need)
   - responsive.css
-3. doc folder (base docs of HTML boilerplate, can be removed)
-4. fonst folder (full package of Graphik font)
-5. img folder (few images from old project, most images of project are downloaded from absolute url, where they placed now for old project)
-6. js folder (global js files & libraries):
+
+`III. doc folder (base docs of HTML boilerplate, can be removed)`
+
+`IV. fonst folder (full package of Graphik font)`
+
+`V. img folder (few images from old project, most images of project are downloaded from absolute url, where they placed now for old project)`
+
+`VI. js folder (global js files & libraries):`
   - vendor folder (includes modernizr js library)
   - dragscroll.js (library for scrolling)
   - handle-scroll-left.js (custom function to scrool team groups in responsive)
@@ -47,12 +53,16 @@ There are NO node modules, packages, or build sources
   - events-lib.js (custom data library with events)
   - publications-lib.js (custom data library with publications)
   - team-members-lib.js (custom data library with team members)
-6. news folder (include piece of news html files)
-7. publications folder (includes publication.html template)
-8. team folder:
+
+`VII. news folder (include piece of news html files)`
+
+`VIII. publications folder (includes publication.html template)`
+
+`IX. team folder:`
   - category (5 html files with team groups)
   - team-member.html (template for rendering single member)
-9. templates folder (includes all simple templates for project)
+
+`X. templates folder (includes all simple templates for project)`
 
 ## How it works
 
