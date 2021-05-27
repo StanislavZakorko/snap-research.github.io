@@ -19,7 +19,7 @@ const newsList = [
     descriptionShort:
       "Snap Research’s Creative Vision team won the “Best in Show” award at SIGGRAPH 2020 Real Time Live for their demo, “Interactive Style Transfer to Live Video Streams.",
     description:
-      "../news/detail/snap-research-wins-best-in-show-award-at-siggraph-2020",
+      "../news/detail/snap-research-wins-best-in-show-award-at-siggraph-2020.html",
     metaTitle: "Snap Research Wins “Best in Show” Award at SIGGRAPH 2020",
     metaDescription: "Snap Research’s Creative Vision team won the “Best in Show” award at SIGGRAPH 2020 Real Time Live for their demo, “Interactive Style Transfer to Live Video Streams.” The technology is the result of a collaboration between Senior Research Scientist Menglei Chai, former Research Intern Ondřej Texler, and Lead Research Scientist Sergey Tulyakov.",
   },
@@ -32,7 +32,7 @@ const newsList = [
       "Snap Creative Challenge Invites Universities to Reimagine AR Storytelling",
     descriptionShort:
       "What will storytelling look like in a world where AR is more prevalent? Snap Research organized a virtual Creative Challenge at ACM IMX, an academic conference focused on interactive media and television, to explore that exact question.",
-    description: "../news/detail/snap-creative-challenge-acm-imx-2020",
+    description: "../news/detail/snap-creative-challenge-acm-imx-2020.html",
     metaTitle:
       "Snap Creative Challenge Invites Universities to Reimagine AR Storytelling",
     metaDescription: "What will storytelling look like in a world where AR is more prevalent? Snap Research organized a virtual Creative Challenge at ACM IMX, an academic conference focused on interactive media and television, to explore that exact question.",
