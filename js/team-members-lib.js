@@ -606,7 +606,7 @@ const teamMembersList = [
 const teamMembersForTeamCategory = {
   computationalImaging: [0, 1, 2, 3, 4, 5],
   computationalSocialScience: [100, 101, 102, 103, 104, 105, 106, 107],
-  humanComputerIinteraction: [200, 201, 202, 203, 204, 205, 206, 207],
+  humanComputerInteraction: [200, 201, 202, 203, 204, 205, 206, 207],
   creativeVision: [300, 301, 302, 303, 304, 305],
   admin: [400, 401, 402, 403, 404, 405, 406],
 
@@ -615,7 +615,7 @@ const teamMembersForTeamCategory = {
       ...this.admin,
       ...this.computationalImaging,
       ...this.computationalSocialScience,
-      ...this.humanComputerIinteraction,
+      ...this.humanComputerInteraction,
       ...this.creativeVision,
     ];
   },
