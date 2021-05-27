@@ -127,6 +127,7 @@
       $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
 
       const singlePublication = getPublicationBySlug(window.location.hash);
+      console.log(singlePublication);
       $('.publication-container').loadTemplate($('#publication-template'), singlePublication);
       document.title = singlePublication[0].metaTitle;
       $('meta[name=description]').attr('content', singlePublication[0].metaDescription);
