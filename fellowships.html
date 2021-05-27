@@ -1,20 +1,17 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title>Fellowship Program</title>
+  <title>Fellowship Program - Snap Research</title>
   <meta name="description" content="If you are interested in applying to the 2021 Fellowship program, please apply here.">
+  <meta property="og:title" content="Fellowship Program - Snap Research">
+  <meta property="og:description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <!--  <link rel="manifest" href="site.webmanifest">-->
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -22,8 +19,6 @@
   <link rel="stylesheet" href="css/main2.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
-
-  <meta name="theme-color" content="#fafafa">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="./js/jquery.loadTemplate.min.js"></script>
@@ -84,7 +79,7 @@
         <p>If you are interested in applying to the 2021 Fellowship program, please apply here.</p>
         <div class="news--group-link">
           <a class="cta" href="fellowships.html">Apply to Fellowship Program</a>
-        </div>   
+        </div>
       </div>
     </div>
     <div class="publication--group-wrapper fellowships--group-wrapper">
@@ -126,6 +121,9 @@
     const dropdownPeriodFrom = 2016;
     const dropdownPeriodTo = new Date().getFullYear();
     const dateRangeOfYears = dropdownPeriodTo - dropdownPeriodFrom;
+    fellowshipsList.sort(function(a,b){
+      return new Date(b.date) - new Date(a.date);
+    });
     const headerRoutes = {
       home: 'index.html',
       logo: 'img/snap-logo.svg',
@@ -160,7 +158,7 @@
 
     function searchHandler() {
       let val = $('.search-box--filter-input').val();
-      let filtered = 0(fellowshipsList, val);
+      let filtered = searchItem(fellowshipsList, val);
       renderBreadcrumbs(filtered);
       $('.fellowships-list-item').loadTemplate("templates/components/fellowships-list-item.html", filtered);
       setTimeout(function() {
@@ -185,7 +183,7 @@
 
     function renderBreadcrumbs (list) {
       $('.fellowships--group-pagination').empty();
-      if(list.length > 1) {
+      if(list.length/paginationCount > 1) {
         for (let i = 0; i < list.length/paginationCount; i++){
           $('.fellowships--group-pagination').append(
             `<li class="noactive">
