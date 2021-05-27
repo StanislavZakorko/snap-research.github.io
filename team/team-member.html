@@ -1,168 +1,168 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <title></title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <!--  <link rel="manifest" href="site.webmanifest">-->
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <meta property="og:description" content="">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
+
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/bootstrap-grid.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/main2.css">
   <link rel="stylesheet" href="../css/responsive.css">
   <link rel="stylesheet" href="../fonts/stylesheet.css">
-  <meta name="theme-color" content="#fafafa">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="../js/jquery.1.10.2.min.js"></script>
   <script src="../js/jquery.loadTemplate.min.js"></script>
 </head>
 
 <body>
-<div class="header-container header-dark"></div>
-<div class="team">
-  <div class="sub-hero">
-    <div class="container">
-      <a class="category" href="../team/category/computational-imaging.html">Back to Team</a>
+  <div class="header-container header-dark"></div>
+  <div class="team">
+    <div class="sub-hero">
+      <div class="container">
+        <a class="category" href="../team/category/computational-imaging.html">Back to Team</a>
+      </div>
     </div>
-  </div>
-  <div class="container content">
-    <div class="team--detail">
-      <div class="row">
-        <div class="col-12 col-md-3">
-          <div class="card--email-container">
-            <img class="team--detail-img" src="" alt=""/>
-            <div class="card--email-team-member" class="showEmail">
-              <img src="../img/email.svg" alt="email"/>
-              <div>&nbsp;&nbsp;</div>
-              <div class="card--email-team-member-text" data-content="email"></div>
+    <div class="container content">
+      <div class="team--detail">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card--email-container">
+              <img class="team--detail-img" src="" alt=""/>
+              <div class="card--email-team-member" class="showEmail">
+                <img src="../img/email.svg" alt="email"/>
+                <div>&nbsp;&nbsp;</div>
+                <div class="card--email-team-member-text" data-content="email"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
+            <h1 class="title team--detail-name"></h1>
+            <h2 class="sub-title">Research Scientist</h2>
+            <div class="team--detail-research-areas">
+              <span>Research Areas</span>
+              <span class="research-areas"></span>
+            </div>
+            <p class="team--detail-description"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3"></div>
+          <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
+            <div class="team--detail-publications-member">
+              <h2 class="title">Publications</h2>
+              <div class="publications-for-member"></div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
-          <h1 class="title team--detail-name"></h1>
-          <h2 class="sub-title">Research Scientist</h2>
-          <div class="team--detail-research-areas">
-            <span>Research Areas</span>
-            <span class="research-areas"></span>
-          </div>
-          <p class="team--detail-description"></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-3"></div>
-        <div class="col-12 col-md-9 pl-md-5 pt-4 pt-md-0">
-          <div class="team--detail-publications-member">
-            <h2 class="title">Publications</h2>
-            <div class="publications-for-member"></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="join-our-team-container"></div>
-<div class="footer-container"></div>
+  <div class="join-our-team-container"></div>
+  <div class="footer-container"></div>
 
-<script src="../js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="../js/plugins.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/events-lib.js"></script>
-<script src="../js/team-members-lib.js"></script>
-<script src="../js/publications-lib.js"></script>
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () {
-    ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
-<script type="text/javascript">
-  $(function () {
-    let publicationsForTeamMember = [];
-    const headerRoutes = {
-      home: '../index.html',
-      logo: '../img/snap-logo.svg',
-      fellowships: '../fellowships.html',
-      team: '../team.html',
-      computationalImaging: '../team/category/computational-imaging.html',
-      computationalSocialScience: '../team/category/computational-social-science.html',
-      humanComputerInteraction: '../team/category/human-computer-interaction.html',
-      creativeVision: '../team/category/creative-vision.html',
-      allTeam: '../team/category/all.html',
-      publications: '../publications.html',
-      news: '../news.html'
+  <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/events-lib.js"></script>
+  <script src="../js/team-members-lib.js"></script>
+  <script src="../js/publications-lib.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments)
     };
-    const footerRoutes = {
-      logo: '../img/snap-logo-footer.svg',
-      team: '../team.html',
-      publications: '../publications.html',
-      news: '../news.html'
-    };
-    $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script type="text/javascript">
+    $(function () {
+      let publicationsForTeamMember = [];
+      const headerRoutes = {
+        home: '../index.html',
+        logo: '../img/snap-logo.svg',
+        fellowships: '../fellowships.html',
+        team: '../team.html',
+        computationalImaging: '../team/category/computational-imaging.html',
+        computationalSocialScience: '../team/category/computational-social-science.html',
+        humanComputerInteraction: '../team/category/human-computer-interaction.html',
+        creativeVision: '../team/category/creative-vision.html',
+        allTeam: '../team/category/all.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      const footerRoutes = {
+        logo: '../img/snap-logo-footer.svg',
+        team: '../team.html',
+        publications: '../publications.html',
+        news: '../news.html'
+      };
+      $('.header-container').loadTemplate("../templates/components/header.html", headerRoutes);
 
-    $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html",
-      publicationsForTeamMember);
+      $('.publications-for-member').loadTemplate("../templates/components/publications-for-member.html",
+        publicationsForTeamMember);
 
-    $('.join-our-team-container').loadTemplate("../templates/components/join.html");
-    $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
+      $('.join-our-team-container').loadTemplate("../templates/components/join.html");
+      $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
 
-    const hash = window.location.hash;
-    const teamMemberInfo = teamMembersList.find((item) => item.hash === hash);
-    console.log(teamMemberInfo);
+      const hash = window.location.hash;
+      const teamMemberInfo = teamMembersList.find((item) => item.hash === hash);
+      console.log(teamMemberInfo);
 
-    if (!teamMemberInfo) $(location).attr("href", "../../404.html");
+      if (!teamMemberInfo) $(location).attr("href", "../../404.html");
 
-    const teamMemberName = teamMemberInfo.name;
+      const teamMemberName = teamMemberInfo.name;
 
-    publicationsForTeamMember = publicationsList.filter((publication) => {
-      return publication.authors.includes(teamMemberName);
+      publicationsForTeamMember = publicationsList.filter((publication) => {
+        return publication.authors.includes(teamMemberName);
+      });
+
+      publicationsForTeamMember.forEach((publication) => {
+        publication.url = "../../" + publication.url;
+      });
+
+      if (!publicationsForTeamMember.length) {
+        $(".team--detail-publications-member h2:eq(0)").hide();
+      }
+
+      $(".team--detail-name").text(teamMemberInfo.name);
+      $(".sub-title").text(teamMemberInfo.subTitle);
+      $(".research-areas").text(teamMemberInfo.researchAreas);
+      $(".team--detail-description").html(teamMemberInfo.description);
+      $("a.category").attr("href", teamMemberInfo.backUrl);
+      $(".team--detail-img").attr("src", teamMemberInfo.imageUrl);
+      $(".team--detail-img").attr("alt", teamMemberInfo.name);
+      $(".card--email-team-member-text").text(teamMemberInfo.email);
+
+      if (!teamMemberInfo.email) $(".card--email-team-member").hide();
+
+      $("title").text(teamMemberInfo.name + " - Snap Research");
+      $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);
+      $('meta[property="og:title"]').attr(
+        "content",
+        teamMemberInfo.name + " - Snap Research"
+      );
+      $('meta[property="og:description"]').attr(
+        "content",
+        teamMemberInfo.metaDescription
+      );
+
     });
-
-    publicationsForTeamMember.forEach((publication) => {
-      publication.url = "../../" + publication.url;
-    });
-
-    if (!publicationsForTeamMember.length) {
-      $(".team--detail-publications-member h2:eq(0)").hide();
-    }
-
-    $(".team--detail-name").text(teamMemberInfo.name);
-    $(".sub-title").text(teamMemberInfo.subTitle);
-    $(".research-areas").text(teamMemberInfo.researchAreas);
-    $(".team--detail-description").html(teamMemberInfo.description);
-    $("a.category").attr("href", teamMemberInfo.backUrl);
-    $(".team--detail-img").attr("src", teamMemberInfo.imageUrl);
-    $(".team--detail-img").attr("alt", teamMemberInfo.name);
-    $(".card--email-team-member-text").text(teamMemberInfo.email);
-
-    if (!teamMemberInfo.email) $(".card--email-team-member").hide();
-
-    $("title").text(teamMemberInfo.name + " - Snap Research");
-    $("meta[name=description]").attr("content", teamMemberInfo.metaDescription);
-    $('meta[property="og:title"]').attr(
-      "content",
-      teamMemberInfo.name + " - Snap Research"
-    );
-    $('meta[property="og:description"]').attr(
-      "content",
-      teamMemberInfo.metaDescription
-    );
-
-  });
-</script>
+  </script>
 </body>
 
 </html>
