@@ -3,26 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Publications - Snap Research</title>
+  <meta name="description" content="Snap Research serves as an innovation engine for Snap Inc. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:title" content="Publications - Snap Research">
+  <meta property="og:description" content="Snap Research serves as an innovation engine for Snap Inc. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves.">
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <!--  <link rel="manifest" href="site.webmanifest">-->
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
-
-  <meta name="theme-color" content="#fafafa">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="./js/jquery.loadTemplate.min.js"></script>
@@ -84,51 +79,6 @@
     </div>
     <div class="publication--group-wrapper">
       <div class="publication-list-item"></div>
-
-
-
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>December 02, 2020</span><br><a-->
-<!--          href="/publications/data-augmentation-for-graph-neural-networks">Data Augmentation for Graph Neural-->
-<!--          Networks</a></div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Tong Zhao, Yozen Liu, Leonardo Neves, Oliver Woodford, Meng Jiang, Neil-->
-<!--          Shah-->
-<!--        </div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> AAAI 2021</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Computational Social Science</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>November 16, 2020</span><br><a-->
-<!--          href="/publications/tweet-eval-unified-benchmark-and-comparative-evaluation-for-tweet">TWEET EVAL: Unified-->
-<!--          Benchmark and Comparative Evaluation for Tweet Classification</a></div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Francesco Barbieri, Jose Camacho-Collados, Leonardo Neves, Luis-->
-<!--          Espinosa-Anke†-->
-<!--        </div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> EMNLP 2020</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Computational Social Science, Natural Language Processing</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>November 02, 2020</span><br><a-->
-<!--          href="/publications/the-devil-is-in-the-details-evaluating-limitations-of-transformer-based">The Devil is in-->
-<!--          the Details: Evaluating Limitations of Transformer-based Methods for Granular Tasks</a></div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Brihi Joshi, Neil Shah, Francesco Barbieri, Leonardo Neves</div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> COLING 2020</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Computational Social Science, Natural Language Processing</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="publication&#45;&#45;group">-->
-<!--        <div class="publication&#45;&#45;group-title"><span>September 28, 2020</span><br><a-->
-<!--          href="/publications/a-good-image-generator-is-what-you-need-for-high-resolution-video-synthesis">A Good Image-->
-<!--          Generator Is What You Need for High-Resolution Video Synthesis</a></div>-->
-<!--        <div class="publication&#45;&#45;group-authors">Yu Tian, Jian Ren, Menglei Chai, Kyle Olszewski, Xi Peng, Dimitris N.-->
-<!--          Metaxas, Sergey Tulyakov-->
-<!--        </div>-->
-<!--        <div class="publication&#45;&#45;group-event"><span>Event</span> ICLR 2021</div>-->
-<!--        <div class="publication&#45;&#45;group-research-areas"><span>Research Areas</span><span class="research-areas">Creative Vision</span>-->
-<!--        </div>-->
-<!--      </div>-->
       <ul class="publication--group-pagination"></ul>
     </div>
   </div>
@@ -164,6 +114,9 @@
     const dropdownPeriodFrom = 2016;
     const dropdownPeriodTo = new Date().getFullYear();
     const dateRangeOfYears = dropdownPeriodTo - dropdownPeriodFrom;
+    publicationsList.sort(function(a,b){
+      return new Date(b.date) - new Date(a.date);
+    });
     const headerRoutes = {
       home: 'index.html',
       logo: 'img/snap-logo.svg',

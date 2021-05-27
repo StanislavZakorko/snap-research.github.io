@@ -23,7 +23,6 @@ There is NO node modules, packages, or build sources
   1.1 Main structure files:
      - index.html
      - news.html
-     - team.html
      - publications.html
      - fellowships.html
      - 404.html
