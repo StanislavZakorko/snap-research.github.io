@@ -176,7 +176,7 @@
 
     function renderBreadcrumbs (list) {
       $('.publication--group-pagination').empty();
-      if(list.length > 1) {
+      if(list.length/paginationCount > 1) {
         for (let i = 0; i < list.length/paginationCount; i++){
           $('.publication--group-pagination').append(
             `<li class="noactive">

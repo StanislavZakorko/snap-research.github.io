@@ -42,7 +42,7 @@ const newsList = [
 function getNews() {
   const tempNewsList = newsList.map((item) => {
     const tempItems = { ...item };
-    tempItems.url = "news/news-one#" + tempItems.slug;
+    tempItems.url = "news/news-one.html#" + tempItems.slug;
     return tempItems;
   });
   return tempNewsList.sort((a, b) => new Date(b.date) - new Date(a.date));

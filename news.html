@@ -1,22 +1,17 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>Snap Research</title>
-  <meta name="description"
-    content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves." />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta property="og:title" content="Snap Research" />
-  <meta property="og:description"
-    content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves." />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
+  <title>News - Snap Research</title>
+  <meta name="description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves." />
+  <meta property="og:title" content="News - Snap Research" />
+  <meta property="og:description" content="Snap Research serves as an innovation engine for the company. Our projects range from solutions to hard technical problems that significantly enhance Snap’s existing products, to riskier explorations that can lead to fundamental paradigm shifts in the way people communicate and express themselves." />
+  <meta property="og:type" content="website">
+  <meta name="keywords" content="Snap Research, Snap, Snapchat Research, Snap Research Website, Snap, Research, Data Mining, Computer Vision, Snapchat, Snapchat Research, snap research" data-react-helmet="true">
 
-  <!--  <link rel="manifest" href="site.webmanifest">-->
-  <link rel="apple-touch-icon" href="icon.png" />
-  <!-- Place favicon.ico in the root directory -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="https://storage.googleapis.com/forbusiness-cms-assets/favicon.ico">
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/bootstrap-grid.css" />
@@ -25,10 +20,6 @@
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="fonts/stylesheet.css" />
 
-  <style>
-  </style>
-
-  <meta name="theme-color" content="#fafafa" />
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="./js/jquery.loadTemplate.min.js"></script>
 </head>
@@ -97,7 +88,7 @@
       const paginationCount=3;
       function renderBreadcrumbs(list) {
         $('.publication--group-pagination').empty();
-        if(list.length>1) {
+        if(list.length/paginationCount > 1) {
           for(let i=0;i<list.length/paginationCount;i++) {
             $('.publication--group-pagination').append(
               `<li class="noactive">

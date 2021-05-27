@@ -133,9 +133,6 @@
       $('.join-our-team-container').loadTemplate("../templates/components/join.html");
       $('.footer-container').loadTemplate("../templates/components/footer.html", footerRoutes);
 
-      $('.back-link').on('click', function () {
-        window.history.back();
-      })
       const singlePublication = getPublicationBySlug(window.location.hash);
       $('.publication-container').loadTemplate($('#publication-template'), singlePublication);
       document.title = singlePublication[0].metaTitle;
@@ -143,6 +140,9 @@
       $('meta[property="og:title"]').attr('content', singlePublication[0].metaTitle);
       $('meta[property="og:description"]').attr('content', singlePublication[0].metaDescription);
 
+      $('.back-link').on('click', function() {
+        window.history.back();
+      })
     });
   </script>
 </body>
