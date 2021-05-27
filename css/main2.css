@@ -68,7 +68,7 @@
 .card--email-team-member,
 .card--email {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	position: absolute;
 	background-color: #ebecef;
 	font-size: 14px;
@@ -83,8 +83,8 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.card--email{
-  display: none;
+.card--email {
+	display: none;
 }
 .show-email {
 	display: flex;
@@ -115,4 +115,11 @@
 	overflow: hidden;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+.home--publication .card-outer .card--bg-image {
+	min-height: 100%;
+	max-width: 100%;
+	position: absolute;
+	opacity: .35;
+	object-fit: cover;
 }

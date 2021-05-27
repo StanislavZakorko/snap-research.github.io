@@ -122,7 +122,7 @@
         publicationForCategory);
 
       $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html",
-        getEvents());
+        getEvents().slice(0,5));
 
       $('.team-members-container').loadTemplate("../../templates/components/team-member-card.html",
         getMembersByIDs(teamMembersForTeamCategory.creativeVision, '../../'));

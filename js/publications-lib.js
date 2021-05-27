@@ -1124,7 +1124,8 @@ const publicationsList = [
     PDFLink:
       "https://assets.ctfassets.net/btheynltg5cn/3PdxbRLZpTUe3iIYiZNabH/4380aa6811486dd7dcd5055dff0ca180/1902.08900.pdf",
     metadescription: `We present a method for fine-grained face manipulation. Given a face image with an arbitrary expression, our method can synthesize another arbitrary expression by the same person. This is achieved by first fitting a 3D face model and then disentangling the face into a texture and a shape. We then learn different networks in these two spaces. In the texture space, we use a conditional generative network to change the appearance, and carefully design input formats and loss functions to achieve the best results. In the shape space, we use a fully connected network to predict the accurate shapes and use the available depth data for supervision. Both networks are conditioned on expression coefficients rather than discrete labels, allowing us to generate an unlimited amount of expressions. We show the superiority of this disentangling approach through both quantitative and qualitative studies. In a user study, our method is preferred in 85% of cases when compared to the most recent work. When compared to the ground truth, annotators cannot reliably distinguish between our synthesized images and real images, preferring our method in 53% of the cases.`,
-    bgImage: "",
+    bgImage:
+      "https://images.ctfassets.net/btheynltg5cn/5jUom8ndR4V4HMkgu2wuNm/b9ae318781eeafd1e3878bafc59f746f/3D_Guided_Fine-Grained_Face_Manipulation.png?w=400",
   },
   {
     id: 68,
@@ -1265,7 +1266,8 @@ const publicationsList = [
     PDFLink:
       "https://downloads.ctfassets.net/btheynltg5cn/3GZ7ISDbMLoxSfXNXNrA00/f60111ad3ee6dae174c5df01ef90b353/vidgets.pdf",
     metadescription: `We present Vidgets, a family of mechanical widgets, specifically push buttons and rotary knobs that augment mobile devices with tangible user interfaces. When these widgets are attached to a mobile device and a user interacts with them, the widgets’ nonlinear mechanical response shifts the device slightly and quickly, and this subtle motion can be detected by the accelerometer commonly equipped on mobile devices. We propose a physics-based model to understand the nonlinear mechanical response of widgets. This understanding enables us to design tactile force profiles of these widgets so that the resulting accelerometer signals become easy to recognize. We then develop a lightweight signal processing algorithm that analyzes the accelerometer signals and recognizes how the user interacts with the widgets in real time. Vidgets widgets are low-cost, compact, reconfigurable, and power efficient. They can form a diverse set of physical interfaces that enrich users’ interactions with mobile devices in various practical scenarios.We demonstrate their use in three applications: photo capture with singlehanded zoom, control of mobile games, and making a playable mobile music instrument.`,
-    bgImage: "",
+    bgImage:
+      "https://images.ctfassets.net/btheynltg5cn/7e2c6ncG5rpGp5SgvV30go/becdb8a878fc4824c0cd6299b9006912/Vidgets.png?w=400",
   },
   {
     id: 78,
@@ -1310,236 +1312,385 @@ const publicationsList = [
     PDFLink:
       "https://assets.ctfassets.net/btheynltg5cn/7kWAgZGgPmO0PATMyNrlO/f3dcc21a0e34de6ceb37458d181ae9d7/1908.02409.pdf",
     metadescription: `We introduce Blocks, a mobile application that enables people to co-create AR structures that persist in the physical environment. Using Blocks, end users can collaborate synchronously or asynchronously, whether they are colocated or remote. Additionally, the AR structures can be tied to a physical location or can be accessed from anywhere. We evaluated how people used Blocks through a series of lab and field deployment studies with over 160 participants, and explored the interplay between two collaborative dimensions: space and time. We found that participants preferred creating structures synchronously with colocated collaborators. Additionally, they were most active when they created structures that were not restricted by time or place. Unlike most of today’s AR experiences, which focus on content consumption, this work outlines new design opportunities for persistent and collaborative AR experiences that empower anyone to collaborate and create AR content.`,
-    bgImage: "",
+    bgImage:
+      "https://images.ctfassets.net/btheynltg5cn/7aOMZpQPllYrNHTozHfqwv/62c76ec8165b57fa1d7c2275cef3d62c/Blocks.png?w=400",
   },
   {
     id: 81,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
-    eventID: 81,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    date: "August 21, 2019",
+    title:
+      "SliceNDice: Mining Suspicious Multi-attribute Entity Groups with Multi-view Graphs",
+    description: `<p><b>Abstract: </b>Given the reach of web platforms, bad actors have considerable incentives to manipulate and defraud users at the expense of platform integrity. This has spurred research in numerous suspicious behavior detection tasks, including detection
+    of sybil accounts, false information, and payment scams/fraud. In this paper, we draw the insight that many such initiatives can be tackled in a common framework by posing a detection task which seeks to find groups of entities which share too many properties with one another across multiple attributes (sybil accounts created at the same time and location, propaganda spreaders broadcasting articles with the same rhetoric and with similar reshares, etc.) Our work makes four core contributions: Firstly, we posit a novel formulation of this task as a multi-view graph mining problem, in which distinct views reflect distinct attribute similarities across entities, and contextual similarity and attribute importance are respected. Secondly, we propose a novel suspiciousness metric for scoring entity groups given the abnormality of their synchronicity across multiple views, which obeys intuitive desiderata that existing metrics do not. Finally, we propose the SLICENDICE algorithm which enables efficient extraction of highly suspicious entity groups, and demonstrate its practicality in production, in terms of strong detection performance and discoveries on Snapchat’s large advertiser ecosystem (89% precision and numerous discoveries of real fraud rings), marked outperformance of baselines (over 97% precision/recall in simulated settings) and linear scalability.</p><p><i><b>Index Terms:</b></i><i> anomaly detection, attributed data, multi-view graphs, outlier</i></p>`,
+    authors: "Hamed Nilforoshan, Neil Shah",
+    eventID: 79,
+    researchArea: "Data Science, Security",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/QhyyXJLXVgaBwUOxuEDyg/353c24b99235f911ca80aa7a38ce3e41/1908.07087.pdf",
+    metadescription: `Given the reach of web platforms, bad actors have considerable incentives to manipulate and defraud users at the expense of platform integrity. This has spurred research in numerous suspicious behavior detection tasks, including detection of sybil accounts, false information, and payment scams/fraud. In this paper, we draw the insight that many such initiatives can be tackled in a common framework by posing a detection task which seeks to find groups of entities which share too many properties with one another across multiple attributes (sybil accounts created at the same time and location, propaganda spreaders broadcasting articles with the same rhetoric and with similar reshares, etc.) Our work makes four core contributions: Firstly, we posit a novel formulation of this task as a multi-view graph mining problem, in which distinct views reflect distinct attribute similarities across entities, and contextual similarity and attribute importance are respected. Secondly, we propose a novel suspiciousness metric for scoring entity groups given the abnormality of their synchronicity across multiple views, which obeys intuitive desiderata that existing metrics do not. Finally, we propose the SLICENDICE algorithm which enables efficient extraction of highly suspicious entity groups, and demonstrate its practicality in production, in terms of strong detection performance and discoveries on Snapchat’s large advertiser ecosystem (89% precision and numerous discoveries of real fraud rings), marked outperformance of baselines (over 97% precision/recall in simulated settings) and linear scalability.`,
     bgImage: "",
   },
   {
     id: 82,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "August 26, 2019",
+    title: "Transformable Bottleneck Networks",
+    description: `<p>Abstract: </p><p>We propose a novel approach to performing fine-grained 3D manipulation of image content via a convolutional neural network, which we call the Transformable Bottleneck Network (TBN). It applies given spatial transformations directly to a volumetric bottleneck within our encoderbottleneck-decoder architecture. Multi-view supervision encourages the network to learn to spatially disentangle the feature space within the bottleneck. The resulting spatial structure can be manipulated with arbitrary spatial transformations. We demonstrate the efficacy of TBNs for novel view synthesis, achieving state-of-the-art results on a challenging benchmark. We demonstrate that the bottlenecks produced by networks trained for this task contain meaningful spatial structure that allows us to intuitively perform a variety of image manipulations in 3D, well beyond the rigid transformations seen during training. These manipulations include non-uniform scaling, non-rigid warping, and combining content from different images. Finally, we extract explicit 3D structure from the bottleneck, performing impressive 3D reconstruction from a single input image. </p>`,
+    authors:
+      "Kyle Olszewski, Sergey Tulyakov, Oliver Woodford, Hao Li, Linjie Luo",
     eventID: 82,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computer Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/263h5HtArb8wxBZPXs8rtN/b1d0366e23bce9fec194eedcad5a6cac/1904.06458.pdf",
+    metadescription: `We propose a novel approach to performing fine-grained 3D manipulation of image content via a convolutional neural network, which we call the Transformable Bottleneck Network (TBN). It applies given spatial transformations directly to a volumetric bottleneck within our encoderbottleneck-decoder architecture. Multi-view supervision encourages the network to learn to spatially disentangle the feature space within the bottleneck. The resulting spatial structure can be manipulated with arbitrary spatial transformations. We demonstrate the efficacy of TBNs for novel view synthesis, achieving state-of-the-art results on a challenging benchmark. We demonstrate that the bottlenecks produced by networks trained for this task contain meaningful spatial structure that allows us to intuitively perform a variety of image manipulations in 3D, well beyond the rigid transformations seen during training. These manipulations include non-uniform scaling, non-rigid warping, and combining content from different images. Finally, we extract explicit 3D structure from the bottleneck, performing impressive 3D reconstruction from a single input image.`,
     bgImage: "",
   },
   {
     id: 83,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
-    eventID: 83,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    date: "August 30, 2019",
+    title: "Animating Arbitrary Objects via Deep Motion Transfer",
+    description: `<p><b>Abstract: </b>This paper introduces a novel deep learning framework for image animation. Given an input image with a target object and a driving video sequence depicting a moving object, our framework generates a video in which the target object is animated according to the driving sequence. This is achieved through a deep architecture that decouples appearance and motion information. Our framework consists of three main modules: (i) a Keypoint Detector unsupervisely trained to extract object keypoints, (ii) a Dense Motion prediction network for generating dense heatmaps from sparse keypoints, in order to better encode motion information and (iii) a Motion Transfer Network, which uses the motion heatmaps and appearance information extracted from the input image to synthesize the output frames. We demonstrate the effectiveness of our method on several benchmark datasets, spanning a wide variety of object appearances, and show that our approach outperforms stateof-the-art image animation and video generation methods. Our source code is publicly available.
+    </p>`,
+    authors:
+      "Aliaksandr Siarohin, Stephane Lathuili, Sergey Tulyakov, Elisa Ricci, Nicu Sebe",
+    eventID: 66,
+    researchArea: "Computer Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/5nYGK5YeS5SXVbOMLgKjPi/5a74d3e9f9b27a7dbb2f42531a2c4294/1812.08861.pdf",
+    metadescription: `This paper introduces a novel deep learning framework for image animation. Given an input image with a target object and a driving video sequence depicting a moving object, our framework generates a video in which the target object is animated according to the driving sequence. This is achieved through a deep architecture that decouples appearance and motion information. Our framework consists of three main modules: (i) a Keypoint Detector unsupervisely trained to extract object keypoints, (ii) a Dense Motion prediction network for generating dense heatmaps from sparse keypoints, in order to better encode motion information and (iii) a Motion Transfer Network, which uses the motion heatmaps and appearance information extracted from the input image to synthesize the output frames. We demonstrate the effectiveness of our method on several benchmark datasets, spanning a wide variety of object appearances, and show that our approach outperforms stateof-the-art image animation and video generation methods. Our source code is publicly available.`,
     bgImage: "",
   },
   {
     id: 84,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "October 20, 2019",
+    title: "Audiovisual Zooming: What You See Is What You Hear",
+    description: `<p><i>Best Paper Award at ACM Multimedia 2019</i></p><p><b>Abstract:</b> When capturing videos on a mobile platform, often the target of interest is contaminated by the surrounding environment. To alleviate the visual irrelevance, camera panning and zooming provide the means to isolate a desired field of view (FOV). However, the captured audio is still contaminated by signals outside the FOV. This effect is unnatural—for human perception, visual and auditory cues must go hand-in-hand. We present the concept of Audiovisual Zooming, whereby an auditory FOV is formed to match the visual. Our framework is built around the classic idea of beamforming, a computational approach to enhancing sound from a single direction using a microphone array. Yet, beamforming on its own can not incorporate the auditory FOV, as the FOV may include an arbitrary number of directional sources. We formulate our audiovisual zooming as a generalized eigenvalue problem and propose an algorithm for efficient computation on mobile platforms. To inform the algorithmic and physical implementation, we offer a theoretical analysis of our algorithmic components as well as numerical studies for understanding various design choices of microphone arrays. Finally, we demonstrate audiovisual zooming on two different mobile platforms: a mobile smartphone and a 360◦ spherical imaging system for video conference settings.</p><p><i></i><i><b>CCS Concepts</b></i><i>Information systems → Multimedia content creation</i></p><p><i></i><i><b>Keywords
+    </b></i><i>audiovisual zooming, beamforming, audio enhancement</i></p>`,
+    authors: "Arun Asokan Nair, Austin Reiter, Changxi Zheng, Shree Nayar",
     eventID: 84,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Imaging",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/70j5m6VdoBbmnPQRduwuMC/35a4731a8f92a2b07932ea1be3e74e59/Audiovisual_Zooming-_What_You_See_Is_What_You_Hear.pdf",
+    metadescription: `When capturing videos on a mobile platform, often the target of interest is contaminated by the surrounding environment. To alleviate the visual irrelevance, camera panning and zooming provide the means to isolate a desired field of view (FOV). However, the captured audio is still contaminated by signals outside the FOV. This effect is unnatural—for human perception, visual and auditory cues must go hand-in-hand. We present the concept of Audiovisual Zooming, whereby an auditory FOV is formed to match the visual. Our framework is built around the classic idea of beamforming, a computational approach to enhancing sound from a single direction using a microphone array. Yet, beamforming on its own can not incorporate the auditory FOV, as the FOV may include an arbitrary number of directional sources. We formulate our audiovisual zooming as a generalized eigenvalue problem and propose an algorithm for efficient computation on mobile platforms. To inform the algorithmic and physical implementation, we offer a theoretical analysis of our algorithmic components as well as numerical studies for understanding various design choices of microphone arrays. Finally, we demonstrate audiovisual zooming on two different mobile platforms: a mobile smartphone and a 360◦ spherical imaging system for video conference settings.`,
     bgImage: "",
   },
   {
     id: 85,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
-    eventID: 85,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    date: "October 29, 2019",
+    title: "Micro-Baseline Structured Light",
+    description: `<p><b>Abstract: </b>We propose Micro-baseline Structured Light (MSL), a novel 3D imaging approach designed for small form-factor devices such as cell-phones and miniature robots. MSL operates with small projector-camera baseline and low-cost projection hardware, and can recover scene depths with computationally lightweight algorithms. The main observation is that a small baseline leads to small disparities, enabling a first-order approximation of the non-linear SL image formation model. This leads to the key theoretical result of the paper: the MSL equation, a linearized version of SL image formation. MSL equation is under-constrained due to two unknowns (depth and albedo) at each pixel, but can be efficiently solved using a local least squares approach. We analyze the performance of MSL in terms of various system parameters such as projected pattern and baseline, and provide guidelines for optimizing performance. Armed with these insights, we build a prototype to experimentally examine the theory and its practicality.</p>`,
+    authors: "Vishwanath Saragadam, Jian Wang, Mohit Gupta, Shree Nayar",
+    eventID: 82,
+    researchArea: "Computational Imaging",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/4XrPMcEDc40JGaJ09Ru7fO/2349c98e575de5ad5bb26fcf33221782/Saragadam_Micro-Baseline_Structured_Light_ICCV_2019_paper.pdf",
+    metadescription: `We propose Micro-baseline Structured Light (MSL), a novel 3D imaging approach designed for small form-factor devices such as cell-phones and miniature robots. MSL operates with small projector-camera baseline and low-cost projection hardware, and can recover scene depths with computationally lightweight algorithms. The main observation is that a small baseline leads to small disparities, enabling a first-order approximation of the non-linear SL image formation model. This leads to the key theoretical result of the paper: the MSL equation, a linearized version of SL image formation. MSL equation is under-constrained due to two unknowns (depth and albedo) at each pixel, but can be efficiently solved using a local least squares approach. We analyze the performance of MSL in terms of various system parameters such as projected pattern and baseline, and provide guidelines for optimizing performance. Armed with these insights, we build a prototype to experimentally examine the theory and its practicality.`,
     bgImage: "",
   },
   {
     id: 86,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "November 07, 2019",
+    title:
+      "Learning to Annotate: Modularizing Data Augmentation for Text Classifiers with Natural Language Explanations",
+    description: `<p><b>Abstract</b>: Deep neural networks usually require massive labeled data, which restricts their applications in scenarios where data annotation is expensive. Natural language (NL) explanations have been demonstrated very useful additional supervision, which can provide sufficient domain knowledge for generating more labeled data over new instances, while the annotation time only doubles. However, directly applying them for augmenting model learning encounters two challenges: (1) NL explanations are unstructured and inherently compositional. (2) NL explanations often have large numbers of linguistic variants, resulting in low recall and limited generalization ability. In this paper, we propose a novel Neural EXecution Tree (NEXT) framework to augment training data for text classification using NL explanations. After transforming NL explanations into executable logical forms by semantic parsing, NEXT generalizes different types of actions specified by the logical forms for labeling data instances, which substantially increases the coverage of each NL explanation. Experiments on two NLP tasks (relation extraction and sentiment analysis) demonstrate its superiority over baseline methods. Its extension to multi-hop question answering achieves performance gain with light annotation effort.</p>`,
+    authors:
+      "Ziqi Wang, Yujia Qin, Wenxuan Zhou, Jun Yan, Qinyuan Ye, Leonardo Neves, Zhiyuan Liu, Xiang Ren",
     eventID: 86,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Natural Language Processing, Data Mining",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/28WXBGH7ytJ4FyVEjRvPBm/5be7170e74d99eeb78818314ee6236e8/1911.01352.pdf",
+    metadescription: `Deep neural networks usually require massive labeled data, which restricts their applications in scenarios where data annotation is expensive. Natural language (NL) explanations have been demonstrated very useful additional supervision, which can provide sufficient domain knowledge for generating more labeled data over new instances, while the annotation time only doubles. However, directly applying them for augmenting model learning encounters two challenges: (1) NL explanations are unstructured and inherently compositional. (2) NL explanations often have large numbers of linguistic variants, resulting in low recall and limited generalization ability. In this paper, we propose a novel Neural EXecution Tree (NEXT) framework to augment training data for text classification using NL explanations. After transforming NL explanations into executable logical forms by semantic parsing, NEXT generalizes different types of actions specified by the logical forms for labeling data instances, which substantially increases the coverage of each NL explanation. Experiments on two NLP tasks (relation extraction and sentiment analysis) demonstrate its superiority over baseline methods. Its extension to multi-hop question answering achieves performance gain with light annotation effort.`,
     bgImage: "",
   },
   {
     id: 87,
-    date: "",
-    title: "",
+    date: "January 15, 2020",
+    title:
+      "NERO: A Neural Rule Grounding Framework for Label-Efficient Relation Extraction",
     description: ``,
-    authors: "",
+    authors:
+      "Wenxuan Zhou, Hongtao Lin, Bill Yuchen Lin, Ziqi Wang, Junyi Du, Leonardo Neves, Xiang Ren",
     eventID: 87,
-    researchArea: "",
+    researchArea: "Natural Language Processing",
     PDFLink: "",
     metadescription: ``,
     bgImage: "",
   },
   {
     id: 88,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "February 07, 2020",
+    title:
+      "Revisiting Image Aesthetic Assessment via Self-Supervised Feature Learning",
+    description: `<p><b>Abstract:</b>
+    Visual aesthetic assessment has been an active research field for decades. Although latest methods have achieved promising performance on benchmark datasets, they typically rely on a large number of manual annotations including both aesthetic labels and related image attributes. In this paper, we revisit the problem of image aesthetic assessment from the selfsupervised feature learning perspective. Our motivation is that a suitable feature representation for image aesthetic assessment should be able to distinguish different expertdesigned image manipulations, which have close relationships with negative aesthetic effects. To this end, we design two novel pretext tasks to identify the types and parameters of editing operations applied to synthetic instances. The features from our pretext tasks are then adapted for a one-layer linear classifier to evaluate the performance in terms of binary aesthetic classification. We conduct extensive quantitative experiments on three benchmark datasets and demonstrate  that our approach can faithfully extract aesthetics-aware features and outperform alternative pretext schemes. Moreover,  we achieve comparable results to state-of-the-art supervised methods that use 10 million labels from ImageNet.</p>`,
+    authors:
+      "Kekai Sheng, Weiming Dong, Menglei Chai, Guohui Wang, Peng Zhou, Feiyue Huang, Bao-Gang Hu, Rongrong Ji, Chongyang Ma",
     eventID: 88,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Creative Vision, Computer Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/1gQHhi3KomFR0Ob7Yuz3Sv/e8fe8e8bd0b4f96471b3aca8425b9d12/1911.11419.pdf",
+    metadescription: `Visual aesthetic assessment has been an active research field for decades. Although latest methods have achieved promising performance on benchmark datasets, they typically rely on a large number of manual annotations including both aesthetic labels and related image attributes. In this paper, we revisit the problem of image aesthetic assessment from the selfsupervised feature learning perspective. Our motivation is that a suitable feature representation for image aesthetic assessment should be able to distinguish different expertdesigned image manipulations, which have close relationships with negative aesthetic effects. To this end, we design two novel pretext tasks to identify the types and parameters of editing operations applied to synthetic instances. The features from our pretext tasks are then adapted for a one-layer linear classifier to evaluate the performance in terms of binary aesthetic classification. We conduct extensive quantitative experiments on three benchmark datasets and demonstrate that our approach can faithfully extract aesthetics-aware features and outperform alternative pretext schemes. Moreover, we achieve comparable results to state-of-the-art supervised methods that use 10 million labels from ImageNet.`,
     bgImage: "",
   },
   {
     id: 89,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "April 07, 2020",
+    title: "Sifter: A Hybrid Workflow for Theme-based Video Curation at Scale",
+    description: `<p><b>Abstract: </b>
+    User-generated content platforms curate their vast repositories into thematic compilations that facilitate the discovery of high-quality material. Platforms that seek tight editorial control employ people to do this curation, but this process involves time-consuming routine tasks, such as sifting through thousands of videos. We introduce Sifter, a system that improves the curation process by combining automated techniques with a human-powered pipeline that browses, selects, and reaches an agreement on what videos to include in a compilation. We evaluated Sifter by creating 12 compilations from over 34,000 user-generated videos. Sifter was more than three times faster than dedicated curators, and its output was of comparable quality. We reflect on the challenges and opportunities introduced by Sifter to inform the design of content curation systems that need subjective human judgments of videos at scale.</p><p><b>ACM Reference Format:</b>Yan Chen, Andrés Monroy-Hernández, Ian Wehrman, Steve Oney, Walter S. Lasecki, and Rajan Vaish. 2020. Sifter: A Hybrid Workflow for Themebased Video Curation at Scale. In Woodstock ’18: ACM Symposium on Neural Gaze Detection, June 03–05, 2018, <i>Woodstock, NY . ACM, New York, NY, USA, 9 pages. https://doi.org/10.1145/nnnnnnn.nnnnnnn</i></p>`,
+    authors:
+      "Yan Chen, Andrés Monroy-Hernández, Ian Wehrman, Steve Oney, Walter S. Lasecki, Rajan Vaish",
     eventID: 89,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Human Computer Interaction",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/1EfBgzGKsNEuyqW36EUfFi/b45a8beb20cad0567a5e183eb511f277/2004.01790.pdf",
+    metadescription: `User-generated content platforms curate their vast repositories into thematic compilations that facilitate the discovery of high-quality material. Platforms that seek tight editorial control employ people to do this curation, but this process involves time-consuming routine tasks, such as sifting through thousands of videos. We introduce Sifter, a system that improves the curation process by combining automated techniques with a human-powered pipeline that browses, selects, and reaches an agreement on what videos to include in a compilation. We evaluated Sifter by creating 12 compilations from over 34,000 user-generated videos. Sifter was more than three times faster than dedicated curators, and its output was of comparable quality. We reflect on the challenges and opportunities introduced by Sifter to inform the design of content curation systems that need subjective human judgments of videos at scale.`,
     bgImage: "",
   },
   {
     id: 90,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "July 05, 2020",
+    title:
+      "LEAN-LIFE: A Label-Efficient Annotation Framework Towards Learning from Explanation",
+    description: `<p><b>Abstract:</b></p><p>Successfully training a deep neural network demands a huge corpus of labeled data. However, each label only provides limited information to learn from and collecting the requisite number of labels involves massive human effort. In this work, we introduce LEAN-LIFE, a web-based, <b>L</b>abel-<b>E</b>fficient <b>A</b>nnotatio<b>N</b> framework for sequence labeling and classification tasks, with an easy-to-use UI that not only allows an annotator to provide the needed labels for a task, but also enables <b>L</b>earn<b>I</b>ng <b>F</b>rom <b>E</b>xplanations for each labeling decision. Such explanations enable us to generate useful additional labeled data from unlabeled instances, bolstering the pool of available training data. On three popular NLP tasks (named entity recognition, relation extraction, sentiment analysis), we find that using this enhanced supervision allows our models to surpass competitive baseline F1 scores by more than 5-10 percentage points, while using 2X times fewer labeled instances. Our framework is the first to utilize this enhanced supervision technique and does so for three important tasks thus providing improved annotation recommendations to users and an ability to build datasets of (data, label, explanation) triples instead of the regular (data, label) pair.</p>`,
+    authors:
+      "Dong-Ho Lee, Rahul Khanna, Bill Yuchen Lin, Jamin Chen, Seyeon Lee, Qinyuan Ye, Elizabeth Boschee, Leonardo Neves, Xiang Ren",
     eventID: 90,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Social Science",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/4M8Glgb0wtRvB6whwsC3Do/ded0cf7008d8632502b917bd0b952e22/2004.07499.pdf",
+    metadescription: `Successfully training a deep neural network demands a huge corpus of labeled data. However, each label only provides limited information to learn from and collecting the requisite number of labels involves massive human effort. In this work, we introduce LEAN-LIFE, a web-based, Label-Efficient AnnotatioN framework for sequence labeling and classification tasks, with an easy-to-use UI that not only allows an annotator to provide the needed labels for a task, but also enables LearnIng From Explanations for each labeling decision. Such explanations enable us to generate useful additional labeled data from unlabeled instances, bolstering the pool of available training data. On three popular NLP tasks (named entity recognition, relation extraction, sentiment analysis), we find that using this enhanced supervision allows our models to surpass competitive baseline F1 scores by more than 5-10 percentage points, while using 2X times fewer labeled instances. Our framework is the first to utilize this enhanced supervision technique and does so for three important tasks thus providing improved annotation recommendations to users and an ability to build datasets of (data, label, explanation) triples instead of the regular (data, label) pair.`,
     bgImage: "",
   },
   {
     id: 91,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "July 09, 2020",
+    title: "Interactive Video Stylization Using Few-Shot Patch-Based Training",
+    description: `<p>In this paper, we present a learning-based method to the keyframe-based video stylization that allows an artist to propagate the style from a few selected keyframes to the rest of the sequence. Its key advantage is that the resulting stylization is semantically meaningful, i.e., specific parts of moving objects are stylized according to the artist’s intention. In contrast to previous style transfer techniques, our approach does not require any lengthy pre-training process nor a large training dataset. We demonstrate how to train an appearance translation network from scratch using only a few stylized exemplars while implicitly preserving temporal consistency.</p><p>This leads to a video stylization framework that supports real-time inference, parallel processing, and random access to an arbitrary output frame. It can also merge the content from multiple keyframes without the need to perform an explicit blending operation. We demonstrate its practical utility in various interactive scenarios, where the user paints over a selected keyframe and sees her style transferred to an existing recorded sequence or a live video stream.</p>`,
+    authors:
+      "Ondrej Texler, David Futschik, Michal Kucera, Ondrej Jamriska, Sarka Sochorova, Menglei Chai, Sergey Tulyakov, Daniel Sykora",
     eventID: 91,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computer Vision, Computer Graphics, Creative Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/Mpb7IE5v2r1Gzhn8ha8Pc/64b5cfdf062abe2148008976d12d20e2/2004.14489.pdf",
+    metadescription: `In this paper, we present a learning-based method to the keyframe-based video stylization that allows an artist to propagate the style from a few selected keyframes to the rest of the sequence. Its key advantage is that the resulting stylization is semantically meaningful, i.e., specific parts of moving objects are stylized according to the artist’s intention. In contrast to previous style transfer techniques, our approach does not require any lengthy pre-training process nor a large training dataset. We demonstrate how to train an appearance translation network from scratch using only a few stylized exemplars while implicitly preserving temporal consistency.`,
     bgImage: "",
   },
   {
     id: 92,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
-    eventID: 92,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    date: "July 09, 2020",
+    title:
+      "MichiGAN: Multi-Input-Conditioned Hair Image Generation for Portrait Editing",
+    description: `<p>Despite the recent success of face image generation with GANs, conditional hair editing remains challenging due to the under-explored complexity of its geometry and appearance. In this paper, we present MichiGAN (Multi-InputConditioned Hair Image GAN), a novel conditional image generation method for interactive portrait hair manipulation. To provide user control over every major hair visual factor, we explicitly disentangle hair into four orthogonal attributes, including shape, structure, appearance, and background. For each of them, we design a corresponding condition module to represent, process, and convert user inputs, and modulate the image generation pipeline in ways that respect the natures of different visual attributes. All these condition modules are integrated with the backbone generator to form the final end-toend network, which allows fully-conditioned hair generation from multiple user inputs. Upon it, we also build an interactive portrait hair editing system that enables straightforward manipulation of hair by projecting intuitive and high-level user inputs such as painted masks, guiding strokes, or reference photos to well-defined condition representations. Through extensive experiments and evaluations, we demonstrate the superiority of our method regarding both result quality and user controllability.</p>`,
+    authors:
+      "Zhentao Tan, Menglei Chai, Dongdong Chen, Jing Liao, Qi Chu, Lu Yuan, Sergey Tulyakov, Nenghai Yu",
+    eventID: 91,
+    researchArea: "Computer Vision, Creative Vision",
+    PDFLink:
+      "https://downloads.ctfassets.net/btheynltg5cn/5N3ynN3OlD9wE5YKPtoGqG/e6e4b842b7dd74b4d9d1b7705eed2c13/tan2020michigan.pdf",
+    metadescription: `Despite the recent success of face image generation with GANs, conditional hair editing remains challenging due to the under-explored complexity of its geometry and appearance. In this paper, we present MichiGAN (Multi-InputConditioned Hair Image GAN), a novel conditional image generation method for interactive portrait hair manipulation. To provide user control over every major hair visual factor, we explicitly disentangle hair into four orthogonal attributes, including shape, structure, appearance, and background. For each of them, we design a corresponding condition module to represent, process, and convert user inputs, and modulate the image generation pipeline in ways that respect the natures of different visual attributes. All these condition modules are integrated with the backbone generator to form the final end-toend network, which allows fully-conditioned hair generation from multiple user inputs. Upon it, we also build an interactive portrait hair editing system that enables straightforward manipulation of hair by projecting intuitive and high-level user inputs such as painted masks, guiding strokes, or reference photos to well-defined condition representations. Through extensive experiments and evaluations, we demonstrate the superiority of our method regarding both result quality and user controllability.`,
     bgImage: "",
   },
   {
     id: 93,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "July 09, 2020",
+    title: "Neural Hair Rendering",
+    description: `<p><b>Abstract: </b></p><p>In this paper, we propose a generic neural-based hair rendering pipeline that can synthesize photo-realistic images from virtual 3D hair models. Unlike existing supervised translation methods that require model-level similarity to preserve consistent structure representation for both real images and fake renderings, our method adopts an unsupervised solution to work on arbitrary hair models. The key component of our method is a shared latent space to encode appearance-invariant structure information of both domains, which generates realistic renderings conditioned by extra appearance inputs. This is achieved by domain-specific pre-disentangled structure representation, partially shared domain encoder layers, and a structure discriminator. We also propose a simple yet effective temporal conditioning method to enforce consistency for video sequence generation. We demonstrate the superiority of our method by testing it on large amount of portraits, and comparing with alternative baselines and state-of-the-art unsupervised image translation methods.</p><p>
+    <b>Keywords:</b> Neural rendering, unsupervised image translation</p>`,
+    authors: "Menglei Chai, Jian Ren, and Sergey Tulyakov",
     eventID: 93,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computer Vision, Creative Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/3BF6WsTOUBpyKTdVZchdwz/be82b03d1f5c4db784490f2f84c05aff/2004.13297.pdf",
+    metadescription: `In this paper, we propose a generic neural-based hair rendering pipeline that can synthesize photo-realistic images from virtual 3D hair models. Unlike existing supervised translation methods that require model-level similarity to preserve consistent structure representation for both real images and fake renderings, our method adopts an unsupervised solution to work on arbitrary hair models. The key component of our method is a shared latent space to encode appearance-invariant structure information of both domains, which generates realistic renderings conditioned by extra appearance inputs. This is achieved by domain-specific pre-disentangled structure representation, partially shared domain encoder layers, and a structure discriminator. We also propose a simple yet effective temporal conditioning method to enforce consistency for video sequence generation. We demonstrate the superiority of our method by testing it on large amount of portraits, and comparing with alternative baselines and state-of-the-art unsupervised image translation methods.`,
     bgImage: "",
   },
   {
     id: 94,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "August 13, 2020",
+    title: "Social App Accessibility for Deaf Signers",
+    description: `<p>Social media platforms support the sharing of written text, video, and audio. All of these formats may be inaccessible to people who are deaf or hard of hearing (DHH), particularly those who primarily communicate via sign language, people who we call Deaf signers. We study how Deaf signers engage with social platforms, focusing on how they share content and the barriers they face. We employ a mixed-methods approach involving seven in-depth interviews and a survey of a larger population (n = 60). We find that Deaf signers share the most in written English, despite their desire to share in sign language. We further identify key areas of difficulty in consuming content (e.g., lack of captions for spoken content in videos) and producing content (e.g., captioning signed videos, signing into a phone camera) on social media platforms. Our results both provide novel insights into social media use by Deaf signers and reinforce prior findings on DHH communication more generally, while revealing potential ways to make social media platforms more accessible to Deaf signers.</p>`,
+    authors:
+      "Kelly Mack, Danielle Bragg, Meredith Ringel Morris, Maarten W. Bos, Isabelle Albi, Andrés Monroy-Hernández",
     eventID: 94,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Social Science, Human Computer Interaction",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/5k23GHu1TNQ7kgY41ORh5l/a416f998f36372a688ee732b945f3acd/2008.05691.pdf",
+    metadescription: `Social media platforms support the sharing of written text, video, and audio. All of these formats may be inaccessible to people who are deaf or hard of hearing (DHH), particularly those who primarily communicate via sign language, people who we call Deaf signers. We study how Deaf signers engage with social platforms, focusing on how they share content and the barriers they face. We employ a mixed-methods approach involving seven in-depth interviews and a survey of a larger population (n = 60). We find that Deaf signers share the most in written English, despite their desire to share in sign language. We further identify key areas of difficulty in consuming content (e.g., lack of captions for spoken content in videos) and producing content (e.g., captioning signed videos, signing into a phone camera) on social media platforms. Our results both provide novel insights into social media use by Deaf signers and reinforce prior findings on DHH communication more generally, while revealing potential ways to make social media platforms more accessible to Deaf signers.`,
     bgImage: "",
   },
   {
     id: 95,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "September 07, 2020",
+    title: "Large Scale Photometric Bundle Adjustment",
+    description: `<p><b>Abstract:</b>&nbsp;Direct methods have shown promise on visual odometry and SLAM, leading to greater accuracy and robustness over feature-based methods. However, offline 3-d reconstruction from internet images has not yet benefited from a joint, photometric optimization over dense geometry and camera parameters. Issues such as the lack of brightness constancy, and the sheer volume of data, make this a more challenging task. This work presents a framework for jointly optimizing millions of scene points and hundreds of camera poses and intrinsics, using a photometric cost that is invariant to local lighting changes. The improvement in metric reconstruction accuracy that it confers over feature-based bundle adjustment is demonstrated on the large-scale Tanks &amp; Temples benchmark. We further demonstrate qualitative reconstruction improvements on an internet photo collection, with challenging diversity in lighting and camera intrinsics.</p>`,
+    authors: "Oliver J. Woodford, Edward Rosten",
     eventID: 95,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Creative Vision",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/nZdLwL9JzYZn13Z1Inatm/81871c162ff2e6ffbf8b61d1cb8f9422/0822.pdf",
+    metadescription: `Direct methods have shown promise on visual odometry and SLAM, leading to greater accuracy and robustness over feature-based methods. However, offline 3-d reconstruction from internet images has not yet benefited from a joint, photometric optimization over dense geometry and camera parameters. Issues such as the lack of brightness constancy, and the sheer volume of data, make this a more challenging task. This work presents a framework for jointly optimizing millions of scene points and hundreds of camera poses and intrinsics, using a photometric cost that is invariant to local lighting changes. The improvement in metric reconstruction accuracy that it confers over feature-based bundle adjustment is demonstrated on the large-scale Tanks & Temples benchmark. We further demonstrate qualitative reconstruction improvements on an internet photo collection, with challenging diversity in lighting and camera intrinsics.`,
     bgImage: "",
   },
   {
     id: 96,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "September 28, 2020",
+    title:
+      "A Good Image Generator Is What You Need for High-Resolution Video Synthesis",
+    description: `<p><b>ABSTRACT</b></p><p>Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques. </p><p>Code will be released at https://github.com/snap-research/MoCoGAN-HD.</p>`,
+    authors:
+      "Yu Tian, Jian Ren, Menglei Chai, Kyle Olszewski, Xi Peng, Dimitris N. Metaxas, Sergey Tulyakov",
     eventID: 96,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Creative Vision",
+    PDFLink:
+      "https://downloads.ctfassets.net/btheynltg5cn/5bv0CSn2Gz2No3YFNRB8cW/6f770978b86b6d86c11629447bc7ba19/pdf",
+    metadescription: `Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques.`,
     bgImage: "",
   },
   {
     id: 97,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "November 02, 2020",
+    title:
+      "The Devil is in the Details: Evaluating Limitations of Transformer-based Methods for Granular Tasks",
+    description: `<p><b>Abstract</b>
+    Contextual embeddings derived from transformer-based neural language models have shown state-of-the-art performance for various tasks such as question answering, sentiment analysis, and textual similarity in recent years. Extensive work shows how accurately such models can represent abstract, semantic information present in text. In this expository work, we explore a tangent direction and analyze such models’ performance on tasks that require a more granular level of representation. We focus on the problem of textual similarity from two perspectives: matching documents on a granular level (requiring embeddings to capture fine-grained attributes in the text), and an abstract level (requiring embeddings to capture overall textual semantics).</p><p>We empirically demonstrate, across two datasets from different domains, that despite high performance in abstract document matching as expected, contextual embeddings are consistently (and at times, vastly) outperformed by simple baselines like TF-IDF for more granular tasks. We then propose a simple but effective method to incorporate TF-IDF into models that use contextual embeddings, achieving relative improvements of up to 36% on granular tasks.</p>`,
+    authors: "Brihi Joshi, Neil Shah, Francesco Barbieri, Leonardo Neves",
     eventID: 97,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Social Science, Natural Language Processing",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/WUgIBbb5JQ4yXsZTLi2ay/25d747d901068f12be951a9d4c4095b8/2011.01196.pdf",
+    metadescription: `Contextual embeddings derived from transformer-based neural language models have shown state-of-the-art performance for various tasks such as question answering, sentiment analysis, and textual similarity in recent years. Extensive work shows how accurately such models can represent abstract, semantic information present in text. In this expository work, we explore a tangent direction and analyze such models’ performance on tasks that require a more granular level of representation. We focus on the problem of textual similarity from two perspectives: matching documents on a granular level (requiring embeddings to capture fine-grained attributes in the text), and an abstract level (requiring embeddings to capture overall textual semantics).`,
     bgImage: "",
   },
   {
     id: 98,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "November 16, 2020",
+    title:
+      "TWEET EVAL: Unified Benchmark and Comparative Evaluation for Tweet Classification",
+    description: `<p><b>Abstract</b>
+    The experimental landscape in natural language processing for social media is too fragmented. Each year, new shared tasks and datasets are proposed, ranging from classics like sentiment analysis to irony detection or emoji prediction. Therefore, it is unclear what the current state of the art is, as there is no standardized evaluation protocol, neither a strong set of baselines trained on such domainspecific data. In this paper, we propose a new evaluation framework (TWEETEVAL) consisting of seven heterogeneous Twitter-specific classification tasks. We also provide a strong set of baselines as starting point, and compare different language modeling pre-training strategies. Our initial experiments show the effectiveness of starting off with existing pretrained generic language models, and continue training them on Twitter corpora.</p>`,
+    authors:
+      "Francesco Barbieri, Jose Camacho-Collados, Leonardo Neves, Luis Espinosa-Anke†",
     eventID: 98,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Social Science, Natural Language Processing",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/3mKDgDM0vE6hMvPZaisEZZ/aef05f083605760a1efc7e39e67c5d27/2020.findings-emnlp.148.pdf",
+    metadescription: `The experimental landscape in natural language processing for social media is too fragmented. Each year, new shared tasks and datasets are proposed, ranging from classics like sentiment analysis to irony detection or emoji prediction. Therefore, it is unclear what the current state of the art is, as there is no standardized evaluation protocol, neither a strong set of baselines trained on such domainspecific data. In this paper, we propose a new evaluation framework (TWEETEVAL) consisting of seven heterogeneous Twitter-specific classification tasks. We also provide a strong set of baselines as starting point, and compare different language modeling pre-training strategies. Our initial experiments show the effectiveness of starting off with existing pretrained generic language models, and continue training them on Twitter corpora.`,
     bgImage: "",
   },
   {
     id: 99,
-    date: "",
-    title: "",
-    description: ``,
-    authors: "",
+    date: "December 02, 2020",
+    title: "Data Augmentation for Graph Neural Networks",
+    description: `<p><b>Abstract</b></p><p>
+    Data augmentation has been widely used to improve generalizability of machine learning models. However, comparatively little work studies data augmentation for graphs. This is largely due to the complex, non-Euclidean structure of graphs, which limits possible manipulation operations. Augmentation operations commonly used in vision and language have no analogs for graphs. Our work studies graph data augmentation for graph neural networks (GNNs) in the context of improving semi-supervised node-classification. We discuss practical and theoretical motivations, considerations and strategies for graph data augmentation. Our work shows that neural edge predictors can effectively encode classhomophilic structure to promote intra-class edges and demote inter-class edges in given graph structure, and our main contribution introduces the GAUG graph data augmentation framework, which leverages these insights to improve performance in GNN-based node classification via edge prediction. Extensive experiments on multiple benchmarks show that augmentation via GAUG improves performance across GNN architectures and datasets.</p>`,
+    authors:
+      "Tong Zhao, Yozen Liu, Leonardo Neves, Oliver Woodford, Meng Jiang, Neil Shah",
     eventID: 99,
-    researchArea: "",
-    PDFLink: "",
-    metadescription: ``,
+    researchArea: "Computational Social Science",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/6U9l1ptDcrGoUPBOrDrChh/23ddcd2a0ab783ab47936196eeb15e2a/2006.06830.pdf",
+    metadescription: `Data augmentation has been widely used to improve generalizability of machine learning models. However, comparatively little work studies data augmentation for graphs. This is largely due to the complex, non-Euclidean structure of graphs, which limits possible manipulation operations. Augmentation operations commonly used in vision and language have no analogs for graphs. Our work studies graph data augmentation for graph neural networks (GNNs) in the context of improving semi-supervised node-classification. We discuss practical and theoretical motivations, considerations and strategies for graph data augmentation. Our work shows that neural edge predictors can effectively encode classhomophilic structure to promote intra-class edges and demote inter-class edges in given graph structure, and our main contribution introduces the GAUG graph data augmentation framework, which leverages these insights to improve performance in GNN-based node classification via edge prediction. Extensive experiments on multiple benchmarks show that augmentation via GAUG improves performance across GNN architectures and datasets.`,
     bgImage: "",
   },
+  {
+    id: 100,
+    date: "December 05, 2020",
+    title: "FairOD: Fairness-aware Outlier Detection",
+    description: `<p>Fairness and Outlier Detection (OD) are closely related, as it is exactly the goal of OD to spot rare, minority samples in a given population. When being a minority (as defined by protected variables, e.g. race/ethnicity/sex/age) does not reflect positive-class membership (e.g. criminal/fraud), however, OD produces unjust outcomes. Surprisingly, fairness-aware OD has been almost untouched in prior work, as fair machine learning literature mainly focus on supervised settings. Our work aims to bridge this gap. Specifically, we develop desiderata capturing well-motivated fairness criteria for OD, and systematically formalize the fair OD problem. Further, guided by our desiderata, we propose FairOD, a fairness-aware outlier detector, which has the following, desirable properties: FairOD (1) does not employ disparate treatment at test time, (2) aims to flag equal proportions of samples from all groups (i.e. obtain group fairness, via statistical parity), and (3) strives to flag truly high-risk fraction of samples within each group. Extensive experiments on a diverse set of synthetic and real world datasets show that FairOD produces outcomes that are fair with respect to protected variables, while performing comparable to (and in some cases, even better than) fairness-agnostic detectors in terms of detection performance.</p>`,
+    authors: "Shubhranshu Shekhar, Neil Shah, Leman Akoglu",
+    eventID: 100,
+    researchArea: "Computational Social Science",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/4bSVQh0NCd9vuemQ9Euk8a/259be56e72ba2c0e70522f459c755861/2012.03063.pdf",
+    metadescription: `Fairness and Outlier Detection (OD) are closely related, as it is exactly the goal of OD to spot rare, minority samples in a given population. When being a minority (as defined by protected variables, e.g. race/ethnicity/sex/age) does not reflect positive-class membership (e.g. criminal/fraud), however, OD produces unjust outcomes. Surprisingly, fairness-aware OD has been almost untouched in prior work, as fair machine learning literature mainly focus on supervised settings. Our work aims to bridge this gap. Specifically, we develop desiderata capturing well-motivated fairness criteria for OD, and systematically formalize the fair OD problem. Further, guided by our desiderata, we propose FairOD, a fairness-aware outlier detector, which has the following, desirable properties: FairOD (1) does not employ disparate treatment at test time, (2) aims to flag equal proportions of samples from all groups (i.e. obtain group fairness, via statistical parity), and (3) strives to flag truly high-risk fraction of samples within each group. Extensive experiments on a diverse set of synthetic and real world datasets show that FairOD produces outcomes that are fair with respect to protected variables, while performing comparable to (and in some cases, even better than) fairness-agnostic detectors in terms of detection performance.`,
+    bgImage: "",
+  },
+  {
+    id: 101,
+    date: "January 04, 2021",
+    title:
+      "AdverTiming Matters: Examining User Ad Consumption for Effective Ad Allocations on Social Media",
+    description: `<p>Showing ads delivers revenue for online content distributors, but ad exposure can compromise user experience and cause user fatigue and frustration. Correctly balancing ads with other content is imperative. Currently, ad allocation relies primarily on demographics and inferred user interests, which are treated as static features and can be privacy-intrusive. This paper uses person-centric and momentary context features to understand optimal ad-timing. In a quasi-experimental study on a three-month longitudinal dataset of 100K Snapchat users, we find ad timing influences ad effectiveness. We draw insights on the relationship between ad effectiveness and momentary behaviors such as duration, interactivity, and interaction diversity. We simulate ad reallocation, finding that our study-driven insights lead to greater value for the platform. This work advances our understanding of ad consumption and bears implications for designing responsible ad allocation systems, improving both user and platform outcomes. We discuss privacy-preserving components and ethical implications of our work.</p>`,
+    authors:
+      "Koustuv Saha, Yozen Liu, Nicholas Vincent, Farhan Asif Chowdhury, Leonardo Neves, Neil Shah, Maarten Bos",
+    eventID: 101,
+    researchArea: "Computational Social Science",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/w1aqHgJ3zsegGpJUYKxbN/323c07d286a10d875a58c12d348ffad3/CHI21_AdverTiming_DoubleColumn.pdf",
+    metadescription: `Showing ads delivers revenue for online content distributors, but ad exposure can compromise user experience and cause user fatigue and frustration. Correctly balancing ads with other content is imperative. Currently, ad allocation relies primarily on demographics and inferred user interests, which are treated as static features and can be privacy-intrusive. This paper uses person-centric and momentary context features to understand optimal ad-timing. In a quasi-experimental study on a three-month longitudinal dataset of 100K Snapchat users, we find ad timing influences ad effectiveness. We draw insights on the relationship between ad effectiveness and momentary behaviors such as duration, interactivity, and interaction diversity. We simulate ad reallocation, finding that our study-driven insights lead to greater value for the platform. This work advances our understanding of ad consumption and bears implications for designing responsible ad allocation systems, improving both user and platform outcomes. We discuss privacy-preserving components and ethical implications of our work.`,
+    bgImage: "",
+  },
+  {
+    id: 102,
+    date: "February 08, 2021",
+    title:
+      "Graph Neural Networks for Friend Ranking in Large-scale Social Platforms",
+    description: `<p><b>ABSTRACT</b></p><p> Graph Neural Networks (GNNs) have recently enabled substantial advances in graph learning. Despite their rich representational capacity, GNNs remain under-explored for large-scale social modeling applications. One such industrially ubiquitous application is friend suggestion: recommending users other candidate users to befriend, to improve user connectivity, retention and engagement. However, modeling such user-user interactions on large-scale social platforms poses unique challenges: such graphs often have heavy-tailed degree distributions, where a significant fraction of users are inactive and have limited structural and engagement information. Moreover, users interact with different functionalities, communicate with diverse groups, and have multifaceted interaction patterns. We study the application of GNNs for friend suggestion, providing the first investigation of GNN design for this task, to our knowledge. To leverage the rich knowledge of in-platform actions, we formulate friend suggestion as multi-faceted friend ranking with multi-modal user features and link communication features. We design a neural architecture GraFRank to learn expressive user representations from multiple feature modalities and user-user interactions. Specifically, GraFRank employs modality-specific neighbor aggregators and cross-modality attentions to learn multi-faceted user representations. We conduct experiments on two multi-million user datasets from Snapchat, a leading mobile social platform, where
+    GraFRank outperforms several state-of-the-art approaches on candidate retrieval (by 30% MRR) and ranking (by 20% MRR) tasks. Moreover, our qualitative analysis indicates notable gains for critical populations of less-active and low-degree users.</p>`,
+    authors: "Aravind Sankar, Yozen Liu, Jun Yu, Neil Shah",
+    eventID: 102,
+    researchArea: "Computational Social Science",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/53nweIQ8YcXmh9uRxAssqi/e43c35ef60dd613fe25689ca55e35ac9/GrafRank.WWW.21.pdf",
+    metadescription: `Graph Neural Networks (GNNs) have recently enabled substantial advances in graph learning. Despite their rich representational capacity, GNNs remain under-explored for large-scale social modeling applications. One such industrially ubiquitous application is friend suggestion: recommending users other candidate users to befriend, to improve user connectivity, retention and engagement. However, modeling such user-user interactions on large-scale social platforms poses unique challenges: such graphs often have heavy-tailed degree distributions, where a significant fraction of users are inactive and have limited structural and engagement information. Moreover, users interact with different functionalities, communicate with diverse groups, and have multifaceted interaction patterns. We study the application of GNNs for friend suggestion, providing the first investigation of GNN design for this task, to our knowledge. To leverage the rich knowledge of in-platform actions, we formulate friend suggestion as multi-faceted friend ranking with multi-modal user features and link communication features. We design a neural architecture GraFRank to learn expressive user representations from multiple feature modalities and user-user interactions. Specifically, GraFRank employs modality-specific neighbor aggregators and cross-modality attentions to learn multi-faceted user representations. We conduct experiments on two multi-million user datasets from Snapchat, a leading mobile social platform, where GraFRank outperforms several state-of-the-art approaches on candidate retrieval (by 30% MRR) and ranking (by 20% MRR) tasks. Moreover, our qualitative analysis indicates notable gains for critical populations of less-active and low-degree users.`,
+    bgImage: "",
+  },
+  {
+    id: 103,
+    date: "February 16, 2021",
+    title:
+      "Significant Otter: Understanding the Role of Biosignals in Communication",
+    description: `<p>ABSTRACT</p><p>With the growing ubiquity of wearable devices, sensed physiological responses provide new means to connect with others. While recent research demonstrates the expressive potential for biosignals, the value of sharing these personal data remains unclear. To understand their role in communication, we created Significant Otter, an Apple Watch/iPhone app that enables romantic partners to share and respond to each other’s biosignals in the form of animated otter avatars. In a one-month study with 20 couples, participants used Significant Otter with biosignals sensing OFF and ON. We found that while sensing OFF enabled couples to keep in touch, sensing ON enabled easier and more authentic communication that fostered social connection. However, the addition of biosignals introduced concerns about autonomy and agency over the messages they sent. We discuss design implications and future directions for communication systems that recommend messages based on biosignals.</p>`,
+    authors:
+      "Fannie Liu, Chunjong Park, Yu Jiang Tham, Tsung-Yu Tsai, Laura Dabbish, Geoff Kaufman, Andrés Monroy-Hernández",
+    eventID: 101,
+    researchArea: "Human Computer Interaction",
+    PDFLink:
+      "https://assets.ctfassets.net/btheynltg5cn/eOL9X92uuV2MjAFYZRgYX/a3ee211a9baf1ec472de66dfd360f028/2102.08235.pdf",
+    metadescription: `With the growing ubiquity of wearable devices, sensed physiological responses provide new means to connect with others. While recent research demonstrates the expressive potential for biosignals, the value of sharing these personal data remains unclear. To understand their role in communication, we created Significant Otter, an Apple Watch/iPhone app that enables romantic partners to share and respond to each other’s biosignals in the form of animated otter avatars. In a one-month study with 20 couples, participants used Significant Otter with biosignals sensing OFF and ON. We found that while sensing OFF enabled couples to keep in touch, sensing ON enabled easier and more authentic communication that fostered social connection. However, the addition of biosignals introduced concerns about autonomy and agency over the messages they sent. We discuss design implications and future directions for communication systems that recommend messages based on biosignals.`,
+    bgImage:
+      "https://images.ctfassets.net/btheynltg5cn/1sZ3K3mOk9WmgdEORIWYcA/1a26da31f46bf51d1124ef802e17e915/Screen_Shot_2021-02-20_at_2.48.12_AM.png?w=400",
+  },
+  {
+    id: 104,
+    date: "March 15, 2021",
+    title:
+      "CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms",
+    description: `<p><b>Abstract</b></p><p>To improve the user experience as well as business outcomes, social platforms aim to predict user behavior. To this end, recurrent models are often used to predict a user’s next behavior based on their most recent behavior. However, people have habits and routines, making it plausible to predict their behavior from more than just their most recent activity. Our work focuses on the interplay between ephemeral and cyclical components of user behaviors. By utilizing user activity data from social platform Snapchat, we uncover cyclic and ephemeral usage patterns on a per user-level. Based on our findings, we imbued recurrent models with awareness: we augment an RNN with a cyclic module to complement traditionalRNNs that model ephemeral behaviors and allow a flexible weighting of the two for the prediction task. We conducted extensive experiments to evaluate our model’s performance on four user behavior prediction tasks on the Snapchat platform.We achieve improved results on each task compared against existing methods, using this simple, but important insight in user behavior: Both cyclical and ephemeral components matter. We show that in some situations and for some people, ephemeral components may be more helpful for predicting behavior, while for others and in other situations, cyclical components may carry more weight.</p>`,
+    authors:
+      "Farhan Chowdhury, Yozen Liu, Nick Vincent, Koustuv Saha, Leo Neves, Neil Shah, Maarten Bos",
+    eventID: 104,
+    researchArea: "Computational Social Science",
+    PDFLink: "",
+    metadescription: `To improve the user experience as well as business outcomes, social platforms aim to predict user behavior. To this end, recurrent models are often used to predict a user’s next behavior based on their most recent behavior. However, people have habits and routines, making it plausible to predict their behavior from more than just their most recent activity. Our work focuses on the interplay between ephemeral and cyclical components of user behaviors. By utilizing user activity data from social platform Snapchat, we uncover cyclic and ephemeral usage patterns on a per user-level. Based on our findings, we imbued recurrent models with awareness: we augment an RNN with a cyclic module to complement traditionalRNNs that model ephemeral behaviors and allow a flexible weighting of the two for the prediction task. We conducted extensive experiments to evaluate our model’s performance on four user behavior prediction tasks on the Snapchat platform.We achieve improved results on each task compared against existing methods, using this simple, but important insight in user behavior: Both cyclical and ephemeral components matter. We show that in some situations and for some people, ephemeral components may be more helpful for predicting behavior, while for others and in other situations, cyclical components may carry more weight.`,
+    bgImage: "",
+  },
+  {
+    id: 105,
+    date: "March 15, 2021",
+    title:
+      "Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat",
+    description: `<p><b>Abstract</b></p><p>The Covid-19 pandemic has created large shifts in how people stay connected with each other in lieu of social distancing and isolation measures. More and more, individuals have turned to online communications as a necessary replacement for in-person interaction. Despite this, the research community has little understanding of how online communications have been influenced by the offline impacts of Covid-19. Our work touches upon this topic. Specifically, we study research questions around the impact of Covid-19 on online public and private sharing propensity, its influence on online communication homophily, and correlations between online communication and offline case severity in the United States. To do so, we study the usage patterns of 79 million US-based users on Snapchat, a large, leading mobile multimedia-driven social sharing platform. Our findings suggest that Covid-19 has increased propensity to privately communicate with friends, while decreasing propensity to publicly share content when users are out-and-about. Moreover, online communications have observed a marked decrease in baseline homophily across locations, ages and genders, with relative increases in cross-group communications. Finally, we observe that increased offline positive Covid-19 case severity in US states is associated with widening gaps between across-state and within-state communication increases after the onset of Covid-19, as well as marked declines in public sharing. We hope our findings drive further interest and work on online communication changes during pandemics and other extended times of crisis.</p>`,
+    authors:
+      "Qi Yang, Weinan Wang, Lucas Pierce, Rajan Vaish, Xiaolin Shi, Neil Shah",
+    eventID: 104,
+    researchArea: "Computational Social Science, Data Science",
+    PDFLink: "",
+    metadescription: `The Covid-19 pandemic has created large shifts in how people stay connected with each other in lieu of social distancing and isolation measures. More and more, individuals have turned to online communications as a necessary replacement for in-person interaction. Despite this, the research community has little understanding of how online communications have been influenced by the offline impacts of Covid-19. Our work touches upon this topic. Specifically, we study research questions around the impact of Covid-19 on online public and private sharing propensity, its influence on online communication homophily, and correlations between online communication and offline case severity in the United States. To do so, we study the usage patterns of 79 million US-based users on Snapchat, a large, leading mobile multimedia-driven social sharing platform. Our findings suggest that Covid-19 has increased propensity to privately communicate with friends, while decreasing propensity to publicly share content when users are out-and-about. Moreover, online communications have observed a marked decrease in baseline homophily across locations, ages and genders, with relative increases in cross-group communications. Finally, we observe that increased offline positive Covid-19 case severity in US states is associated with widening gaps between across-state and within-state communication increases after the onset of Covid-19, as well as marked declines in public sharing. We hope our findings drive further interest and work on online communication changes during pandemics and other extended times of crisis.`,
+    bgImage: "",
+  },
+  // {
+  //   id: 106,
+  //   date: "",
+  //   title: "",
+  //   description: ``,
+  //   authors: "",
+  //   eventID: 106,
+  //   researchArea: "",
+  //   PDFLink: "",
+  //   metadescription: ``,
+  //   bgImage: "",
+  // },
 ];
 
 publicationsList.forEach((publication) => {
@@ -1551,7 +1702,7 @@ publicationsList.forEach((publication) => {
 
 publicationsList.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-function getPublicationsByIDs(id, path) {
+function getPublicationsByIDs(id, path, noSort) {
   if (!id.length) return [];
   let result = [];
   id.map((insideID) => {
@@ -1561,13 +1712,13 @@ function getPublicationsByIDs(id, path) {
       }
     });
   });
-  return result
-    .map((item) => {
-      const tempObj = { ...item };
-      tempObj.link = path + tempObj.link;
-      return tempObj;
-    })
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
+  result = result.map((item) => {
+    const tempObj = { ...item };
+    tempObj.link = path + tempObj.link;
+    return tempObj;
+  });
+  if (noSort) return result;
+  return result.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
 function getPublicationBySlug(slug) {
