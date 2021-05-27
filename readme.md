@@ -2,7 +2,7 @@
 
 ## Technologies
 
-The roject was written by simple technologies without any framework or backend
+The project was written by simple technologies without any framework or backend
 There are NO node modules, packages, or build sources
 
 - HTML5 Boilerplate;
