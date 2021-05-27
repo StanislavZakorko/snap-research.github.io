@@ -594,7 +594,7 @@ const teamMembersList = [
     metaTitle: "",
     metaDescription: ``,
     name: "Rachel Greenfield",
-    email: "rach@snap.com",
+    email: "fdssbsdgsfgnfn_rach@snap.com",
     subTitle: "",
     researchAreas: "",
     backUrl: "../../team/category/all.html",
@@ -666,8 +666,8 @@ $(function () {
   $(".research-areas").text(teamMemberInfo.researchAreas);
   $(".team--detail-description").html(teamMemberInfo.description);
   $("a.category").attr("href", teamMemberInfo.backUrl);
-  $(".team--detail img").attr("src", teamMemberInfo.imageUrl);
-  $(".team--detail img").attr("alt", teamMemberInfo.name);
+  $(".team--detail-img").attr("src", teamMemberInfo.imageUrl);
+  $(".team--detail-img").attr("alt", teamMemberInfo.name);
   $(".card--email-team-member-text").text(teamMemberInfo.email);
 
   if (!teamMemberInfo.email) $(".card--email-team-member").hide();

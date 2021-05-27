@@ -125,7 +125,7 @@
     $('.footer-container').loadTemplate("../../templates/components/footer.html", footerRoutes);
 
     $('.publications-for-member').loadTemplate("../../templates/components/publications-for-member.html",
-      publicationForCategory);
+      publicationForCategory.slice(0,5));
       
     $('.events-for-member').loadTemplate("../../templates/components/events-for-member.html", 
       getEvents());
