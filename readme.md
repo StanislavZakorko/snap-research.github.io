@@ -97,7 +97,7 @@ There are two types of templates:
 <br>
 static (simple, first variant of changing data ) - he calls in script without any parameters
 ````
-$(.home-hero-container').loadTemplate("templates/components/home-hero.html");
+$('.home-hero-container').loadTemplate("templates/components/home-hero.html");
 ````
 and dynamic template - calls with parameters (parameter can be single object or array of objects)
 ````
