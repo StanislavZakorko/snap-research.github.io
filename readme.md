@@ -97,7 +97,7 @@ There are two types of templates:
 <br>
 static (simple, first variant of changing data ) - he calls in script without any parameters
 ````
-$(.home-hero-container').loadTemplate("templates/components/home-hero.html");
+$('.home-hero-container').loadTemplate("templates/components/home-hero.html");
 ````
 and dynamic template - calls with parameters (parameter can be single object or array of objects)
 ````
@@ -146,11 +146,6 @@ for example you need to add new publication:
 ````
 3) paste it under the last publication structure after comma
 4) change data in the fields of pasted structure
-> the slug field is the name of publication for script
-> <br>
-> also url field must contain correct slug name
-> <br>
-> url: 'publications/publication.html#your-slug-name'
 
 when you find field 'eventID: something', you need to paste the id of event from another lib
 <br>

@@ -776,7 +776,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  opacity: .35
+  opacity: .35;object-fit: cover;
 }
 
 .home--publication .card-outer .card--copy {
@@ -1665,7 +1665,7 @@ textarea {
 
 /* ------------------ team pages ------------------*/
 .team--group {
-  padding: 60px 0 180px;
+  padding: 60px 0 96px;
 }
 
 .team--group .col {

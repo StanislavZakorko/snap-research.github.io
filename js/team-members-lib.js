@@ -1,7 +1,6 @@
 const teamMembersList = [
   {
     id: 0,
-    hash: "#changxi-zheng",
     metaTitle: "",
     metaDescription: ``,
     name: "Changxi Zheng",
@@ -14,7 +13,6 @@ const teamMembersList = [
   },
   {
     id: 1,
-    hash: "#guru-krishnan",
     metaTitle: "",
     metaDescription: `
     Guru is a Lead Research Engineer at Snap Research Seattle, who focuses on computational imaging, photography, computer vision, machine learning, robotics, and computer graphics. Before joining Snap Inc., Guru worked at Amazon, where he helped automate fulfillment and deliver multiple perception systems for robotics technologies. Guru earned a Master’s in Computer Science from Columbia University. Learn more about his work
@@ -33,7 +31,6 @@ const teamMembersList = [
 
   {
     id: 2,
-    hash: "#jian-james-wang",
     metaTitle: "",
     metaDescription: `
     Jian (James) Wang works in the Computational Imaging lab at Snap Research New York. Jian received his PhD in Computation Imaging and Computer Vision from Carnegie Mellon University in 2018. His research interests lie in computer vision and computational photography. His previous work involves the design of novel camera systems (algorithms, optics and mechanics) for 3D acquisition, imaging beyond visible light, and seeing through scattering media. Learn more about his work
@@ -58,7 +55,6 @@ const teamMembersList = [
 
   {
     id: 3,
-    hash: "#karl-bayer",
     metaTitle: "",
     metaDescription: `
     Karl Bayer is a Research Engineer at Snap Research New York, specializing in mechanical design and prototyping. Before joining Snap Inc., he worked in aerospace manufacturing at Kulite Semiconductor Products, where he managed a production line specializing in semiconductor packaging. Karl received a Master’s in Computer Science from Columbia University, with a focus on vision, robotics, and interaction.
@@ -76,7 +72,6 @@ const teamMembersList = [
   },
   {
     id: 4,
-    hash: "#mikhail-fridberg",
     metaTitle: "",
     metaDescription: ``,
     name: "Mikhail Fridberg",
@@ -89,7 +84,6 @@ const teamMembersList = [
   },
   {
     id: 5,
-    hash: "#shree-nayar",
     metaTitle: "",
     metaDescription: `
     Shree Nayar heads Snap’s Computational Imaging Laboratory in New York City. His research is focused on three areas - the creation of novel cameras that provide new forms of visual information, the design of physics based models for vision and graphics, and the development of algorithms for understanding scenes from images. His work is motivated by applications in the fields of digital imaging, computer vision, computer graphics, robotics and human-computer interfaces.
@@ -108,7 +102,6 @@ const teamMembersList = [
 
   {
     id: 100,
-    hash: "#colin-eles",
     metaTitle: "",
     metaDescription: `
     Colin is a Lead Research Engineer whose initial focus is to advance cloud infrastructure and build out new systems for Snap Research. His work allows Research Engineers and Scientists to train models, run experiments, and solicit feedback among other tasks. He joined Snap Inc. in 2017 as a member of the Developer Tools team, creating tools to improve code quality and manage build infrastructure. Previously, he worked for Ever.ai, a face recognition platform, where he set up the initial machine learning infrastructure for both training and inference. Colin received his Master’s degree in Software Engineering from McMaster University.
@@ -126,7 +119,6 @@ const teamMembersList = [
   },
   {
     id: 101,
-    hash: "#diego-gomes-zara",
     metaTitle: "",
     metaDescription: ``,
     name: "Diego Gomes Zara",
@@ -139,7 +131,6 @@ const teamMembersList = [
   },
   {
     id: 102,
-    hash: "#francesco-barbieri",
     metaTitle: "",
     metaDescription: `
     Francesco is a Research Scientist at Snap Research, whose research is focused on Natural Language Processing. He has been working on understanding social media communications, visual and music domain. He is looking to further his research in multimodality. His work was published in top conferences such as EMNLP, NAACL, EACL, ACMMM, and IJCAI.
@@ -159,7 +150,6 @@ const teamMembersList = [
   },
   {
     id: 103,
-    hash: "#leonardo-neves",
     metaTitle: "",
     metaDescription: `
     Leonardo is a Lead Research Scientist and manages the Computational Social Science team at Snap Research. His research is focused on Natural Language Processing and Data Mining, specifically in learning additional context to improve language understanding.
@@ -178,7 +168,6 @@ const teamMembersList = [
   },
   {
     id: 104,
-    hash: "#maarten-bos",
     metaTitle: "",
     metaDescription: `
     Maarten Bos is a quantitative experimental behavioral researcher, with expertise in decision-science, persuasion, and human-technology interaction. He brings four and a half years of experience leading a behavioral science group at Disney Research, translating research and analytics to business outcomes and improvements. Maarten’s research has been published in journals including Science, Psychological Science, Journal of Consumer Psychology, and The Review of Economic Studies. His work has been covered by the Wall Street Journal, Harvard Business Review, NPR, and The New York Times. Maarten received his PhD training in The Netherlands, and postdoc training from Harvard Business School and Harvard Medical School.
@@ -196,7 +185,6 @@ const teamMembersList = [
   },
   {
     id: 105,
-    hash: "#neil-shah",
     metaTitle: "",
     metaDescription: `
     Neil is a Sr. Research Scientist at Snap Inc, with interests in computational user modeling and user understanding, especially in the contexts of misbehavior, abuse and fraud on web platforms. His work has resulted in 30+ conference and journal publications, in top venues such as KDD, ICDM, WWW, SDM, DSAA, PAKDD, TKDD and more, including several best-paper awards.  He has also served as an organizer, chair and on program committees at a number of these. He has had previous research experiences at Lawrence Livermore National Laboratory, Microsoft Research, and Twitch.tv.
@@ -214,7 +202,6 @@ const teamMembersList = [
   },
   {
     id: 106,
-    hash: "#nils-murrugarra-llerena",
     metaTitle: "",
     metaDescription: `
     Nils is a research scientist, with expertise in computer vision, machine learning and natural language processing. Specifically, his research is focused on multi-modal learning, deep learning, metric learning, and reinforcement learning. Nils' research has been published in conferences such as CVPR, AAAI, BMVC, WACV and workshops in NeurIPS and ICML. Before joining Snap Inc, he worked in ASEA Brown Boveri (ABB) and Educational Testing Services (ETS).
@@ -233,7 +220,6 @@ const teamMembersList = [
   },
   {
     id: 107,
-    hash: "#yozen-liu",
     metaTitle: "",
     metaDescription: `
     Yozen Liu is a Research Engineer on the Computational Social Science Team. Here at Snap Research, he works on Deep Graph Neural Networks and its Large-scale applications, as well as  Social/Data Science projects in understanding and predicting user behavior.
@@ -252,7 +238,6 @@ const teamMembersList = [
 
   {
     id: 200,
-    hash: "#ana-cardenas-gasca",
     metaTitle: "",
     metaDescription: `
     Ana is a Research Intern on the Human-Computer Interaction (HCI) team at Snap Research. Her research focuses on reclaiming technologies to strengthen human connection instead of weaken it, particularly on mobile Augmented Reality. She designs and creates Augmented Reality applications around social themes such as co-located interactions and studies around the way users interact with these applications.
@@ -270,7 +255,6 @@ const teamMembersList = [
   },
   {
     id: 201,
-    hash: "#andres-monroy-hernandez",
     metaTitle: "",
     metaDescription: `
     Andrés manages the Human-computer Interaction research team distributed across Seattle, NYC and LA. His core area of research is social computing systems. Along with with his team, he designs and studies technologies that help people connect and collaborate in new ways. In recent years, his team and him have created smartwatch applications that use biosignals to support remote social presence, and augmented reality experiences that bring co-located friends closer together through play and creative expression.
@@ -288,7 +272,6 @@ const teamMembersList = [
   },
   {
     id: 202,
-    hash: "#andrbrian-smith",
     metaTitle: "",
     metaDescription: `
     Brian A. Smith is a Research Scientist specializing in Human–Computer Interaction (HCI) and an Assistant Professor of Computer Science at Columbia University, where he directs the Computer-Enabled Abilities Laboratory (CEAL). His research goal is to develop computers that can grant people new abilities, abilities that help people better experience the world. His work is interdisciplinary and incorporates AI, sensing, vision, game design, augmented reality, accessibility, and social computing.
@@ -307,7 +290,6 @@ const teamMembersList = [
   },
   {
     id: 203,
-    hash: "#fannie-liu",
     metaTitle: "",
     metaDescription: `
     Fannie Liu is a Research Scientist at Snap Research New York. As part of the Human-Computer Interaction team, Fannie works on designing and studying technologies that facilitate social connection between people. Her research areas include HCI, social computing, and physiological sensing. Fannie received her Ph.D. in Human-Computer Interaction from Carnegie Mellon University.
@@ -325,7 +307,6 @@ const teamMembersList = [
   },
   {
     id: 204,
-    hash: "#jack-tsung-yu-tsai",
     metaTitle: "",
     metaDescription: `
     Jack is a Research Engineer on Snap Research's Seattle team. His works are focused on user experience, and prototyping and exploring potential new features to be incorporated with the product. Before joining Snap, Jack worked at Stitchbridge, Oculus Research (now as Facebook Reality Lab), and Next Animation Studio for Research and Development of AR/VR, Computer Graphics, Gaming and Animation field in the United States and Taiwan. His works include conducting computer graphic research, developing in-house software, integrating research and improving the production pipeline. He received his Master’s degrees in Computer Science from National Taiwan University in 2008 and in Entertainment Technology from Carnegie Mellon University in 2016.
@@ -343,7 +324,6 @@ const teamMembersList = [
   },
   {
     id: 205,
-    hash: "#rajan-vaish",
     metaTitle: "",
     metaDescription: `
     Rajan Vaish is a Senior Research Scientist at Snap Research. His current interest in human-computer interaction (HCI) spans designing novel augmented reality experiences and conducting social computing research. Before joining Snap Inc., Rajan was a Postdoctoral Research Fellow in the School of Engineering at Stanford University, where he developed crowdsourcing systems for scaling open-ended complex goals. He has worked and collaborated with various groups at Microsoft Research Redmond and India, Palo Alto Research Center, Los Alamos National Lab, IBM T.J. Watson Research Center, Accenture Technology Labs, Google SoC, OpenStreetMap, and One Laptop per Child. Rajan earned a MS and a PhD in Computer Science from UC Santa Cruz, and received the University of California Regents Fellowship. In addition to top academic conferences, Rajan's research has been featured in the MIT Tech Review, New Scientist, Stanford News, and Wired, among others. Learn more about his work at
@@ -361,7 +341,6 @@ const teamMembersList = [
   },
   {
     id: 206,
-    hash: "#sven-kratz",
     metaTitle: "",
     metaDescription: `
     Sven is a Research Engineer with the Human Computer Interaction (HCI) group of Snap Research. Sven’s previous work in academia and industry includes gestural and spatial user interfaces for mobile devices, immersive telepresence robotics, advanced driver monitoring systems and HMI for operators and engineers of autonomous vehicles.
@@ -380,7 +359,6 @@ const teamMembersList = [
   },
   {
     id: 207,
-    hash: "#yu-jiang-tham",
     metaTitle: "",
     metaDescription: `
     Yu Jiang is a Senior Research Engineer on the Human Computer Interaction group. Before joining Snap Research, he was part of the Spectacles team working on firmware development and prototyping for Spectacles V1, V2, and V3. Prior to joining Snap, he  worked on various projects at Apple in robotics, automated testing, and development.
@@ -399,7 +377,6 @@ const teamMembersList = [
 
   {
     id: 300,
-    hash: "#jian-ren",
     metaTitle: "",
     metaDescription: ``,
     name: "Hsin-Ying Lee",
@@ -412,7 +389,6 @@ const teamMembersList = [
   },
   {
     id: 301,
-    hash: "#hsin-ying-lee",
     metaTitle: "",
     metaDescription: `
     Jian is a Research Scientist working in the Creative Vision group at Snap Research. His research focuses on computer vision, deep learning, and generative models. Before joining Snap Inc., he worked as a Research Intern at Adobe, Snap Inc., and Bytedance Research. Jian obtained a PhD degree in Computer Engineering from Rutgers University in 2019.
@@ -430,7 +406,6 @@ const teamMembersList = [
   },
   {
     id: 302,
-    hash: "#kyle-olszewski",
     metaTitle: "",
     metaDescription: `
     Kyle Olszewski is a Research Scientist in the Creative Vision group at Snap Research. His research interests include facial expression tracking, particularly for emerging platforms such as virtual and augmented reality, 3D reconstruction, and intuitive interfaces for image manipulation and synthesis.
@@ -448,7 +423,6 @@ const teamMembersList = [
   },
   {
     id: 303,
-    hash: "#menglei-chai",
     metaTitle: "",
     metaDescription: `
     Menglei is a Senior Research Scientist in the Creative Vision group at Snap Research. Menglei's research works  are on computer graphics and vision, specifically for image manipulation, physical animation, and human-centered modeling.  Prior to joining Snap Inc., he worked at Adobe Research as a Research intern. Menglei holds a PhD in Computer Science from Zhejiang University in Hangzhou, China.
@@ -466,7 +440,6 @@ const teamMembersList = [
   },
   {
     id: 304,
-    hash: "#sergey-tulyakov",
     metaTitle: "",
     metaDescription: `
     Sergey Tulyakov is a Lead Research Scientist heading the Creative Vision team at Snap Research. His work focuses on creating methods for manipulating the world via computer vision and machine learning. This includes style transfer, photorealistic object manipulation and animation, video synthesis, prediction and retargeting. His work has been published as 20+ top conference papers, journals and patents resulting in multiple tech transfers, including Snapchat Pet Tracking, OurBaby Snappable and Real-time Neural Lenses (gender swap, baby face) and others. Before joining Snap Inc., Sergey was with Carnegie Mellon University, Microsoft, NVIDIA. He holds a PhD degree from the University of Trento, Italy.
@@ -484,7 +457,6 @@ const teamMembersList = [
   },
   {
     id: 305,
-    hash: "#zeng-huang",
     metaTitle: "",
     metaDescription: `
     Zeng Huang is a Research Scientist in the Creative Vision team at Snap Research. His research focuses on geometry reconstruction, reasoning, and human digitization especially for consumer-level devices, allowing easy digital content creation for everyone. His work leverages a combination of computer graphics, vision, and machine learning. His research efforts have been published in venues such as SIGGRAPH, CVPR, ICCV, ECCV, ICLR, and featured in multiple
@@ -503,7 +475,6 @@ const teamMembersList = [
 
   {
     id: 400,
-    hash: "#ali-graw",
     metaTitle: "",
     metaDescription: `
     Ali has been at Snap since late 2016 and has recruited across various technical and nontechnical verticals. She recently took over the Specialty Engineering groups and leads all intern efforts for the Research Team. Should you have any questions about the Internship or New Grad programs at Snap please reach out!
@@ -520,7 +491,6 @@ const teamMembersList = [
   },
   {
     id: 401,
-    hash: "#andrea-sornoza",
     metaTitle: "",
     metaDescription: `
     Andrea is an Operations Specialist who supports the Computational Imaging Research Lab. Before joining Snap Inc., she worked in operations and account management to oversee project development and deployment while building partner relationships. She holds a bachelor’s degree in Biology from Syracuse University.
@@ -537,7 +507,6 @@ const teamMembersList = [
   },
   {
     id: 402,
-    hash: "#jung-kim",
     metaTitle: "",
     metaDescription: `
     Jung Kim is a Research Program Manager who oversees external collaborations, conferences, internal collaborations with product teams, and manages legal and security reviews of research projects from ideation to pre-productization. Before joining Snap Research, she supported Entities and Crowdsourcing teams at Facebook, and earned her B.A from the University of California, Berkeley.
@@ -555,7 +524,6 @@ const teamMembersList = [
   },
   {
     id: 403,
-    hash: "#marian-pho",
     metaTitle: "",
     metaDescription: `
     Marian supports the Computational Imaging Research Lab based out of Snap Research New York. Before joining Snap Inc., she worked in operational management, focused on implementing new projects and developing sustainable growth strategies and practices. She holds a master’s degree in Human Rights & Democratisation (Asia Pacific) from University of Sydney, and a Master’s of Social Work from Fordham University.
@@ -573,7 +541,6 @@ const teamMembersList = [
   },
   {
     id: 404,
-    hash: "#nikki-lowry",
     metaTitle: "",
     metaDescription: `
     Nikki is the Executive Assistant to Co-founder and CTO, Bobby Murphy. She manages processes for Snap Research, Research Interns and the Fellowship Program. In addition to Snap Research, she oversees projects for Snap's Lens Design, Camera Platform, Machine Learning and Cameos Departments. Nikki studied Political Science at Indiana University and before Snap she was the EA to the VP of Policy and Communications at Uber.
@@ -590,11 +557,10 @@ const teamMembersList = [
   },
   {
     id: 405,
-    hash: "#rachel-greenfield",
     metaTitle: "",
     metaDescription: ``,
     name: "Rachel Greenfield",
-    email: "fdssbsdgsfgnfn_rach@snap.com",
+    email: "rach@snap.com",
     subTitle: "",
     researchAreas: "",
     backUrl: "../team/category/all.html",
@@ -602,6 +568,11 @@ const teamMembersList = [
     description: ``,
   },
 ];
+
+teamMembersList.forEach((teamMember) => {
+  teamMember.hash =
+    "#" + teamMember.name.split(" ").join("-").toLocaleLowerCase();
+});
 
 const teamMembersForTeamCategory = {
   computationalImaging: [0, 1, 2, 3, 4, 5],
